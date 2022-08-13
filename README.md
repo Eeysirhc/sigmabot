@@ -29,7 +29,7 @@ python3 sigmabot.py
 
 ### Token price charts
 
-Valid input: `erg`, `ergopad`, `exle`, `paideia`, `neta`, `sigrsv`, `terahertz`, `egio`, `comet`
+Valid input: `sigusd`, `ergopad`, `exle`, `paideia`, `neta`, `sigrsv`, `terahertz`, `egio`, `comet`, `ergold`, `migoreng`, `erdoge`
 
 ```python
 .spf <token>
