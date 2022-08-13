@@ -62,10 +62,15 @@ Line #28: default is `on the Rosen Bridge`.
 ## Backlog
 
 - [ ] Add requirements.txt installation step
-- [ ] Remove dependency on CSV file for initial tokens list
-- [ ] Expand tokens list 
-- [ ] Streamline code efficiency (see comments)
-- [x] Plot $erg address amount over time 
+- [ ] Functionality to intake multiple tokens and plot all on the same graph
+- [ ] Remove dependency on CSV file for initial tokens and expand list
+- [ ] Streamline code efficiency (see inline comments)
+- [x] Plot $ERG address amount over time 
+- [ ] Plot token address balance over time 
+- [x] Replace USD with $ERG values only
+- [ ] Address balance ranking (whale, shark, shrimp, etc.)
+- [ ] Token information such as market cap, circulating supply, etc.
+
 
 ## Contributing
 
