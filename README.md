@@ -4,6 +4,7 @@ Discord bot for all things Ergo with the following available services:
 
 * SpectrumDEX (formerly ErgoDEX) price charts
 * Ergo block height
+* Address balance history charts
 
 ## Prerequisites
 
@@ -43,7 +44,7 @@ Valid input: `erg`, `ergopad`, `exle`, `paideia`, `neta`, `sigrsv`, `terahertz`,
 ### Address balance history 
 
 ```python
-.addy <address>
+.addy <ergo-address>
 ```
 
 ## Customization
@@ -65,5 +66,4 @@ Line #28: default is `on the Rosen Bridge`.
 - [ ] Expand tokens list 
 - [ ] Streamline code efficiency (see comments)
 - [x] Plot $erg address amount over time 
-
 
