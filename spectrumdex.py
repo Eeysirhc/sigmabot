@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 
+# Last updated: 2022-08-13
 ##############################
 
 # LOAD PYTHON MODULES
@@ -38,37 +38,32 @@ def spectrumdex_data(token_name):
 
 ##########
 # FUNCTION: VISUALIZE DATA
-# future: could probably clean this up and separate into two steps instead 1) process 2) plot
 def spectrumdex_charts(user_request):
-	
-	# base $erg in sigUSD
-	sigusd = spectrumdex_data("erg")
 	
 	# token
 	token_data = spectrumdex_data(user_request)
 
-	# join data 
-	df = pd.merge(sigusd, token_data, on='timestamp')
-	df['token_price'] = df['price_x'] / df['price_y']
-	df = df[['datetime_x', 'price_x', 'token_price']]
-	df = df.rename(columns={'datetime_x': 'datetime', 'price_x': 'sigusd_price'})
+	# descriptors
+	latest = token_data.tail(1)
+	title = "ERG / " + user_request.upper()
 
-	# if requesting "erg" price then replace data values
-	if user_request == "erg":
-		df['token_price'] = df['sigusd_price']
-		pass
-
-	# latest price
-	dx = df.tail(1)
-
-	# save plot
-	plt.clf()
-	plt.figure(figsize=(15,10))
-	plt.plot(df.datetime, df.token_price, marker='o')
-	plt.axhline(y=dx.token_price.item(), linestyle=':')
-	plt.ylabel("Price ($)")
-	plt.ylim(0, df.token_price.max()*1.20)
-	plt.title(user_request, fontsize=15, horizontalalignment='left', x=0.05)
-	plt.savefig("toast.png")
+	# if requesting "sigusd" then don't fip y-axis
+	if user_request == "sigusd":
+		plt.clf()
+		plt.figure(figsize=(15,10))
+		plt.plot(token_data.datetime, token_data.price, marker='o')
+		plt.axhline(y=latest.price.item(), linestyle=':')
+		plt.ylim(0, token_data.price.max()*1.20)
+		plt.title(title, fontsize=15, horizontalalignment='left', x=0.05)
+		plt.savefig("toast.png")
+	else:
+		plt.clf()
+		plt.figure(figsize=(15,10))
+		plt.plot(token_data.datetime, token_data.price, marker='o')
+		plt.axhline(y=latest.price.item(), linestyle=':')
+		plt.gca().invert_yaxis()
+		plt.ylim(token_data.price.max()*1.20, 0)
+		plt.title(title, fontsize=15, horizontalalignment='left', x=0.05)
+		plt.savefig("toast.png")
 ##########
 
