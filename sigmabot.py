@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 
+# Last updated: 2022-08-13
 ##############################
 
 # LOAD PYTHON MODULES
@@ -10,8 +10,9 @@ import random
 from dotenv import load_dotenv 
 load_dotenv() 
 
-from spectrumdex import *
+from spectrumdex import * 
 from blox_height import * 
+from address_history import * 
 
 import discord
 from discord.ext import commands
@@ -40,10 +41,14 @@ async def blox(ctx):
     height = blox_height()
     await ctx.send(height)
 
+## ERGO BALANCE HISTORY
+@client.command()
+async def addy(ctx, address):
+    balance = address_charts(address)
+    await ctx.send(file=discord.File(r'addy.png'))
+
 
 # EXECUTE
 client.run(TOKEN)
-
-
 
 

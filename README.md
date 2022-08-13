@@ -40,6 +40,12 @@ Valid input: `erg`, `ergopad`, `exle`, `paideia`, `neta`, `sigrsv`, `terahertz`,
 .blox 
 ```
 
+### Address balance history 
+
+```python
+.addy <address>
+```
+
 ## Customization
 
 Developers can change config settings in the `sigmabot.py` file.
@@ -58,12 +64,6 @@ Line #28: default is `on the Rosen Bridge`.
 - [ ] Remove dependency on CSV file for initial tokens list
 - [ ] Expand tokens list 
 - [ ] Streamline code efficiency (see comments)
-- [ ] Plot $erg address amount over time 
-
-
-
-
-
-
+- [x] Plot $erg address amount over time 
 
 
