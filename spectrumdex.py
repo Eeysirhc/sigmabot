@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-08-13
+# Last updated: 2022-08-14
 ##############################
 
 # LOAD PYTHON MODULES
@@ -36,6 +36,8 @@ def spectrumdex_data(token_name):
 	return(df)
 ##########
 
+
+
 ##########
 # FUNCTION: VISUALIZE DATA
 def spectrumdex_charts(user_request):
@@ -45,25 +47,23 @@ def spectrumdex_charts(user_request):
 
 	# descriptors
 	latest = token_data.tail(1)
-	title = "ERG / " + user_request.upper()
+	title = "ERG / " + user_request.upper() + " @ " + str(round(latest.price.item(),2))
 
-	# if requesting "sigusd" then don't fip y-axis
+	plt.clf()
+	plt.figure(figsize=(15,10))
+	plt.plot(token_data.datetime, token_data.price, marker='o')
+	plt.axhline(y=latest.price.item(), linestyle=':')
+	plt.title(title, fontsize=15, horizontalalignment='left', x=0.05)
+
+	# if requesting sigUSD then don't flip y-axis 
 	if user_request == "sigusd":
-		plt.clf()
-		plt.figure(figsize=(15,10))
-		plt.plot(token_data.datetime, token_data.price, marker='o')
-		plt.axhline(y=latest.price.item(), linestyle=':')
 		plt.ylim(0, token_data.price.max()*1.20)
-		plt.title(title, fontsize=15, horizontalalignment='left', x=0.05)
-		plt.savefig("toast.png")
 	else:
-		plt.clf()
-		plt.figure(figsize=(15,10))
-		plt.plot(token_data.datetime, token_data.price, marker='o')
-		plt.axhline(y=latest.price.item(), linestyle=':')
 		plt.gca().invert_yaxis()
 		plt.ylim(token_data.price.max()*1.20, 0)
-		plt.title(title, fontsize=15, horizontalalignment='left', x=0.05)
-		plt.savefig("toast.png")
+
+	plt.savefig("toast.png")
 ##########
+
+
 
