@@ -2,7 +2,7 @@
 
 Discord bot for all things Ergo with the following available services:
 
-* SpectrumDEX (formerly ErgoDEX) price charts
+* SpectrumDEX price charts
 * Ergo block height
 * Address balance history charts (includes tokens)
 
@@ -31,21 +31,15 @@ python3 sigmabot.py
 
 Valid input: `sigusd`, `ergopad`, `exle`, `paideia`, `neta`, `sigrsv`, `terahertz`, `egio`, `comet`, `ergold`, `migoreng`, `erdoge`
 
-```python
-.spf <TOKEN>
-```
+![](https://preview.redd.it/wb1346dupih91.png?width=1690&format=png&auto=webp&s=6cc8b78925ebcb8c157cc983234bf6e8204804bb)
 
 ### Ergo block height
 
-```python
-.blox 
-```
+![](https://preview.redd.it/hmpx5ejxpih91.png?width=1706&format=png&auto=webp&s=53394032970c0e9b37c39bffc8506595781dde8e)
 
 ### Address balance history charts
 
-```python
-.addy <ERGO-ADDRESS>
-```
+![](https://preview.redd.it/t6jtflozpih91.png?width=1696&format=png&auto=webp&s=1f668397cd1c9880655d1ae7f8766018bd89e0ef)
 
 And for individual tokens:
 
@@ -86,4 +80,5 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
+
 

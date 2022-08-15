@@ -25,8 +25,7 @@ keys = pd.read_csv("lp.csv")
 def spectrumdex_data(token_name):
 	
 	# lookup pool IDs
-	token = token_name
-	pool_id = keys[keys['name'] == token]['pool_id'].iloc[0]
+	pool_id = keys[keys['name'] == token_name]['pool_id'].iloc[0]
 
 	# retrieve pool stats
 	df_raw = requests.get("https://api.ergodex.io/v1/amm/pool/" + pool_id + "/chart").json()
@@ -64,6 +63,7 @@ def spectrumdex_charts(user_request):
 
 	plt.savefig("toast.png")
 ##########
+
 
 
 
