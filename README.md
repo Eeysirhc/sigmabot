@@ -1,9 +1,9 @@
 # sigmabot
 
-Discord bot for all things Ergo with the following available services:
+Discord bot for frequently asked Ergo data:
 
-* SpectrumDEX price charts
 * Ergo block height
+* SpectrumDEX price charts
 * Address balance history charts (includes tokens)
 
 ## Prerequisites
@@ -59,18 +59,6 @@ Line #20: instead of the default `.` can modify to `$`, `#`, `!` or whatever you
 
 Line #28: default is `World of ERGcraft`.
 
-## Backlog
-
-- [ ] Add requirements.txt installation step
-- [ ] Functionality to intake multiple tokens and plot all on the same graph
-- [ ] Remove dependency on CSV file for initial tokens and expand list
-- [x] Plot $ERG address amount over time 
-- [x] Plot token address balance over time 
-- [x] Replace USD with $ERG values only
-- [ ] Address balance ranking (whale, shark, shrimp, etc.)
-- [ ] Token information such as market cap, circulating supply, etc.
-- [ ] Candlestick charts
-
 ## Contributing
 
 The spaghetti code for this bot is held together by hope and a lot of bubble gum. It would be ideal for someone with actual software development skills can improve upon this and make it better. Thus, any improvements to this package is highly appreciated.
@@ -80,5 +68,7 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
+
+
 
 
