@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-08-14
+# Last updated: 2022-08-19
 ##############################
 
 # LOAD PYTHON MODULES
@@ -46,9 +46,19 @@ async def blox(ctx):
 async def addy(ctx, address, token_name=""):
     token_name = token_name.lower()
     adh.address_charts(address, token_name)
-    await ctx.send(file=discord.File(r'addy.png'))    
+    await ctx.send(file=discord.File(r'addy.png'))  
+
+"""
+## GAZZA WEN COMMAND
+@client.command()
+async def wen(ctx):
+    userid = '<@userid>'
+    responses = ["Please ser {userid} wen $SPF token?",
+                "Where to /register for airdrop {userid}?",
+                "{userid} ser wen wallet wen layer 2 wen ethereum wen cardano"]
+    await ctx.send(random.choice(responses).format(userid=userid))
+"""
 
 # EXECUTE
 client.run(TOKEN)
-
 
