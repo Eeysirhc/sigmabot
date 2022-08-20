@@ -57,7 +57,7 @@ Line #20: instead of the default `.` can modify to `$`, `#`, `!` or whatever you
 
 ### Status
 
-Line #28: default is `World of ERGcraft`.
+Line #29: default is `World of ERGcraft`.
 
 ## Contributing
 
