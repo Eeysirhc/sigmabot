@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-08-19
+# Last updated: 2022-08-22
 ##############################
 
 # LOAD PYTHON MODULES
@@ -17,8 +17,15 @@ import address_history as adh
 import discord
 from discord.ext import commands
 
+# https://stackoverflow.com/questions/68581659/i-want-my-bot-to-process-commands-sent-by-other-bots
+class UnfilteredBot(commands.Bot):
+    async def process_commands(self, message):
+        ctx = await self.get_content(message)
+        await self.invoke(ctx)
+
 # CONFIG
-client = commands.Bot(command_prefix = '.')
+#client = commands.Bot(command_prefix = '.')
+client = UnfilteredBot(command_prefix = '.')
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 # EVENTS
@@ -61,4 +68,7 @@ async def wen(ctx):
 
 # EXECUTE
 client.run(TOKEN)
+
+
+
 
