@@ -53,11 +53,11 @@ Developers can change config settings in the `sigmabot.py` file.
 
 ### Prefix
 
-Line #20: instead of the default `.` can modify to `$`, `#`, `!` or whatever you want.
+`command_prefix`: instead of the default `.` can modify to `$`, `#`, `!` or whatever you prefer.
 
 ### Status
 
-Line #29: default is `World of ERGcraft`.
+`discord.Game()`: default is `World of ERGcraft`.
 
 ## Contributing
 
