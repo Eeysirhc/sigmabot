@@ -39,41 +39,51 @@ async def blox(ctx):
     await ctx.send(height)
 
 ## WELCOME
+@client.command()
 async def welcome(ctx):
     await ctx.send(faq_welcome())
 
 ## GET $ERG
+@client.command()
 async def geterg(ctx):
     await ctx.send(faq_geterg())
 
 ## WALLETS
+@client.command()
 async def wallets(ctx, modifier=""):
     modifier = modifier.lower()
     response = faq_wallets(modifier)
     await ctx.send(resopnse)
 
 ## MINING
+@client.command()
 async def mining(ctx, modifier=""):
     modifier = modifier.lower()
     response = faq_mining(modifier)
     await ctx.send(response)
 
 ## DECENTRALIZED EXCHANGES
+@client.command()
 async def dex(ctx):
     await ctx.send(faq_dex())
 
 ## CENTRALIZED EXCHANGES
+@client.command()
 async def cex(ctx):
     await ctx.send(faq_cex())
 
 ## ERGOMIXER
+@client.command()
 async def ergomixer(ctx):
     await ctx.send(faq_ergomixer())
 
 ## SIGMAVERSE
+@client.command()
 async def sigmaverse(ctx):
     await ctx.send(faq_sigmaverse())
 
 # EXECUTE
 client.run(TOKEN)
+
+
 
