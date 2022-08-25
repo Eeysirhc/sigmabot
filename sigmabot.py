@@ -38,12 +38,42 @@ async def blox(ctx):
     height = bh.blox_height()
     await ctx.send(height)
 
+## WELCOME
+async def welcome(ctx):
+    await ctx.send(faq_welcome())
+
+## GET $ERG
+async def geterg(ctx):
+    await ctx.send(faq_geterg())
+
+## WALLETS
+async def wallets(ctx, modifier=""):
+    modifier = modifier.lower()
+    response = faq_wallets(modifier)
+    await ctx.send(resopnse)
+
+## MINING
+async def mining(ctx, modifier=""):
+    modifier = modifier.lower()
+    response = faq_mining(modifier)
+    await ctx.send(response)
+
+## DECENTRALIZED EXCHANGES
+async def dex(ctx):
+    await ctx.send(faq_dex())
+
+## CENTRALIZED EXCHANGES
+async def cex(ctx):
+    await ctx.send(faq_cex())
+
+## ERGOMIXER
+async def ergomixer(ctx):
+    await ctx.send(faq_ergomixer())
+
+## SIGMAVERSE
+async def sigmaverse(ctx):
+    await ctx.send(faq_sigmaverse())
+
 # EXECUTE
 client.run(TOKEN)
-
-
-
-
-
-
 

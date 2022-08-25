@@ -73,7 +73,7 @@ def faq_cex():
 	return(df)
 
 # ERGOMIXER
-def faq_mixer():
+def faq_ergomixer():
 	df = """
 	- https://www.youtube.com/watch?v=DgztoNDFG8U
 	"""
@@ -86,9 +86,4 @@ def faq_sigmaverse():
 	- https://sigmaverse.io/
 	"""
 	return(df)
-
-
-
-
-
 
