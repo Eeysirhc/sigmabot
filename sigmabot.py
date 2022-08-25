@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 load_dotenv() 
 
 import blox_height as bh 
+import faq
 
 import discord
 from discord.ext import commands
@@ -36,7 +37,6 @@ async def on_ready():
 async def blox(ctx):
     height = bh.blox_height()
     await ctx.send(height)
-
 
 # EXECUTE
 client.run(TOKEN)

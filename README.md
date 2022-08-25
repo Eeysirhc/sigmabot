@@ -18,20 +18,19 @@ python3 sigmabot.py
 
 ## Commands
 
-### Ergo block height
-
-![](https://preview.redd.it/hmpx5ejxpih91.png?width=1706&format=png&auto=webp&s=53394032970c0e9b37c39bffc8506595781dde8e)
+* `.blox`: current Ergo block height
+* `.welcome`
+* `.geterg`
+* `.wallets`: modifies with `dis`, `tg`, and `cold`
+* `.mining`: modifies with `dis` and `tg` channel links
+* `.dex`
+* `.cex`
+* `.ergomixer`
+* `.sigmaverse`
 
 ### Coming Soon
 
 * `.help`
-* `.wallets`
-* `.mining`
-* `.dex`
-* `.ergomixer`
-* `.sigmaverse`
-* `.geterg`
-* `.cex`
 
 ## Customization
 
@@ -54,6 +53,7 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
+
 
 
 
