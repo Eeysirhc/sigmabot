@@ -69,16 +69,16 @@ async def mining(ctx, modifier=""):
     response = faq_mining(modifier)
     await ctx.send(response)
 
-## ERGOMIXER
+## PROJECTS
 @client.command()
-async def ergomixer(ctx):
-    await ctx.send(faq_ergomixer())
-
-## SIGMAVERSE
-@client.command()
-async def sigmaverse(ctx):
-    await ctx.send(faq_sigmaverse())
+async def projects(ctx, modifier=""):
+    modifier = modifier.lower()
+    response = faq_projects(modifier)
+    await ctx.send(response)
 
 # EXECUTE
 client.run(TOKEN)
+
+
+
 

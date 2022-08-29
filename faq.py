@@ -12,8 +12,7 @@ def faq_help():
 	- .geterg: modifies with "dex" and "cex"
 	- .wallets: modifies with "dis", "tg", and "cold"
 	- .mining: modifies with "dis" and "tg" channel links
-	- .ergomixer
-	- .sigamverse
+	- .projects: valid input with "mixer" as modifier with more to come
 	"""
 	return(df)
 
@@ -90,20 +89,16 @@ def faq_mining(modifier=""):
 		"""
 	return(df)
 
-# ERGOMIXER
-def faq_ergomixer():
-	df = """
-	- https://www.youtube.com/watch?v=DgztoNDFG8U
-	"""
-	return(df)
-
-# SIGMAVERSE
+# ERGO PROJECTS 
 ## future: add categories as modifier (https://github.com/ergoplatform/sigmaverse/blob/master/config/categories.ts)
-def faq_sigmaverse():
-	df = """
-	- https://sigmaverse.io/
-	"""
+def faq_projects(modifier=""):
+	if modifier=="mixer":
+		df = """
+		- https://www.youtube.com/watch?v=DgztoNDFG8U
+		"""
+	else:
+		df = """
+		- https://sigmaverse.io/
+		"""
 	return(df)
-
-
 
