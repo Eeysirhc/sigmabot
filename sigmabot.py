@@ -50,8 +50,10 @@ async def welcome(ctx):
 
 ## GET $ERG
 @client.command()
-async def geterg(ctx):
-    await ctx.send(faq_geterg())
+async def geterg(ctx, modifier=""):
+    modifier = modifier.lower()
+    response = faq_geterg(modifier)
+    await ctx.send(response)
 
 ## WALLETS
 @client.command()
@@ -67,16 +69,6 @@ async def mining(ctx, modifier=""):
     response = faq_mining(modifier)
     await ctx.send(response)
 
-## DECENTRALIZED EXCHANGES
-@client.command()
-async def dex(ctx):
-    await ctx.send(faq_dex())
-
-## CENTRALIZED EXCHANGES
-@client.command()
-async def cex(ctx):
-    await ctx.send(faq_cex())
-
 ## ERGOMIXER
 @client.command()
 async def ergomixer(ctx):
@@ -89,6 +81,4 @@ async def sigmaverse(ctx):
 
 # EXECUTE
 client.run(TOKEN)
-
-
 

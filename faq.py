@@ -9,11 +9,9 @@ def faq_help():
 	df = """
 	- .blox: current Ergo block height
 	- .welcome 
-	- .geterg
+	- .geterg: modifies with "dex" and "cex"
 	- .wallets: modifies with "dis", "tg", and "cold"
 	- .mining: modifies with "dis" and "tg" channel links
-	- .dex
-	- .cex
 	- .ergomixer
 	- .sigamverse
 	"""
@@ -27,16 +25,37 @@ def faq_welcome():
 	return(df)
 
 # GET $ERG
-def faq_geterg():
-	df = """
-	- https://ergoplatform.org/en/get-erg/
-	"""
+def faq_geterg(modifier=""):
+	if modifier=="dex":
+		df = """
+		- https://app.spectrum.fi/ergo/swap
+		"""
+	elif modifier=="cex":
+		df = """
+		- https://www.gate.io/trade/ERG_USDT
+		- https://www.kucoin.com/trade/ERG-USDT
+		- https://www.coinex.com/exchange?currency=usdt&dest=erg
+		- https://tradeogre.com/exchange/BTC-ERG
+		- https://indodax.com/
+		- https://www.hotbit.io/exchange?symbol=ERG_BTC
+		- https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
+		- https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
+		- https://fmfw.io/erg-to-btc
+		- https://changelly.com/
+		- https://pro.changelly.com/
+		"""
+	else:
+		df = """
+		- https://ergoplatform.org/en/get-erg/
+		"""
 	return(df)
 
 # WALLETS
 def faq_wallets(modifier=""):
 	if modifier=="dis":
-		df = "- #🚧│wallets "
+		df = """
+		- #🚧│wallets
+		"""
 	elif modifier=="tg":
 		df = """
 		- @NautilusWallet
@@ -44,15 +63,21 @@ def faq_wallets(modifier=""):
 		- @SatergoWallet
 		"""
 	elif modifier=="cold":
-		df = "- https://www.youtube.com/watch?v=7q3Jq_OvhKY"
+		df = """
+		- https://www.youtube.com/watch?v=7q3Jq_OvhKY
+		"""
 	else:
-		df = "- https://ergoplatform.org/en/get-erg/#Wallets"
+		df = """
+		- https://ergoplatform.org/en/get-erg/#Wallets
+		"""
 	return(df)
 
 # MINING
 def faq_mining(modifier=""):
 	if modifier=="dis":
-		df = "- #🚧│mining "
+		df = """
+		- #🚧│mining
+		"""
 	elif modifier=="tg":
 		df = """
 		- @Ergo_Mining
@@ -60,31 +85,9 @@ def faq_mining(modifier=""):
 		- @GuapSwapCommunity
 		"""
 	else:
-		df = "- https://ergoplatform.org/en/get-erg/#Mining"
-	return(df)
-
-# DECENTRALIZED EXCHANGES
-def faq_dex():
-	df = """
-	- https://app.spectrum.fi/ergo/swap
-	"""
-	return(df)
-
-# CENTRALIZED EXCHANGES
-def faq_cex():
-	df = """
-	- https://www.gate.io/trade/ERG_USDT
-	- https://www.kucoin.com/trade/ERG-USDT
-	- https://www.coinex.com/exchange?currency=usdt&dest=erg
-	- https://tradeogre.com/exchange/BTC-ERG
-	- https://indodax.com/
-	- https://www.hotbit.io/exchange?symbol=ERG_BTC
-	- https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
-	- https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
-	- https://fmfw.io/erg-to-btc
-	- https://changelly.com/
-	- https://pro.changelly.com/
-	"""
+		df = """
+		- https://ergoplatform.org/en/get-erg/#Mining
+		"""
 	return(df)
 
 # ERGOMIXER
@@ -101,4 +104,6 @@ def faq_sigmaverse():
 	- https://sigmaverse.io/
 	"""
 	return(df)
+
+
 
