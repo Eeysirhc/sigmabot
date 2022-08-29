@@ -1,25 +1,25 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-08-28
+# Last updated: 2022-08-29
 ##############################
 
 # HELP
 def faq_help():
 	df = """
-	- .blox: current Ergo block height
-	- .welcome 
-	- .geterg: modifies with "dex" and "cex"
-	- .wallets: modifies with "dis", "tg", and "cold"
-	- .mining: modifies with "dis" and "tg" channel links
-	- .projects: valid input with "mixer" as modifier with more to come
+	.blox: current Ergo block height
+	.welcome 
+	.geterg: modifies with "dex" and "cex"
+	.wallets: modifies with "dis", "tg", and "cold"
+	.mining: modifies with "dis" and "tg" channel links
+	.projects: valid input with "mixer" as modifier with more to come
 	"""
 	return(df)
 
 # WELCOME
 def faq_welcome():
 	df = """
-	- https://youtu.be/CzGqYAlQRWQ
+	https://youtu.be/CzGqYAlQRWQ
 	"""
 	return(df)
 
@@ -27,25 +27,25 @@ def faq_welcome():
 def faq_geterg(modifier=""):
 	if modifier=="dex":
 		df = """
-		- https://app.spectrum.fi/ergo/swap
+		https://app.spectrum.fi/ergo/swap
 		"""
 	elif modifier=="cex":
 		df = """
-		- https://www.gate.io/trade/ERG_USDT
-		- https://www.kucoin.com/trade/ERG-USDT
-		- https://www.coinex.com/exchange?currency=usdt&dest=erg
-		- https://tradeogre.com/exchange/BTC-ERG
-		- https://indodax.com/
-		- https://www.hotbit.io/exchange?symbol=ERG_BTC
-		- https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
-		- https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
-		- https://fmfw.io/erg-to-btc
-		- https://changelly.com/
-		- https://pro.changelly.com/
+		GateIO: https://www.gate.io/trade/ERG_USDT
+		KuCoin: https://www.kucoin.com/trade/ERG-USDT
+		CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
+		TradeOgre: https://tradeogre.com/exchange/BTC-ERG
+		Indodax: https://indodax.com/
+		HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
+		Bisq: https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
+		swop.fi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
+		FMFW.io: https://fmfw.io/erg-to-btc
+		Changelly: https://changelly.com/
+		Changelly PRO: https://pro.changelly.com/
 		"""
 	else:
 		df = """
-		- https://ergoplatform.org/en/get-erg/
+		https://ergoplatform.org/en/get-erg/
 		"""
 	return(df)
 
@@ -53,21 +53,21 @@ def faq_geterg(modifier=""):
 def faq_wallets(modifier=""):
 	if modifier=="dis":
 		df = """
-		- #🚧│wallets
+		#🚧│wallets
 		"""
 	elif modifier=="tg":
 		df = """
-		- @NautilusWallet
-		- @ErgoWalletApp
-		- @SatergoWallet
+		@NautilusWallet
+		@ErgoWalletApp
+		@SatergoWallet
 		"""
 	elif modifier=="cold":
 		df = """
-		- https://www.youtube.com/watch?v=7q3Jq_OvhKY
+		https://www.youtube.com/watch?v=7q3Jq_OvhKY
 		"""
 	else:
 		df = """
-		- https://ergoplatform.org/en/get-erg/#Wallets
+		https://ergoplatform.org/en/get-erg/#Wallets
 		"""
 	return(df)
 
@@ -75,17 +75,17 @@ def faq_wallets(modifier=""):
 def faq_mining(modifier=""):
 	if modifier=="dis":
 		df = """
-		- #🚧│mining
+		#🚧│mining
 		"""
 	elif modifier=="tg":
 		df = """
-		- @Ergo_Mining
-		- @GetBlok
-		- @GuapSwapCommunity
+		@Ergo_Mining
+		@GetBlok
+		@GuapSwapCommunity
 		"""
 	else:
 		df = """
-		- https://ergoplatform.org/en/get-erg/#Mining
+		https://ergoplatform.org/en/get-erg/#Mining
 		"""
 	return(df)
 
@@ -94,11 +94,11 @@ def faq_mining(modifier=""):
 def faq_projects(modifier=""):
 	if modifier=="mixer":
 		df = """
-		- https://www.youtube.com/watch?v=DgztoNDFG8U
+		https://www.youtube.com/watch?v=DgztoNDFG8U
 		"""
 	else:
 		df = """
-		- https://sigmaverse.io/
+		https://sigmaverse.io/
 		"""
 	return(df)
 

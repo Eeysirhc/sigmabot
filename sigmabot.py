@@ -1,16 +1,15 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-08-28
+# Last updated: 2022-08-29
 ##############################
 
 # LOAD PYTHON MODULES
 import os
 from dotenv import load_dotenv 
 load_dotenv() 
-
-import blox_height as bh 
 import faq
+import blox_height as bh 
 
 import discord
 from discord.ext import commands
@@ -18,7 +17,7 @@ from discord.ext import commands
 # https://stackoverflow.com/questions/68581659/i-want-my-bot-to-process-commands-sent-by-other-bots
 class UnfilteredBot(commands.Bot):
     async def process_commands(self, message):
-        ctx = await self.get_content(message)
+        ctx = await self.get_contenst(message)
         await self.invoke(ctx)
 
 # CONFIG
@@ -31,12 +30,6 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 async def on_ready():
     print('Logged in as {0.user}'.format(client))
     await client.change_presence(activity = discord.Game("in Sigmaverse"))
-
-## ERGO BLOCK HEIGHT
-@client.command()
-async def blox(ctx):
-    height = bh.blox_height()
-    await ctx.send(height)
 
 ## HELP
 @client.command()
@@ -76,9 +69,11 @@ async def projects(ctx, modifier=""):
     response = faq_projects(modifier)
     await ctx.send(response)
 
+## ERGO BLOCK HEIGHT
+@client.command()
+async def blox(ctx):
+    height = bh.blox_height()
+    await ctx.send(height)
+
 # EXECUTE
 client.run(TOKEN)
-
-
-
-

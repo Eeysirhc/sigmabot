@@ -10,7 +10,7 @@ Discord bot for frequently asked questions about Ergo.
 DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
 ```
 
-### Launch bot
+### Launch
 
 ```python
 python3 sigmabot.py
@@ -18,7 +18,7 @@ python3 sigmabot.py
 
 ### Help
 
-For a list of available commands call `.help` in Discord or Telegram.
+For a list of available commands send `.help` as a message in Discord or Telegram.
 
 ## Customization
 
@@ -26,7 +26,7 @@ Developers can change config settings in the `sigmabot.py` file.
 
 ### Prefix
 
-`command_prefix`: instead of the default `.` can modify to `$`, `#`, `!` or whatever you prefer.
+`command_prefix`: instead of the default `.` can modify to `/`, `$`, `#`, `!` or whatever you prefer.
 
 ### Status
 
@@ -41,9 +41,4 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
-
-
-
-
-
 
