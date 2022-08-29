@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-08-25
+# Last updated: 2022-08-28
 ##############################
 
 # LOAD PYTHON MODULES
@@ -37,6 +37,11 @@ async def on_ready():
 async def blox(ctx):
     height = bh.blox_height()
     await ctx.send(height)
+
+## HELP
+@client.command()
+async def help(ctx):
+    await ctx.send(faq_help())
 
 ## WELCOME
 @client.command()

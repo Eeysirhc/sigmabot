@@ -1,8 +1,23 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 
+# Last updated: 2022-08-28
 ##############################
+
+# HELP
+def faq_help():
+	df = """
+	- .blox: current Ergo block height
+	- .welcome 
+	- .geterg
+	- .wallets: modifies with "dis", "tg", and "cold"
+	- .mining: modifies with "dis" and "tg" channel links
+	- .dex
+	- .cex
+	- .ergomixer
+	- .sigamverse
+	"""
+	return(df)
 
 # WELCOME
 def faq_welcome():

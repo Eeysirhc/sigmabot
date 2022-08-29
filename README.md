@@ -4,7 +4,7 @@ Discord bot for frequently asked questions about Ergo.
 
 ## Quick Start
 
-### Create `.env` file
+### `.env` file
 
 ```bash
 DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
@@ -16,21 +16,9 @@ DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
 python3 sigmabot.py
 ```
 
-## Commands
+### Help
 
-* `.blox`: current Ergo block height
-* `.welcome`
-* `.geterg`
-* `.wallets`: modifies with `dis`, `tg`, and `cold`
-* `.mining`: modifies with `dis` and `tg` channel links
-* `.dex`
-* `.cex`
-* `.ergomixer`
-* `.sigmaverse`
-
-### Coming Soon
-
-* `.help`
+For a list of available commands call `.help` in Discord or Telegram.
 
 ## Customization
 
@@ -53,6 +41,8 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
+
+
 
 
 
