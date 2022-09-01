@@ -30,7 +30,7 @@ Developers can change config settings in the `sigmabot.py` file.
 
 ### Status
 
-`discord.Game()`: default is `in Sigmaverse`.
+`discord.Game()`: default is `on the Rosen Bridge`.
 
 ## Contributing
 
