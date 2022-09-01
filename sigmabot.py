@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-08-29
+# Last updated: 2022-09-01
 ##############################
 
 # LOAD PYTHON MODULES
@@ -33,8 +33,8 @@ async def on_ready():
 
 ## HELP
 @client.command()
-async def help(ctx):
-    await ctx.send(faq_help())
+async def halp(ctx):
+    await ctx.send(faq_halp())
 
 ## WELCOME
 @client.command()

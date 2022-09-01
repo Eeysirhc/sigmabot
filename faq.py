@@ -1,11 +1,11 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-08-29
+# Last updated: 2022-09-01
 ##############################
 
 # HELP
-def faq_help():
+def faq_halp():
 	df = """
 	.blox: current Ergo block height
 	.welcome 
