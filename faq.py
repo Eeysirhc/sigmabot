@@ -8,11 +8,11 @@
 def faq_halp():
 	df = """
 	.blox: current Ergo block height
-	.welcome 
-	.geterg: modifies with "dex" and "cex"
-	.wallets: modifies with "dis", "tg", and "cold"
-	.mining: modifies with "dis" and "tg" channel links
-	.projects: valid input with "mixer" as modifier with more to come
+.welcome 
+.geterg: modifies with "dex" and "cex"
+.wallets: modifies with "dis", "tg", and "cold"
+.mining: modifies with "dis" and "tg" channel links
+.projects: valid input with "mixer" as modifier with more to come
 	"""
 	return(df)
 
@@ -32,16 +32,16 @@ def faq_geterg(modifier=""):
 	elif modifier=="cex":
 		df = """
 		GateIO: https://www.gate.io/trade/ERG_USDT
-		KuCoin: https://www.kucoin.com/trade/ERG-USDT
-		CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
-		TradeOgre: https://tradeogre.com/exchange/BTC-ERG
-		Indodax: https://indodax.com/
-		HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
-		Bisq: https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
-		swop.fi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
-		FMFW.io: https://fmfw.io/erg-to-btc
-		Changelly: https://changelly.com/
-		Changelly PRO: https://pro.changelly.com/
+KuCoin: https://www.kucoin.com/trade/ERG-USDT
+CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
+TradeOgre: https://tradeogre.com/exchange/BTC-ERG
+Indodax: https://indodax.com/
+HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
+Bisq: https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
+swop.fi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
+FMFW.io: https://fmfw.io/erg-to-btc
+Changelly: https://changelly.com/
+Changelly PRO: https://pro.changelly.com/
 		"""
 	else:
 		df = """
@@ -58,8 +58,8 @@ def faq_wallets(modifier=""):
 	elif modifier=="tg":
 		df = """
 		@NautilusWallet
-		@ErgoWalletApp
-		@SatergoWallet
+@ErgoWalletApp
+@SatergoWallet
 		"""
 	elif modifier=="cold":
 		df = """
@@ -80,8 +80,8 @@ def faq_mining(modifier=""):
 	elif modifier=="tg":
 		df = """
 		@Ergo_Mining
-		@GetBlok
-		@GuapSwapCommunity
+@GetBlok
+@GuapSwapCommunity
 		"""
 	else:
 		df = """

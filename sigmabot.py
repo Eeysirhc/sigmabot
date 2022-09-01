@@ -8,7 +8,7 @@
 import os
 from dotenv import load_dotenv 
 load_dotenv() 
-import faq
+import faq as fq
 import blox_height as bh 
 
 import discord
@@ -34,39 +34,39 @@ async def on_ready():
 ## HELP
 @client.command()
 async def halp(ctx):
-    await ctx.send(faq_halp())
+    await ctx.send(fq.faq_halp())
 
 ## WELCOME
 @client.command()
 async def welcome(ctx):
-    await ctx.send(faq_welcome())
+    await ctx.send(fq.faq_welcome())
 
 ## GET $ERG
 @client.command()
 async def geterg(ctx, modifier=""):
     modifier = modifier.lower()
-    response = faq_geterg(modifier)
+    response = fq.faq_geterg(modifier)
     await ctx.send(response)
 
 ## WALLETS
 @client.command()
 async def wallets(ctx, modifier=""):
     modifier = modifier.lower()
-    response = faq_wallets(modifier)
-    await ctx.send(resopnse)
+    response = fq.faq_wallets(modifier)
+    await ctx.send(response)
 
 ## MINING
 @client.command()
 async def mining(ctx, modifier=""):
     modifier = modifier.lower()
-    response = faq_mining(modifier)
+    response = fq.faq_mining(modifier)
     await ctx.send(response)
 
 ## PROJECTS
 @client.command()
 async def projects(ctx, modifier=""):
     modifier = modifier.lower()
-    response = faq_projects(modifier)
+    response = fq.faq_projects(modifier)
     await ctx.send(response)
 
 ## ERGO BLOCK HEIGHT
@@ -77,3 +77,8 @@ async def blox(ctx):
 
 # EXECUTE
 client.run(TOKEN)
+
+
+
+
+
