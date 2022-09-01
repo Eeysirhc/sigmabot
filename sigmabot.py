@@ -9,7 +9,6 @@ import os
 from dotenv import load_dotenv 
 load_dotenv() 
 import faq as fq
-import blox_height as bh 
 
 import discord
 from discord.ext import commands
@@ -69,16 +68,7 @@ async def projects(ctx, modifier=""):
     response = fq.faq_projects(modifier)
     await ctx.send(response)
 
-## ERGO BLOCK HEIGHT
-@client.command()
-async def blox(ctx):
-    height = bh.blox_height()
-    await ctx.send(height)
-
 # EXECUTE
 client.run(TOKEN)
-
-
-
 
 
