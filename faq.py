@@ -7,8 +7,7 @@
 # HELP
 def faq_halp():
 	df = """
-	.blox: current Ergo block height
-.welcome 
+	.welcome 
 .geterg: modifies with "dex" and "cex"
 .wallets: modifies with "dis", "tg", and "cold"
 .mining: modifies with "dis" and "tg" channel links
@@ -101,4 +100,5 @@ def faq_projects(modifier=""):
 		https://sigmaverse.io/
 		"""
 	return(df)
+
 
