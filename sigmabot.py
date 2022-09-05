@@ -15,100 +15,93 @@ from discord.ext import commands
 
 # https://stackoverflow.com/questions/68581659/i-want-my-bot-to-process-commands-sent-by-other-bots
 class UnfilteredBot(commands.Bot):
-    async def process_commands(self, message):
-        ctx = await self.get_context(message)
-        await self.invoke(ctx)
+	async def process_commands(self, message):
+		ctx = await self.get_context(message)
+		await self.invoke(ctx)
 
 # CONFIG
-client = UnfilteredBot(command_prefix = '.')
+intents = discord.Intents().all()
+client = UnfilteredBot(command_prefix = '.', intents=intents)
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 # EVENTS
 ## BOT STATUS
 @client.event
 async def on_ready():
-    print('Logged in as {0.user}'.format(client))
-    await client.change_presence(activity = discord.Game("on the Rosen Bridge"))
+	print('Logged in as {0.user}'.format(client))
+	await client.change_presence(activity = discord.Game("on the Rosen Bridge"))
 
 ## HELP
 @client.command()
 async def halp(ctx):
-    await ctx.send(fq.faq_halp())
+	await ctx.send(fq.faq_halp())
 
 ## WELCOME
-#@client.command()
+@client.command()
 async def welcome(ctx):
-    await ctx.send(fq.faq_welcome())
+	await ctx.send(fq.faq_welcome())
 
 ## GET $ERG
-#@client.command()
+@client.command()
 async def geterg(ctx, modifier=""):
-    modifier = modifier.lower()
-    response = fq.faq_geterg(modifier)
-    await ctx.send(response)
+	modifier = modifier.lower()
+	response = fq.faq_geterg(modifier)
+	await ctx.send(response)
 
 ## WALLETS
-#@client.command()
+@client.command()
 async def wallets(ctx, modifier=""):
-    modifier = modifier.lower()
-    response = fq.faq_wallets(modifier)
-    await ctx.send(response)
+	modifier = modifier.lower()
+	response = fq.faq_wallets(modifier)
+	await ctx.send(response)
 
 ## MINING
-#@client.command()
+@client.command()
 async def mining(ctx, modifier=""):
-    modifier = modifier.lower()
-    response = fq.faq_mining(modifier)
-    await ctx.send(response)
+	modifier = modifier.lower()
+	response = fq.faq_mining(modifier)
+	await ctx.send(response)
 
 ## LISTING
 @client.command()
 async def listing(ctx, modifier=""):
-    modifier = modifier.lower()
-    response = fq.faq_listing(modifier)
-    await ctx.send(response)
+	modifier = modifier.lower()
+	response = fq.faq_listing(modifier)
+	await ctx.send(response)
 
 ## BINANCE
-#@client.command()
-async def binance(ctx, modifier="")
-    modifier = modifier.lower()
-    response = fq.faq_listing(modifier)
-    await ctx.send(response)
+@client.command()
+async def binance(ctx):
+	await ctx.send(fq.faq_binance())
 
 ## TRANSACTIONS
-#@client.command()
-async def tps(ctx, modifier="")
-    modifier = modifier.lower()
-    response = fq.faq_listing(modifier)
-    await ctx.send(response)
+@client.command()
+async def tps(ctx):
+	await ctx.send(fq.faq_tps())
 
 # MARKET CAPITALIZATION
-#@client.command()                       
-async def marketcap(ctx, modifier="")         
-    modifier = modifier.lower()         
-    response = fq.faq_listing(modifier) 
-    await ctx.send(response)            
+@client.command()                       
+async def marketcap(ctx):     
+	await ctx.send(fq.faq_marketcap())            
 
 # GENESIS
-#@client.command()                       
-async def genesis(ctx, modifier="")         
-    modifier = modifier.lower()         
-    response = fq.faq_listing(modifier) 
-    await ctx.send(response)            
+@client.command()                       
+async def genesis(ctx):     
+	await ctx.send(fq.faq_genesis())            
 
 # TOKENJAY
-#@client.command()                      
-async def tokenjay(ctx, modifier="")    
-    modifier = modifier.lower()        
-    response = fq.faq_listing(modifier)
-    await ctx.send(response)
-    
+@client.command()                      
+async def tokenjay(ctx, modifier=""):   
+	modifier = modifier.lower()        
+	response = fq.faq_tokenjay(modifier)
+	await ctx.send(response)
+
 ## PROJECTS
-#@client.command()
+@client.command()
 async def projects(ctx, modifier=""):
-    modifier = modifier.lower()
-    response = fq.faq_projects(modifier)
-    await ctx.send(response)
+	modifier = modifier.lower()
+	response = fq.faq_projects(modifier)
+	await ctx.send(response)
 
 # EXECUTE
 client.run(TOKEN)
