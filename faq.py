@@ -60,7 +60,7 @@ def faq_wallets(modifier=""):
 @ErgoWalletApp
 @SatergoWallet
 		"""
-	elif modifier=="cold":
+ 	elif modifier=="cold":
 		df = """
 		https://www.youtube.com/watch?v=7q3Jq_OvhKY
 		"""
@@ -92,12 +92,84 @@ def faq_mining(modifier=""):
 def faq_listing(modifier=""):
 	if modifier=="binance":
 		df = """
-		Ergo will be listed on Biance when its customers want it.
+		Ergo will be listed on Binance when its customers want it.
 		"""
-	else:
+        elif modifier=="coinbase":
+		df = """
+		Ergo will be listed on Coinbase when its customers want it.
+		"""
+        elif modifier=="kracken":
+		df = """
+		Ergo will be listed on Kracken when its customers want it.
+		"""
+        elif modifier=="kucoin":              
+                df = """                       
+                Ergo will be listed on KuCoin when its customers want it                
+                """
+        elif modifier=="ftx":              
+                df = """                       
+                Ergo will be listed on FTX when its customers want it.         
+                """                            
+        elif modifier=="tier1":                      
+                df = """                               
+                Armeanio is already in contact with most exchanges. Listing agents are in the chat every day. The only information that can be provided is that there are ongoing discussions, and announcements will be made by the exchanges themselves. If you just want listing for price pump, betterto keep discussion in @ErgoTrading.                
+                """ 
+	else:                                              
 		df = """ 
                 The team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes on socials when it is announced you will see.  
                 """
+                return(df)
+        
+def faq_binance(modifier=""):                                                              
+        df = """                               
+        Ergo will be listed on Binance when its customers want it.
+        """                                               
+        return(df)                                                                              
+
+
+# TRANSACTIONS
+def faq_tps(modifier=""):                                     
+        df = """                                                  
+        Ergo's TPS (Transactions per second) on the version 5 Node TPS is estimated to be a minimum of 47.5tx/s. There are three scaling layers or levels: L0: Ergo nodes, which can be bootstrapped using NiPoPoWs proofs and UTXO set snapshots are planned. L1: Ergo has an extension section in its code that allows the implementation of a wide variety of scaling solutions such as Sharding, Hydra, or BitcoinNG-style macroblocks. L2 (off-chain): Ergo should be compatible with the Lightning Network, Rainbow Network, and many more. The implementation here will depend on the needs of the applications being built on Ergo.
+
+The general idea, roughtly, is that large chunks of transactions can happen in layer 2 and the whole chunks will be settled in Ergo blockchain using single transaction. Thanks to the high flexibility of ErgoScript programming model, many different protocols will be possible on layer2, each one solving scalability problem in a specific domain (like simple payment transactions).
+
+Thus, Ergo blockchain can be thought as common settlement layer for many L2 protocols and applications.    
+        """                                                      
+        return(df)                                                
+
+# MARKET CAPITALIZATION
+def faq_marketcap(modifier=""):                                                   
+        df = """
+        Ergo Explorer displays circulating supply and max supply (97,739,924 ERG). Multiply these amounts by current price to get Ergo's market capitalization. Coinmarketcap displays incorrect data and should not be relied upon.                         
+        """
+        return(df)
+
+# GENESIS
+def faq_genesis(modifier=""):                                                   
+        df = """
+        Ergo genesis block was 1 July 2019. Prior to that, there was a different coin, EFYT. EFYT was a Waves token that was airdropped, not sold. ICOs cause issues as you're buying from a common enterprise directly - who likely have nothing to show yet so purely for expectations of profits. ERGs value derives from the popularity and utility of the platform + the cost of mining erg.
+        """
+        return(df)
+
+# TOKENJAY
+def faq_tokenjay(modifier=""):
+	if modifier=="mobile":
+		df = """
+                If you haven't already, download Ergo Mobile Wallet (Android) or Terminus Wallet (Apple) and restore seed. Go to Settings. Click on the button Mosaik plugins disabled and make it enabled. A new dApps will appear in the bottom navigation bar of the wallet. Click on dApps, then scroll to the bottom of new page. Click on AgeUSD Dashboard. Then, click the Exchange button for either SigUSD or SigRSV. Then select Buy/Sell from the pull down menu and the amount you want.
+		"""
+	elif modifier=="escrow":
+		df = """
+		The open P2P Escrow service is a smart contract that enables trustless, person-to-person (P2P), private sales on the Ergo blockchain for a small fee. The contract accepts Ergo tokens, such as a non-fungible token (NFT), 100 SigUSD, or other token(s) from the seller. Once in the contract, only a defined buyer sending a defined amount of ERG can access the token(s). If this happens, the contract sends the NFT, SigUSD or other token(s) to the buyer and the ERG to the seller. The seller can cancel the contract at any time before the exchange is made.
+		"""
+        elif modifier=="mosaik":     
+                df = """
+                Mosaik is a JSON-based markup language served via a REST API intended to be used by Ergo platform dApps. For more information: https://docs.ergoplatform.com/dev/stack/mosaik/intro/ 
+                """              
+	else:
+		df = """
+		https://tokenjay.app
+		"""
 	return(df)
 
 # ERGO PROJECTS 
@@ -107,10 +179,32 @@ def faq_projects(modifier=""):
 		df = """
 		https://www.youtube.com/watch?v=DgztoNDFG8U
 		"""
-	else:
-		df = """
+        elif modifier=="spectrum":
+                df = """
+                https://app.spectrum.fi/
+                """
+        elif modifier=="ergopad":   
+                df = """     
+                https://www.ergopad.io/             
+                """          
+        elif modifier=="skyharbor":   
+                df = """     
+                https://www.skyharbor.io/             
+                """          
+        elif modifier=="ergoauctions":   
+                df = """     
+                https://ergoauctions.org/             
+                """          
+        elif modifier=="raffle":   
+                df = """     
+                https://ergoraffle.com/             
+                """          
+        elif modifier=="sigmavalley":   
+                df = """     
+                https://www.sigmavalley.org/             
+                """          
+        else:		
+                df = """
 		https://sigmaverse.io/
 		"""
 	return(df)
-
-
