@@ -14,7 +14,7 @@ def faq_welcome():
 # GET $ERG
 def faq_geterg():
 	df = """
-	- https://ergoplatform.org/en/get-erg/
+	https://ergoplatform.org/en/get-erg/
 	"""
 	return(df)
 
@@ -218,11 +218,22 @@ def faq_manifesto():
 # ADMIN
 def faq_admin():
 	df = """
-	"For technical support please join @ErgoSupport
-For marketing queries please email angie@ergoplatform.org"
+	For technical support please join @ErgoSupport
+For marketing queries please email angie@ergoplatform.org
 	"""
 	return(df)
 
+# LEDGER
+def faq_ledger():
+	df = """
+	Tutorials to sideload Ergo Ledger app
 
+Nano S
+Windows: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md
+Linux/MacOS: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-unix.md
 
+Sideload Nano S Plus
+https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a
+	"""
+	return(df)
 

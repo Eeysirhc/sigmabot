@@ -39,7 +39,7 @@ async def welcome(ctx):
 ## GET $ERG
 @client.command()
 async def geterg(ctx):
-	await ctx.send(fq.geterg())
+	await ctx.send(fq.faq_geterg())
 
 ## DEX
 @client.command()
@@ -120,6 +120,11 @@ async def manifesto(ctx):
 @client.command()
 async def admin(ctx):
 	await ctx.send(fq.faq_admin())
+
+# LEDGER
+@client.command()
+async def ledger(ctx):
+	await ctx.send(fq.faq_ledger())
 
 # EXECUTE
 client.run(TOKEN)
