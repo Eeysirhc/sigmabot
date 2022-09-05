@@ -8,10 +8,10 @@
 import os
 from dotenv import load_dotenv 
 load_dotenv() 
-import faq as fq
-
 import discord
 from discord.ext import commands
+
+import faq as fq
 
 # https://stackoverflow.com/questions/68581659/i-want-my-bot-to-process-commands-sent-by-other-bots
 class UnfilteredBot(commands.Bot):

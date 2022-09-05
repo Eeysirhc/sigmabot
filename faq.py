@@ -61,6 +61,8 @@ def faq_wallets(modifier=""):
 	else:
 		df = """
 		https://ergoplatform.org/en/get-erg/#Wallets
+
+Modifiers: dis, tg, cold
 		"""
 	return(df)
 
@@ -79,6 +81,8 @@ def faq_mining(modifier=""):
 	else:
 		df = """
 		https://ergoplatform.org/en/get-erg/#Mining
+
+Modifiers: dis, tg
 		"""
 	return(df)
 
@@ -117,7 +121,6 @@ def faq_binance():
 	Ergo will be listed on Binance when its customers want it.
 	"""
 	return(df)
-
 
 # TRANSACTIONS
 def faq_tps():
@@ -161,6 +164,8 @@ def faq_tokenjay(modifier=""):
 	else:
 		df = """
 		https://tokenjay.app
+
+Modifiers: mobile, escrow, mosaik
 		"""
 	return(df)
 
@@ -248,7 +253,7 @@ def faq_node(modifier=""):
 	else:
 		df = """
 		https://github.com/ergoplatform/ergo
+
+Modifiers: install, docs
 		"""
 	return(df)
-
-
