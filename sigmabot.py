@@ -79,17 +79,17 @@ async def binance(ctx):
 async def tps(ctx):
 	await ctx.send(fq.faq_tps())
 
-# MARKET CAPITALIZATION
+## MARKET CAPITALIZATION
 @client.command()                       
 async def marketcap(ctx):     
 	await ctx.send(fq.faq_marketcap())            
 
-# GENESIS
+## GENESIS
 @client.command()                       
 async def genesis(ctx):     
 	await ctx.send(fq.faq_genesis())            
 
-# TOKENJAY
+## TOKENJAY
 @client.command()                      
 async def tokenjay(ctx, modifier=""):   
 	modifier = modifier.lower()        

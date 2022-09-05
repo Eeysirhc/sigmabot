@@ -88,10 +88,8 @@ def faq_mining(modifier=""):
 		"""
 	return(df)
 
-
-
-
 # LISTING
+## future: cut down repetition by adding lookup list, if exists, then string interpolation response
 def faq_listing(modifier=""):
 	if modifier=="binance":
 		df = """
@@ -207,3 +205,5 @@ def faq_projects(modifier=""):
 		https://sigmaverse.io/
 		"""
 	return(df)
+
+
