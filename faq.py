@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-01
+# Last updated: 2022-09-04
 ##############################
 
 # HELP
@@ -96,7 +96,7 @@ def faq_listing(modifier=""):
 		"""
 	else:
 		df = """ 
-                The team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes of socials when it is announced you will see.  
+                The team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes on socials when it is announced you will see.  
                 """
 	return(df)
 
