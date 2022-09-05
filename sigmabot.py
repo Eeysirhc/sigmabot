@@ -67,6 +67,33 @@ async def listing(ctx, modifier=""):
     modifier = modifier.lower()
     response = fq.faq_listing(modifier)
     await ctx.send(response)
+
+@client.command()
+async def binance(ctx, modifier="")
+    modifier = modifier.lower()
+    response = fq.faq_listing(modifier)
+    await ctx.send(response)
+
+## TRANSACTIONS
+@client.command()
+async def tps(ctx, modifier="")
+    modifier = modifier.lower()
+    response = fq.faq_listing(modifier)
+    await ctx.send(response)
+
+# MARKET CAPITALIZATION
+@client.command()                       
+async def marketcap(ctx, modifier="")         
+    modifier = modifier.lower()         
+    response = fq.faq_listing(modifier) 
+    await ctx.send(response)            
+
+# GENESIS
+@client.command()                       
+async def genesis(ctx, modifier="")         
+    modifier = modifier.lower()         
+    response = fq.faq_listing(modifier) 
+    await ctx.send(response)            
     
 ## PROJECTS
 @client.command()
