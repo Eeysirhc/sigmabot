@@ -152,6 +152,26 @@ def faq_genesis(modifier=""):
         """
         return(df)
 
+# TOKENJAY
+def faq_tokenjay(modifier=""):
+	if modifier=="mobile":
+		df = """
+                If you haven't already, download Ergo Mobile Wallet (Android) or Terminus Wallet (Apple) and restore seed. Go to Settings. Click on the button Mosaik plugins disabled and make it enabled. A new dApps will appear in the bottom navigation bar of the wallet. Click on dApps, then scroll to the bottom of new page. Click on AgeUSD Dashboard. Then, click the Exchange button for either SigUSD or SigRSV. Then select Buy/Sell from the pull down menu and the amount you want.
+		"""
+	elif modifier=="escrow":
+		df = """
+		The open P2P Escrow service is a smart contract that enables trustless, person-to-person (P2P), private sales on the Ergo blockchain for a small fee. The contract accepts Ergo tokens, such as a non-fungible token (NFT), 100 SigUSD, or other token(s) from the seller. Once in the contract, only a defined buyer sending a defined amount of ERG can access the token(s). If this happens, the contract sends the NFT, SigUSD or other token(s) to the buyer and the ERG to the seller. The seller can cancel the contract at any time before the exchange is made.
+		"""
+        elif modifier=="mosaik":     
+                df = """
+                Mosaik is a JSON-based markup language served via a REST API intended to be used by Ergo platform dApps. For more information: https://docs.ergoplatform.com/dev/stack/mosaik/intro/ 
+                """              
+	else:
+		df = """
+		https://tokenjay.app
+		"""
+	return(df)
+
 # ERGO PROJECTS 
 ## future: add categories as modifier (https://github.com/ergoplatform/sigmaverse/blob/master/config/categories.ts)
 def faq_projects(modifier=""):
@@ -159,8 +179,32 @@ def faq_projects(modifier=""):
 		df = """
 		https://www.youtube.com/watch?v=DgztoNDFG8U
 		"""
-	else:
-		df = """
+        elif modifier=="spectrum":
+                df = """
+                https://app.spectrum.fi/
+                """
+        elif modifier=="ergopad":   
+                df = """     
+                https://www.ergopad.io/             
+                """          
+        elif modifier=="skyharbor":   
+                df = """     
+                https://www.skyharbor.io/             
+                """          
+        elif modifier=="ergoauctions":   
+                df = """     
+                https://ergoauctions.org/             
+                """          
+        elif modifier=="raffle":   
+                df = """     
+                https://ergoraffle.com/             
+                """          
+        elif modifier=="sigmavalley":   
+                df = """     
+                https://www.sigmavalley.org/             
+                """          
+        else:		
+                df = """
 		https://sigmaverse.io/
 		"""
 	return(df)

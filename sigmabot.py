@@ -94,6 +94,13 @@ async def genesis(ctx, modifier="")
     modifier = modifier.lower()         
     response = fq.faq_listing(modifier) 
     await ctx.send(response)            
+
+# TOKENJAY
+@client.command()                      
+async def tokenjay(ctx, modifier="")    
+    modifier = modifier.lower()        
+    response = fq.faq_listing(modifier)
+    await ctx.send(response)
     
 ## PROJECTS
 @client.command()
