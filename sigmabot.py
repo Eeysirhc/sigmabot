@@ -61,6 +61,13 @@ async def mining(ctx, modifier=""):
     response = fq.faq_mining(modifier)
     await ctx.send(response)
 
+## LISTING
+@client.command()
+async def listing(ctx, modifier=""):
+    modifier = modifier.lower()
+    response = fq.faq_listing(modifier)
+    await ctx.send(response)
+    
 ## PROJECTS
 @client.command()
 async def projects(ctx, modifier=""):

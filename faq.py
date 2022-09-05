@@ -88,6 +88,18 @@ def faq_mining(modifier=""):
 		"""
 	return(df)
 
+# LISTING
+def faq_listing(modifier=""):
+	if modifier=="binance":
+		df = """
+		Ergo will be listed on Biance when its customers want it.
+		"""
+	else:
+		df = """ 
+                The team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes of socials when it is announced you will see.  
+                """
+	return(df)
+
 # ERGO PROJECTS 
 ## future: add categories as modifier (https://github.com/ergoplatform/sigmaverse/blob/master/config/categories.ts)
 def faq_projects(modifier=""):
