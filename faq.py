@@ -8,10 +8,10 @@
 def faq_halp():
 	df = """
 	.welcome 
-.geterg: modifies with "dex" and "cex"
-.wallets: modifies with "dis", "tg", and "cold"
-.mining: modifies with "dis" and "tg" channel links
-.projects: valid input with "mixer" as modifier with more to come
+.geterg: dex, cex 
+.wallets: dis, tg, cold
+.mining: dis, tg 
+.projects: mixer
 	"""
 	return(df)
 
