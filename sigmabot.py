@@ -126,9 +126,14 @@ async def admin(ctx):
 async def ledger(ctx):
 	await ctx.send(fq.faq_ledger())
 
+# NODE
+@client.command()
+async def node(ctx, modifier=""):
+	modifier = modifier.lower()
+	response = fq.faq_node(modifier)
+	await ctx.send(response)
+
 # EXECUTE
 client.run(TOKEN)
-
-
 
 

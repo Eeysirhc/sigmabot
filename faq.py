@@ -228,12 +228,27 @@ def faq_ledger():
 	df = """
 	Tutorials to sideload Ergo Ledger app
 
-Nano S
-Windows: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md
-Linux/MacOS: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-unix.md
+Nano S for Windows: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md
+Nano S for Linux/MacOS: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-unix.md
 
-Sideload Nano S Plus
-https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a
+Nano S Plus: https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a
 	"""
 	return(df)
+
+# NODE
+def faq_node(modifier=""):
+	if modifier=="install":
+		df = """
+		Instructions on how to setup a full Ergo node: https://www.youtube.com/watch?v=fpEDJ1CM6ns
+		"""
+	elif modifier=="docs":
+		df = """
+		https://docs.ergoplatform.com/node/install/
+		"""
+	else:
+		df = """
+		https://github.com/ergoplatform/ergo
+		"""
+	return(df)
+
 
