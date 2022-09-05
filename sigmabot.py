@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-04
+# Last updated: 2022-09-05
 ##############################
 
 # LOAD PYTHON MODULES
@@ -36,74 +36,75 @@ async def halp(ctx):
     await ctx.send(fq.faq_halp())
 
 ## WELCOME
-@client.command()
+#@client.command()
 async def welcome(ctx):
     await ctx.send(fq.faq_welcome())
 
 ## GET $ERG
-@client.command()
+#@client.command()
 async def geterg(ctx, modifier=""):
     modifier = modifier.lower()
     response = fq.faq_geterg(modifier)
     await ctx.send(response)
 
 ## WALLETS
-@client.command()
+#@client.command()
 async def wallets(ctx, modifier=""):
     modifier = modifier.lower()
     response = fq.faq_wallets(modifier)
     await ctx.send(response)
 
 ## MINING
-@client.command()
+#@client.command()
 async def mining(ctx, modifier=""):
     modifier = modifier.lower()
     response = fq.faq_mining(modifier)
     await ctx.send(response)
 
 ## LISTING
-@client.command()
+#@client.command()
 async def listing(ctx, modifier=""):
     modifier = modifier.lower()
     response = fq.faq_listing(modifier)
     await ctx.send(response)
 
-@client.command()
+## BINANCE
+#@client.command()
 async def binance(ctx, modifier="")
     modifier = modifier.lower()
     response = fq.faq_listing(modifier)
     await ctx.send(response)
 
 ## TRANSACTIONS
-@client.command()
+#@client.command()
 async def tps(ctx, modifier="")
     modifier = modifier.lower()
     response = fq.faq_listing(modifier)
     await ctx.send(response)
 
 # MARKET CAPITALIZATION
-@client.command()                       
+#@client.command()                       
 async def marketcap(ctx, modifier="")         
     modifier = modifier.lower()         
     response = fq.faq_listing(modifier) 
     await ctx.send(response)            
 
 # GENESIS
-@client.command()                       
+#@client.command()                       
 async def genesis(ctx, modifier="")         
     modifier = modifier.lower()         
     response = fq.faq_listing(modifier) 
     await ctx.send(response)            
 
 # TOKENJAY
-@client.command()                      
+#@client.command()                      
 async def tokenjay(ctx, modifier="")    
     modifier = modifier.lower()        
     response = fq.faq_listing(modifier)
     await ctx.send(response)
     
 ## PROJECTS
-@client.command()
+#@client.command()
 async def projects(ctx, modifier=""):
     modifier = modifier.lower()
     response = fq.faq_projects(modifier)
