@@ -18,7 +18,7 @@ def faq_halp():
 # WELCOME
 def faq_welcome():
 	df = """
-	https://youtu.be/CzGqYAlQRWQ
+	Welcome Ergonauts, in this video you can learn more about Ergo: https://youtu.be/CzGqYAlQRWQ
 	"""
 	return(df)
 
@@ -62,7 +62,7 @@ def faq_wallets(modifier=""):
 		"""
 	elif modifier=="cold":
 		df = """
-		https://www.youtube.com/watch?v=7q3Jq_OvhKY
+		In this tutorial you will find instructions on how to install the cold mobile wallet: https://www.youtube.com/watch?v=7q3Jq_OvhKY
 		"""
 	else:
 		df = """
