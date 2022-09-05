@@ -21,7 +21,7 @@ class UnfilteredBot(commands.Bot):
 
 # CONFIG
 intents = discord.Intents().all()
-client = UnfilteredBot(command_prefix = '/', intents=intents)
+client = UnfilteredBot(command_prefix = '.', intents=intents)
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 # EVENTS
