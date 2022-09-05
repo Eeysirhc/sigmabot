@@ -31,11 +31,6 @@ async def on_ready():
 	print('Logged in as {0.user}'.format(client))
 	await client.change_presence(activity = discord.Game("on the Rosen Bridge"))
 
-## HELP
-@client.command()
-async def halp(ctx):
-	await ctx.send(fq.faq_halp())
-
 ## WELCOME
 @client.command()
 async def welcome(ctx):
@@ -43,10 +38,18 @@ async def welcome(ctx):
 
 ## GET $ERG
 @client.command()
-async def geterg(ctx, modifier=""):
-	modifier = modifier.lower()
-	response = fq.faq_geterg(modifier)
-	await ctx.send(response)
+async def geterg(ctx):
+	await ctx.send(fq.geterg())
+
+## DEX
+@client.command()
+async def dex(ctx):
+	await ctx.send(fq.faq_dex())
+
+## CEX
+@client.command()
+async def cex(ctx):
+	await ctx.send(fq.faq_cex())
 
 ## WALLETS
 @client.command()
@@ -80,19 +83,19 @@ async def tps(ctx):
 	await ctx.send(fq.faq_tps())
 
 ## MARKET CAPITALIZATION
-@client.command()                       
-async def marketcap(ctx):     
-	await ctx.send(fq.faq_marketcap())            
+@client.command()
+async def marketcap(ctx):
+	await ctx.send(fq.faq_marketcap())
 
 ## GENESIS
-@client.command()                       
-async def genesis(ctx):     
-	await ctx.send(fq.faq_genesis())            
+@client.command()
+async def genesis(ctx):
+	await ctx.send(fq.faq_genesis())
 
 ## TOKENJAY
-@client.command()                      
-async def tokenjay(ctx, modifier=""):   
-	modifier = modifier.lower()        
+@client.command()
+async def tokenjay(ctx, modifier=""):
+	modifier = modifier.lower()
 	response = fq.faq_tokenjay(modifier)
 	await ctx.send(response)
 
@@ -103,7 +106,24 @@ async def projects(ctx, modifier=""):
 	response = fq.faq_projects(modifier)
 	await ctx.send(response)
 
+## DOCS
+@client.command()
+async def docs(ctx):
+	await ctx.send(fq.faq_docs())
+
+## MANIFESTO
+@client.command()
+async def manifesto(ctx):
+	await ctx.send(fq.faq_manifesto())
+
+# ADMIN
+@client.command()
+async def admin(ctx):
+	await ctx.send(fq.faq_admin())
+
 # EXECUTE
 client.run(TOKEN)
+
+
 
 

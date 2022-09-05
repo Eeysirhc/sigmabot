@@ -4,17 +4,6 @@
 # Last updated: 2022-09-05
 ##############################
 
-# HELP
-def faq_halp():
-	df = """
-	.welcome 
-.geterg: dex, cex 
-.wallets: dis, tg, cold
-.mining: dis, tg 
-.projects: mixer
-	"""
-	return(df)
-
 # WELCOME
 def faq_welcome():
 	df = """
@@ -23,14 +12,23 @@ def faq_welcome():
 	return(df)
 
 # GET $ERG
-def faq_geterg(modifier=""):
-	if modifier=="dex":
-		df = """
-		https://app.spectrum.fi/ergo/swap
-		"""
-	elif modifier=="cex":
-		df = """
-		GateIO: https://www.gate.io/trade/ERG_USDT
+def faq_geterg():
+	df = """
+	- https://ergoplatform.org/en/get-erg/
+	"""
+	return(df)
+
+# DEX
+def faq_dex():
+	df = """
+	https://app.spectrum.fi/ergo/swap
+	"""
+	return(df)
+
+# CEX
+def faq_cex():
+	df = """
+	GateIO: https://www.gate.io/trade/ERG_USDT
 KuCoin: https://www.kucoin.com/trade/ERG-USDT
 CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
 TradeOgre: https://tradeogre.com/exchange/BTC-ERG
@@ -41,11 +39,7 @@ swop.fi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
 FMFW.io: https://fmfw.io/erg-to-btc
 Changelly: https://changelly.com/
 Changelly PRO: https://pro.changelly.com/
-		"""
-	else:
-		df = """
-		https://ergoplatform.org/en/get-erg/
-		"""
+	"""
 	return(df)
 
 # WALLETS
@@ -117,6 +111,7 @@ def faq_listing(modifier=""):
 		"""
 	return(df)
 
+# WEN BINANCE
 def faq_binance():
 	df = """
 	Ergo will be listed on Binance when its customers want it.
@@ -205,5 +200,29 @@ def faq_projects(modifier=""):
 		https://sigmaverse.io/
 		"""
 	return(df)
+
+# DOCS
+def faq_docs():
+	df = """
+	https://docs.ergoplatform.com/documents/
+	"""
+	return(df)
+
+# ERGO MANIFESTEO
+def faq_manifesto():
+	df = """
+	https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/
+	"""
+	return(df)
+
+# ADMIN
+def faq_admin():
+	df = """
+	"For technical support please join @ErgoSupport
+For marketing queries please email angie@ergoplatform.org"
+	"""
+	return(df)
+
+
 
 
