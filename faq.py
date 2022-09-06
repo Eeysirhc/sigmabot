@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-05
+# Last updated: 2022-09-06
 ##############################
 
 # WELCOME
@@ -88,21 +88,21 @@ Modifiers: dis, tg
 
 #NFTs
 def faq_nfts(modifier=""):
-        if modifier=="dis":
-                df = """
-                https://discord.gg/gYZxq38pJn
-                """
-        elif modifier=="tg":
-                df = """
-                @ErgoNFTs
-                """
-        else:
-                df = """
-                @ErgoNFTs or https://discord.gg/gYZxq38pJn
+	if modifier=="dis":
+		df = """
+		https://discord.gg/gYZxq38pJn
+		"""
+	elif modifier=="tg":
+		df = """
+		@ErgoNFTs
+		"""
+	else:
+		df = """
+		@ErgoNFTs or https://discord.gg/gYZxq38pJn
 
 Modifiers: dis, tg
-                """
-        return(df)
+		"""
+	return(df)
 
 # LISTING
 ## future: cut down repetition by adding lookup list, if exists, then string interpolation response
@@ -161,7 +161,7 @@ def faq_marketcap():
 	df = """
 	Ergo Explorer displays circulating supply and max supply (97,739,924 ERG). Multiply these amounts by current price to get Ergo's market capitalization. Do not rely on Coinmarketcap data. ERGs value derives from the popularity and utility of the platform + the cost of mining erg.
 
-        https://explorer.ergoplatform.com/
+	https://explorer.ergoplatform.com/
 	"""
 	return(df)
 
@@ -228,7 +228,7 @@ def faq_projects(modifier=""):
 		"""
 	else:
 		df = """
-                Sigmaverse is the most comprehensive list of Ergo projects
+		Sigmaverse is the most comprehensive list of Ergo projects
 		https://sigmaverse.io/
 
 Modifiers: ergoauctions, ergopad, mixer, raffle, skyharbor, sigmavalley, spectrum

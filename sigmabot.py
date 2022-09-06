@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-05
+# Last updated: 2022-09-06
 ##############################
 
 # LOAD PYTHON MODULES
@@ -94,10 +94,10 @@ async def genesis(ctx):
 
 ## NFTs
 @client.command()
-async def nfts(ctx):
-        modifier = modifier.lower()
-        response = fq.faq_nfts(modifier)
-        await ctx.send(response)
+async def nfts(ctx, modifier=""):
+	modifier = modifier.lower()
+	response = fq.faq_nfts(modifier)
+	await ctx.send(response)
 
 ## TOKENJAY
 @client.command()
@@ -142,5 +142,3 @@ async def node(ctx, modifier=""):
 
 # EXECUTE
 client.run(TOKEN)
-
-
