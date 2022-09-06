@@ -92,6 +92,11 @@ async def marketcap(ctx):
 async def genesis(ctx):
 	await ctx.send(fq.faq_genesis())
 
+## NFTs
+@client.command()
+async def genesis(ctx):
+        await ctx.send(fq.faq_nfts())
+
 ## TOKENJAY
 @client.command()
 async def tokenjay(ctx, modifier=""):

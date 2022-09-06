@@ -86,6 +86,24 @@ Modifiers: dis, tg
 		"""
 	return(df)
 
+#NFTs
+def faq_nfts(modifier=""):
+        if modifier=="dis":
+                df = """
+                https://discord.gg/gYZxq38pJn
+                """
+        elif modifier=="tg":
+                df = """
+                @ErgoNFTs
+                """
+        else:
+                df = """
+                @ErgoNFTs or https://discord.gg/gYZxq38pJn
+
+Modifiers: dis, tg
+                """
+        return(df)
+
 # LISTING
 ## future: cut down repetition by adding lookup list, if exists, then string interpolation response
 ## Or, each string can be personalized to the exchange.
