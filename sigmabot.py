@@ -94,8 +94,10 @@ async def genesis(ctx):
 
 ## NFTs
 @client.command()
-async def genesis(ctx):
-        await ctx.send(fq.faq_nfts())
+async def nfts(ctx):
+        modifier = modifier.lower()
+        response = fq.faq_nfts(modifier)
+        await ctx.send(response)
 
 ## TOKENJAY
 @client.command()
