@@ -88,6 +88,7 @@ Modifiers: dis, tg
 
 # LISTING
 ## future: cut down repetition by adding lookup list, if exists, then string interpolation response
+## Or, each string can be personalized to the exchange.
 def faq_listing(modifier=""):
 	if modifier=="binance":
 		df = """
@@ -125,25 +126,31 @@ def faq_binance():
 # TRANSACTIONS
 def faq_tps():
 	df = """
-	Ergo's TPS (Transactions per second) on the version 5 Node TPS is estimated to be a minimum of 47.5tx/s. There are three scaling layers or levels: L0: Ergo nodes, which can be bootstrapped using NiPoPoWs proofs and UTXO set snapshots are planned. L1: Ergo has an extension section in its code that allows the implementation of a wide variety of scaling solutions such as Sharding, Hydra, or BitcoinNG-style macroblocks. L2 (off-chain): Ergo should be compatible with the Lightning Network, Rainbow Network, and many more. The implementation here will depend on the needs of the applications being built on Ergo.
+	TPS (Transactions Per Second) is not a useful metric. On Ergo Reference Node v.5, TPS is estimated to be a minimum of 47.5 tx/s. However, transactions can happen in three scaling layers or levels: 
 
-The general idea, roughtly, is that large chunks of transactions can happen in layer 2 and the whole chunks will be settled in Ergo blockchain using single transaction. Thanks to the high flexibility of ErgoScript programming model, many different protocols will be possible on layer2, each one solving scalability problem in a specific domain (like simple payment transactions).
+L0: Ergo Reference Nodes, which can be bootstrapped using NiPoPoWs proofs and UTXO set snapshots. 
+L1: Ergo has extensions that allow for a wide variety of scaling solutions such as Sharding, Hydra, or BitcoinNG-style macroblocks. 
+L2 (off-chain): Ergo should be compatible with the Lightning Network, Rainbow Network, and many more. The implementation here will depend on the needs of the applications being built on Ergo.
 
-Thus, Ergo blockchain can be thought as common settlement layer for many L2 protocols and applications.    
+The general idea is that many transactions can happen in L1 or L2 and these transactions can be bundled and settled on the L0 layer of the Ergo blockchain using a single transaction. Thanks to the high flexibility of ErgoScript programming model, many different protocols are possible, each one solving scalability problem in a specific domain (like simple payment transactions).
+
+Ergo blockchain can be thought as common settlement layer for many L1/L2 protocols and applications.    
 	"""
 	return(df)
 
 # MARKET CAPITALIZATION
 def faq_marketcap():
 	df = """
-	Ergo Explorer displays circulating supply and max supply (97,739,924 ERG). Multiply these amounts by current price to get Ergo's market capitalization. Coinmarketcap displays incorrect data and should not be relied upon.
+	Ergo Explorer displays circulating supply and max supply (97,739,924 ERG). Multiply these amounts by current price to get Ergo's market capitalization. Do not rely on Coinmarketcap data. ERGs value derives from the popularity and utility of the platform + the cost of mining erg.
+
+        https://explorer.ergoplatform.com/
 	"""
 	return(df)
 
 # GENESIS
 def faq_genesis():
 	df = """
-	Ergo genesis block was 1 July 2019. Prior to that, there was a different coin, EFYT. EFYT was a Waves token that was airdropped, not sold. ICOs cause issues as you're buying from a common enterprise directly - who likely have nothing to show yet so purely for expectations of profits. ERGs value derives from the popularity and utility of the platform + the cost of mining erg.
+	The Ergo genesis block was created on 1 July 2019. Prior to that, there was a different coin, EFYT. EFYT was a Waves token that was airdropped, not sold. ICOs cause issues as you're buying from a common enterprise directly - who likely have nothing to show yet so purely for expectations of profits. ERGs value derives from the popularity and utility of the platform + the co.
 	"""
 	return(df)
 
@@ -178,6 +185,7 @@ def faq_projects(modifier=""):
 		"""
 	elif modifier=="spectrum":
 		df = """
+		A DEX on Ergo, use either Nautilus or SAFEW wallets to access.
 		https://app.spectrum.fi/
 		"""
 	elif modifier=="ergopad":
@@ -202,7 +210,10 @@ def faq_projects(modifier=""):
 		"""
 	else:
 		df = """
+                Sigmaverse is the most comprehensive list of Ergo projects
 		https://sigmaverse.io/
+
+Modifiers: ergoauctions, ergopad, mixer, raffle, skyharbor, sigmavalley, spectrum
 		"""
 	return(df)
 
@@ -234,6 +245,7 @@ def faq_ledger():
 	Tutorials to sideload Ergo Ledger app
 
 Nano S for Windows: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md
+
 Nano S for Linux/MacOS: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-unix.md
 
 Nano S Plus: https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a
