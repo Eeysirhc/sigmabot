@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-06
+# Last updated: 2022-09-07
 ##############################
 
 # WELCOME
@@ -30,15 +30,15 @@ def faq_cex():
 	df = """
 	GateIO: https://www.gate.io/trade/ERG_USDT
 KuCoin: https://www.kucoin.com/trade/ERG-USDT
+Huobi: https://www.huobi.com/
 CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
 TradeOgre: https://tradeogre.com/exchange/BTC-ERG
-Indodax: https://indodax.com/
+Indodax: https://indodax.com/market/ERGIDR
 HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
+swopfi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
+FMFW: https://fmfw.io/erg-to-btc
+Changelly: https://changelly.com/exchange/erg
 Bisq: https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
-swop.fi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
-FMFW.io: https://fmfw.io/erg-to-btc
-Changelly: https://changelly.com/
-Changelly PRO: https://pro.changelly.com/
 	"""
 	return(df)
 
