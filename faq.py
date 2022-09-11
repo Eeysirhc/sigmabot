@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-07
+# Last updated: 2022-09-10
 ##############################
 
 # WELCOME
@@ -28,17 +28,19 @@ def faq_dex():
 # CEX
 def faq_cex():
 	df = """
-	GateIO: https://www.gate.io/trade/ERG_USDT
-KuCoin: https://www.kucoin.com/trade/ERG-USDT
-Huobi: https://www.huobi.com/
-CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
+	[KYC]
+Huobi: https://www.huobi.com/exchange/erg_usdt/
+GateIO: https://www.gate.io/trade/ERG_USDT
 TradeOgre: https://tradeogre.com/exchange/BTC-ERG
 Indodax: https://indodax.com/market/ERGIDR
 HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
-swopfi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
 FMFW: https://fmfw.io/erg-to-btc
 Changelly: https://changelly.com/exchange/erg
-Bisq: https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
+swopfi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
+
+[non-KYC]
+KuCoin: https://www.kucoin.com/trade/ERG-USDT
+CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
 	"""
 	return(df)
 
@@ -231,7 +233,7 @@ def faq_projects(modifier=""):
 		Sigmaverse is the most comprehensive list of Ergo projects
 		https://sigmaverse.io/
 
-Modifiers: ergoauctions, ergopad, mixer, raffle, skyharbor, sigmavalley, spectrum
+Modifiers: mixer, spectrum, ergopad, skyharbor, ergoauctions, raffle, sigmavalley
 		"""
 	return(df)
 
