@@ -305,5 +305,15 @@ def faq_drama():
 	"""
 	return(df)
 
+# CONTRIBUTE
+def faq_contribute():
+	df = """
+	https://docs.ergoplatform.com/contribute/
+	"""
+	return(df)
+
+
+
+
 
 

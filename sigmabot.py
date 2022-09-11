@@ -150,6 +150,11 @@ async def staking(ctx):
 async def drama(ctx):
 	await ctx.send(fq.faq_drama())
 
+# CONTRIBUTE
+@client.command()
+async def contribute(ctx):
+	await ctx.send(fq.faq_contribute())
+
 # EXECUTE
 client.run(TOKEN)
 
