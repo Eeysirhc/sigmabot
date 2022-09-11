@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-10
+# Last updated: 2022-09-11
 ##############################
 
 # WELCOME
@@ -52,9 +52,9 @@ def faq_wallets(modifier=""):
 		"""
 	elif modifier=="tg":
 		df = """
-		@NautilusWallet
-@ErgoWalletApp
-@SatergoWallet
+		@NautilusWallet - web browser extension wallet
+@ErgoWalletApp - mobile wallet
+@SatergoWallet - full node desktop wallet
 		"""
 	elif modifier=="cold":
 		df = """
