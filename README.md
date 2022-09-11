@@ -1,7 +1,5 @@
 # sigmabot
 
-Discord bot for frequently asked questions about Ergo.
-
 ## Quick Start
 
 ### `.env` file
@@ -41,4 +39,6 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
+
+
 
