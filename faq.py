@@ -289,3 +289,11 @@ def faq_node(modifier=""):
 Modifiers: install, docs
 		"""
 	return(df)
+
+# STAKING
+def faq_staking():
+	df = """
+	https://ergonaut.space/en/Guides/yield
+	"""
+	return(df)
+

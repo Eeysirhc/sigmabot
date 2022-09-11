@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-06
+# Last updated: 2022-09-11
 ##############################
 
 # LOAD PYTHON MODULES
@@ -139,6 +139,11 @@ async def node(ctx, modifier=""):
 	modifier = modifier.lower()
 	response = fq.faq_node(modifier)
 	await ctx.send(response)
+
+# STAKING
+@client.command()
+async def staking(ctx):
+	await ctx.send(fq.faq_staking())
 
 # EXECUTE
 client.run(TOKEN)
