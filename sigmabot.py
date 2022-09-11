@@ -145,5 +145,15 @@ async def node(ctx, modifier=""):
 async def staking(ctx):
 	await ctx.send(fq.faq_staking())
 
+# DRAMA
+@client.command()
+async def drama(ctx):
+	await ctx.send(fq.faq_drama())
+
 # EXECUTE
 client.run(TOKEN)
+
+
+
+
+

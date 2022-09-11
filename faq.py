@@ -297,3 +297,13 @@ def faq_staking():
 	"""
 	return(df)
 
+# DRAMA
+## future: add to separate functionns list since not a core FAQ
+def faq_drama():
+	df = """
+	Pretend to be nice, please.
+	"""
+	return(df)
+
+
+
