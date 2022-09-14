@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-06
+# Last updated: 2022-09-11
 ##############################
 
 # WELCOME
@@ -28,17 +28,19 @@ def faq_dex():
 # CEX
 def faq_cex():
 	df = """
-	GateIO: https://www.gate.io/trade/ERG_USDT
+	[KYC]
+Huobi: https://www.huobi.com/exchange/erg_usdt/
+GateIO: https://www.gate.io/trade/ERG_USDT
+TradeOgre: https://tradeogre.com/exchange/BTC-ERG
+Indodax: https://indodax.com/market/ERGIDR
+HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
+FMFW: https://fmfw.io/erg-to-btc
+Changelly: https://changelly.com/exchange/erg
+swopfi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
+
+[non-KYC]
 KuCoin: https://www.kucoin.com/trade/ERG-USDT
 CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
-TradeOgre: https://tradeogre.com/exchange/BTC-ERG
-Indodax: https://indodax.com/
-HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
-Bisq: https://www.ergoforum.org/t/bisq-v1-1-6-has-been-released-with-support-for-ergo/88
-swop.fi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
-FMFW.io: https://fmfw.io/erg-to-btc
-Changelly: https://changelly.com/
-Changelly PRO: https://pro.changelly.com/
 	"""
 	return(df)
 
@@ -50,9 +52,9 @@ def faq_wallets(modifier=""):
 		"""
 	elif modifier=="tg":
 		df = """
-		@NautilusWallet
-@ErgoWalletApp
-@SatergoWallet
+		@NautilusWallet - web browser extension wallet
+@ErgoWalletApp - mobile wallet
+@SatergoWallet - full node desktop wallet
 		"""
 	elif modifier=="cold":
 		df = """
@@ -238,7 +240,7 @@ def faq_projects(modifier=""):
 		Sigmaverse is the most comprehensive list of Ergo projects
 		https://sigmaverse.io/
 
-Modifiers: ergoauctions, ergopad, mixer, raffle, skyharbor, sigmavalley, spectrum
+Modifiers: mixer, spectrum, ergopad, skyharbor, ergoauctions, raffle, sigmavalley
 		"""
 	return(df)
 
@@ -307,4 +309,33 @@ def faq_node(modifier=""):
 
 Modifiers: install, docs
 		"""
+	return(df)
+
+# STAKING
+def faq_staking():
+	df = """
+	https://ergonaut.space/en/Guides/yield
+	"""
+	return(df)
+
+# DRAMA
+## future: add to separate functionns list since not a core FAQ
+def faq_drama():
+	df = """
+	Pretend to be nice, please.
+	"""
+	return(df)
+
+# CONTRIBUTE
+def faq_contribute():
+	df = """
+	https://docs.ergoplatform.com/contribute/
+	"""
+	return(df)
+
+# YOROI
+def faq_yoroi():
+	df = """
+	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
+	"""
 	return(df)
