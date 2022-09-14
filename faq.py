@@ -60,6 +60,10 @@ def faq_wallets(modifier=""):
 		df = """
 		In this tutorial you will find instructions on how to install the cold mobile wallet: https://www.youtube.com/watch?v=7q3Jq_OvhKY
 		"""
+	elif modifier=="yoroi":
+		df = """
+		What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
+		"""
 	else:
 		df = """
 		https://ergoplatform.org/en/get-erg/#Wallets
@@ -311,9 +315,3 @@ def faq_contribute():
 	https://docs.ergoplatform.com/contribute/
 	"""
 	return(df)
-
-
-
-
-
-
