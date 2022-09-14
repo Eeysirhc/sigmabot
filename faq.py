@@ -110,19 +110,19 @@ Modifiers: dis, tg
 def faq_listing(modifier=""):
 	if modifier=="binance":
 		df = """
-		Ergo will be listed on Binance when its customers want it.
+		Ergo will be listed on Binance when enough of its customers want it.
 		"""
 	elif modifier=="coinbase":
 		df = """
-		Ergo will be listed on Coinbase when its customers want it.
+		Ergo will be listed on Coinbase when enough of its customers want it.
 		"""
 	elif modifier=="kraken":
 		df = """
-		Ergo will be listed on Kraken when its customers want it.
+		Ergo will be listed on Kraken when enough of its customers want it.
 		"""
 	elif modifier=="ftx":
 		df = """
-		Ergo will be listed on FTX when its customers want it.
+		Ergo will be listed on FTX when enough of its customers want it.
 		"""
 	elif modifier=="tier1":
 		df = """
@@ -137,7 +137,7 @@ def faq_listing(modifier=""):
 # WEN BINANCE
 def faq_binance():
 	df = """
-	Ergo will be listed on Binance when its customers want it.
+	Ergo will be listed on Binance when enough of its customers want it.
 	"""
 	return(df)
 
