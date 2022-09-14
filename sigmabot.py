@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-11
+# Last updated: 2022-09-14
 ##############################
 
 # LOAD PYTHON MODULES
@@ -106,13 +106,12 @@ async def marketcap(ctx):
 async def genesis(ctx):
 	await ctx.send(fq.faq_genesis())
 
-<<<<<<< HEAD
-# GULAG
+
+## GULAG
 @client.command()
 async def gulag(ctx):
 	await ctx.send(fq.faq_gulag())
-=======
->>>>>>> 09b642a0a9722e9dd6f62e8ac78c8e59b0b1add9
+
 
 ## NFTs
 @client.command()
@@ -150,31 +149,30 @@ async def manifesto(ctx):
 	await ctx.send(fq.faq_manifesto())
 
 
-# ADMIN
+## ADMIN
 @client.command()
 async def admin(ctx):
 	await ctx.send(fq.faq_admin())
 
 
-# LEDGER
+## LEDGER
 @client.command()
 async def ledger(ctx):
 	await ctx.send(fq.faq_ledger())
 
-<<<<<<< HEAD
-# POUW
+
+## POUW
 @client.command()
 async def pouw(ctx):
-        await ctx.send(fq.faq_pouw())
+		await ctx.send(fq.faq_pouw())
 
-# STORAGE RENT
+## STORAGE RENT
 @client.command()
 async def rent(ctx):
-        await ctx.send(fq.faq_rent())
-=======
->>>>>>> 09b642a0a9722e9dd6f62e8ac78c8e59b0b1add9
+		await ctx.send(fq.faq_rent())
 
-# NODE
+
+## NODE
 @client.command()
 async def node(ctx, modifier=""):
 	modifier = modifier.lower()
@@ -186,19 +184,19 @@ async def node(ctx, modifier=""):
 async def yoroi(ctx):
 	await ctx.send(fq.faq_yoroi())
 
-# STAKING
+## STAKING
 @client.command()
 async def staking(ctx):
 	await ctx.send(fq.faq_staking())
 
 
-# DRAMA
+## DRAMA
 @client.command()
 async def drama(ctx):
 	await ctx.send(fq.faq_drama())
 
 
-# CONTRIBUTE
+## CONTRIBUTE
 @client.command()
 async def contribute(ctx):
 	await ctx.send(fq.faq_contribute())
@@ -225,3 +223,7 @@ async def bridge(ctx):
 
 # EXECUTE
 client.run(TOKEN)
+
+
+
+

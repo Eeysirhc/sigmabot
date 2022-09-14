@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-11
+# Last updated: 2022-09-14
 ##############################
 
 # WELCOME
@@ -88,7 +88,7 @@ Modifiers: dis, tg
 		"""
 	return(df)
 
-#NFTs
+# NFTs
 def faq_nfts(modifier=""):
 	if modifier=="dis":
 		df = """
@@ -110,11 +110,7 @@ Modifiers: dis, tg
 ## future: cut down repetition by adding lookup list, if exists, then string interpolation response
 ## Or, each string can be personalized to the exchange.
 def faq_listing(modifier=""):
-	if modifier=="binance":
-		df = """
-		Ergo will be listed on Binance when enough of its customers want it.
-		"""
-	elif modifier=="coinbase":
+	if modifier=="coinbase":
 		df = """
 		Ergo will be listed on Coinbase when enough of its customers want it.
 		"""
@@ -288,10 +284,10 @@ def faq_pouw():
 
 ## STORAGE RENT
 def faq_rent():
-        df = """
-        https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/
+	df = """
+	https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/
 	"""
-        return(df)
+	return(df)
 
 # NODE
 def faq_node(modifier=""):
@@ -339,3 +335,5 @@ def faq_yoroi():
 	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
+
+
