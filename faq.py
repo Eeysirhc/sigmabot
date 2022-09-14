@@ -112,19 +112,19 @@ Modifiers: dis, tg
 def faq_listing(modifier=""):
 	if modifier=="binance":
 		df = """
-		Ergo will be listed on Binance when its customers want it.
+		Ergo will be listed on Binance when enough of its customers want it.
 		"""
 	elif modifier=="coinbase":
 		df = """
-		Ergo will be listed on Coinbase when its customers want it.
+		Ergo will be listed on Coinbase when enough of its customers want it.
 		"""
 	elif modifier=="kraken":
 		df = """
-		Ergo will be listed on Kraken when its customers want it.
+		Ergo will be listed on Kraken when enough of its customers want it.
 		"""
 	elif modifier=="ftx":
 		df = """
-		Ergo will be listed on FTX when its customers want it.
+		Ergo will be listed on FTX when enough of its customers want it.
 		"""
 	elif modifier=="tier1":
 		df = """
@@ -139,7 +139,7 @@ def faq_listing(modifier=""):
 # WEN BINANCE
 def faq_binance():
 	df = """
-	Ergo will be listed on Binance when its customers want it.
+	Ergo will be listed on Binance when enough of its customers want it.
 	"""
 	return(df)
 
@@ -171,6 +171,13 @@ def faq_marketcap():
 def faq_genesis():
 	df = """
 	The Ergo genesis block was created on 1 July 2019. Prior to that, there was a different coin, EFYT. EFYT was a Waves token that was airdropped, not sold. ICOs cause issues as you're buying from a common enterprise directly - who likely have nothing to show yet so purely for expectations of profits. ERGs value derives from the popularity and utility of the platform + the co.
+	"""
+	return(df)
+
+# GULAG
+def faq_gulag():
+	df = """
+	This chat is for serious discussion. If you want to troll users and share your spicy opinions, please join our community of Ergo edgelords in @ErgoGulag in Telegram or #🚧│random in Discord. 
 	"""
 	return(df)
 
@@ -244,7 +251,7 @@ def faq_docs():
 	"""
 	return(df)
 
-# ERGO MANIFESTEO
+# ERGO MANIFESTO
 def faq_manifesto():
 	df = """
 	https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/
@@ -271,6 +278,20 @@ Nano S for Linux/MacOS: https://github.com/anon-br/ledger-ergo-js/blob/master/do
 Nano S Plus: https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a
 	"""
 	return(df)
+
+## POUW
+def faq_pouw():
+	df = """
+	While Proof of Useful Work is an interesting idea, it is still in its research phase. Ergo is open to implementing new ideas. But, a radical change to its concensus mechanism that requires a hard fork would likely be outside the scope and resources of Ergo's small core development team and limited budget.
+	"""
+	return(df)
+
+## STORAGE RENT
+def faq_rent():
+        df = """
+        https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/
+	"""
+        return(df)
 
 # NODE
 def faq_node(modifier=""):

@@ -106,6 +106,13 @@ async def marketcap(ctx):
 async def genesis(ctx):
 	await ctx.send(fq.faq_genesis())
 
+<<<<<<< HEAD
+# GULAG
+@client.command()
+async def gulag(ctx):
+	await ctx.send(fq.faq_gulag())
+=======
+>>>>>>> 09b642a0a9722e9dd6f62e8ac78c8e59b0b1add9
 
 ## NFTs
 @client.command()
@@ -154,6 +161,18 @@ async def admin(ctx):
 async def ledger(ctx):
 	await ctx.send(fq.faq_ledger())
 
+<<<<<<< HEAD
+# POUW
+@client.command()
+async def pouw(ctx):
+        await ctx.send(fq.faq_pouw())
+
+# STORAGE RENT
+@client.command()
+async def rent(ctx):
+        await ctx.send(fq.faq_rent())
+=======
+>>>>>>> 09b642a0a9722e9dd6f62e8ac78c8e59b0b1add9
 
 # NODE
 @client.command()
