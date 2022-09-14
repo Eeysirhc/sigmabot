@@ -172,13 +172,6 @@ def faq_genesis():
 	"""
 	return(df)
 
-# GULAG
-def faq_gulag():
-	df = """
-	This chat is for serious discussion. If you want to troll users and share your spicy opinions, please join our community of Ergo edgelords in @ErgoGulag in Telegram or #🚧│random in Discord. 
-	"""
-	return(df)
-
 # TOKENJAY
 def faq_tokenjay(modifier=""):
 	if modifier=="mobile":
@@ -249,7 +242,7 @@ def faq_docs():
 	"""
 	return(df)
 
-# ERGO MANIFESTO
+# ERGO MANIFESTEO
 def faq_manifesto():
 	df = """
 	https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/
@@ -276,19 +269,6 @@ Nano S for Linux/MacOS: https://github.com/anon-br/ledger-ergo-js/blob/master/do
 Nano S Plus: https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a
 	"""
 	return(df)
-
-## POUW
-def faq_pouw():
-	df = """
-	While Proof of Useful Work is an interesting idea, it is still in its research phase. Ergo is open to implementing new ideas. But, a radical change to its concensus mechanism that requires a hard fork would likely be outside the scope and resources of Ergo's small core development team and limited budget.
-	"""
-	return(df)
-
-## STORAGE RENT
-def faq_rent():
-        df = """
-        https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/
-        return(df)
 
 # NODE
 def faq_node(modifier=""):
