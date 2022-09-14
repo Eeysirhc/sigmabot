@@ -162,6 +162,10 @@ async def node(ctx, modifier=""):
 	response = fq.faq_node(modifier)
 	await ctx.send(response)
 
+## YOROI
+@client.command()
+async def yoroi(ctx):
+	await ctx.send(fq.faq_yoroi())
 
 # STAKING
 @client.command()
