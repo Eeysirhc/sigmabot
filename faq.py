@@ -288,6 +288,7 @@ def faq_pouw():
 def faq_rent():
         df = """
         https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/
+	"""
         return(df)
 
 # NODE
