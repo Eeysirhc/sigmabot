@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-14
+# Last updated: 2022-09-15
 ##############################
 
 # WELCOME
@@ -31,7 +31,6 @@ def faq_cex():
 	[KYC]
 Huobi: https://www.huobi.com/exchange/erg_usdt/
 GateIO: https://www.gate.io/trade/ERG_USDT
-TradeOgre: https://tradeogre.com/exchange/BTC-ERG
 Indodax: https://indodax.com/market/ERGIDR
 HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
 FMFW: https://fmfw.io/erg-to-btc
@@ -41,6 +40,7 @@ swopfi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
 [non-KYC]
 KuCoin: https://www.kucoin.com/trade/ERG-USDT
 CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
+TradeOgre: https://tradeogre.com/exchange/BTC-ERG
 	"""
 	return(df)
 
