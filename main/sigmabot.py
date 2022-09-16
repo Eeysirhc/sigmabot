@@ -46,12 +46,6 @@ async def dex(ctx):
 	await ctx.send(fq.faq_dex())
 
 	
-## BOTS
-@client.command()
-async def bots(ctx):
-	await ctx.send(fq.faq_bots())
-
-
 ## CEX
 @client.command()
 async def cex(ctx):
@@ -193,6 +187,11 @@ async def drama(ctx):
 async def contribute(ctx):
 	await ctx.send(fq.faq_contribute())
 
+
+## BOTS
+@client.command()
+async def bots(ctx):
+	await ctx.send(fq.faq_bots())
 
 # EXECUTE
 client.run(TOKEN)
