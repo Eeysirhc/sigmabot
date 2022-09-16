@@ -250,14 +250,15 @@ def faq_docs():
 # ERGO MANIFESTO
 def faq_manifesto():
 	df = """
-	https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/
+	The Ergo Manifesto hopes to educate and offer a vision of what blockchain technology can achieve. We hope to build society through horizontal cooperation through production under the division of labor, trade and exchange, and solidarity and mutual aid. Learn more at https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/
 	"""
 	return(df)
 
 # ADMIN
 def faq_admin():
 	df = """
-	For technical support please join @ErgoSupport
+	For technical support on Telegram please join @ErgoSupport
+Email team@ergoplatform.org for business inquiries
 For marketing queries please email angie@ergoplatform.org
 	"""
 	return(df)
@@ -285,7 +286,7 @@ def faq_pouw():
 ## STORAGE RENT
 def faq_rent():
 	df = """
-	https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/
+	Storage rent is a fee for long term storage on the Ergo blockchain. Four years from your last transaction, you will be charged ~0.14 ERG and a transaction fee to pay for the costs of storing your digital information. Learn more at https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/ and https://docs.ergoplatform.com/mining/rent/
 	"""
 	return(df)
 
@@ -310,12 +311,12 @@ Modifiers: install, docs
 # STAKING
 def faq_staking():
 	df = """
-	https://ergonaut.space/en/Guides/yield
+	Ergo is a Proof of Work blockchain. So, it is not possible to stake Ergo itself as you would in a Proof of Stake blockchain. However, it is possible to earn some yield from your ERG in combination with Ergo in liquidity pools, tokenisation of dApps, trading bots, lending platforms, and other mechanisms. Learn more here at https://ergonaut.space/en/Guides/yield
 	"""
 	return(df)
 
 # DRAMA
-## future: add to separate functionns list since not a core FAQ
+## future: add to separate functions list since not a core FAQ
 def faq_drama():
 	df = """
 	Pretend to be nice, please.
