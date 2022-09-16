@@ -92,14 +92,10 @@ def faq_mining(modifier=""):
 		df = """
 		Welcome new miners! Remember to spread out the hashrate to support decentralization.
 
-[Mining Pools]
-GetBlok: https://ergo.getblok.io/
-2Miners: https://2miners.com/erg-mining-pool
-Nanopool: https://ergo.nanopool.org/
-HeroMiners: https://ergo.herominers.com/
-WoolyPooly:https://woolypooly.com/en/coin/erg
-
 Learn more at https://ergoplatform.org/en/get-erg/#Mining
+
+[Sub-Mining Pools]
+With GetBlok you can mine Ergo or native tokens such as Neta, Ergopad or Comet: https://ergo.getblok.io/
 
 Modifiers: dis, tg, red
 		"""
@@ -358,7 +354,6 @@ def faq_yoroi():
 	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
-
 
 
 
