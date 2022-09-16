@@ -68,7 +68,7 @@ SAFEW (Web): https://github.com/ThierryM1212/SAFEW
 
 Learn more at https://ergoplatform.org/en/get-erg/#Wallets
 
-Modifiers: dis, tg, cold
+Modifiers: `dis`, `tg`, `cold`
 		"""
 	return(df)
 
@@ -97,7 +97,7 @@ Learn more at https://ergoplatform.org/en/get-erg/#Mining
 [Sub-Mining Pools]
 With GetBlok you can mine Ergo or native tokens such as Neta, Ergopad or Comet: https://ergo.getblok.io/
 
-Modifiers: dis, tg, red
+Modifiers: `dis`, `tg`, `red`
 		"""
 	return(df)
 
@@ -135,7 +135,7 @@ def faq_wen(modifier=""):
 		"""
 	else:
 		df = """
-		Modifiers: coinbase, binance, kraken, ftx, tier1, lambo, yacht, bridge
+		Modifiers: `coinbase`, `binance`, `kraken`, `ftx`, `tier1`, `lambo`, `yacht`, `bridge`
 		"""
 	return(df)
 
@@ -178,6 +178,7 @@ def faq_gulag():
 	return(df)
 
 # NFTs
+## need to fix this Ergo server times out the bot due to discord invite links (meant to prevent spam)
 def faq_nfts(modifier=""):
 	if modifier=="dis":
 		df = """
@@ -191,7 +192,7 @@ def faq_nfts(modifier=""):
 		df = """
 		@ErgoNFTs or https://discord.gg/gYZxq38pJn
 
-Modifiers: dis, tg
+Modifiers: `dis`, `tg`
 		"""
 	return(df)
 
@@ -213,7 +214,7 @@ def faq_tokenjay(modifier=""):
 		df = """
 		https://tokenjay.app
 
-Modifiers: mobile, escrow, mosaik
+Modifiers: `mobile`, `escrow`, `mosaik`
 		"""
 	return(df)
 
@@ -254,7 +255,7 @@ def faq_projects(modifier=""):
 		Sigmaverse is the most comprehensive list of Ergo projects
 		https://sigmaverse.io/
 
-Modifiers: mixer, spectrum, ergopad, skyharbor, ergoauctions, raffle, sigmavalley
+Modifiers: `mixer`, `spectrum`, `ergopad`, `skyharbor`, `ergoauctions`, `raffle`, `sigmavalley`
 		"""
 	return(df)
 
@@ -322,7 +323,7 @@ def faq_node(modifier=""):
 		df = """
 		https://github.com/ergoplatform/ergo
 
-Modifiers: install, docs
+Modifiers: `install`, `docs`
 		"""
 	return(df)
 
@@ -354,6 +355,5 @@ def faq_yoroi():
 	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
-
 
 
