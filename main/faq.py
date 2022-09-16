@@ -108,7 +108,7 @@ Modifiers: dis, tg, red
 # WEN
 ## future: probably tidy up the DRY a bit more
 def faq_wen(modifier=""):
-	listing_template = "Ergo will be listed on {cex} when enough of its customers want it. Additionally, the team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes on socials when it is announced you will see."
+	listing_template = "Ergo will be listed on {cex} when enough of its customers want it. Additionally, the team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes on social media for the announcements."
 	if modifier=="coinbase":
 		cex = modifier.title()
 		df = listing_template.format(cex=cex)
@@ -123,7 +123,7 @@ def faq_wen(modifier=""):
 		df = listing_template.format(cex=cex)
 	elif modifier=="tier1":
 		df = """
-		Armeanio is already in contact with most exchanges. Listing agents are in the chat every day. The only information that can be provided is that there are ongoing discussions, and announcements will be made by the exchanges themselves. If you just want listing for price pump, betterto keep discussion in @ErgoTrading.
+		Armeanio is already in contact with most exchanges. Listing agents are in the chat every day. The only information that can be provided is that there are ongoing discussions, and announcements will be made by the exchanges themselves. If you just want listing for price pump, better to keep discussions in @ErgoTrading.
 		"""
 	elif modifier=="lambo":
 		df = """
