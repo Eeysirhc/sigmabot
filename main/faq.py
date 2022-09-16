@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-15
+# Last updated: 2022-09-16
 ##############################
 
 # WELCOME
@@ -105,55 +105,42 @@ Modifiers: dis, tg, red
 		"""
 	return(df)
 
-# NFTs
-def faq_nfts(modifier=""):
-	if modifier=="dis":
-		df = """
-		https://discord.gg/gYZxq38pJn
-		"""
-	elif modifier=="tg":
-		df = """
-		@ErgoNFTs
-		"""
-	else:
-		df = """
-		@ErgoNFTs or https://discord.gg/gYZxq38pJn
-
-Modifiers: dis, tg
-		"""
-	return(df)
-
-# LISTING
-## future: cut down repetition by adding lookup list, if exists, then string interpolation response
-## Or, each string can be personalized to the exchange.
-def faq_listing(modifier=""):
+# WEN
+## future: probably tidy up the DRY a bit more
+def faq_wen(modifier=""):
+	listing_template = "Ergo will be listed on {cex} when enough of its customers want it. Additionally, the team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes on socials when it is announced you will see."
 	if modifier=="coinbase":
-		df = """
-		Ergo will be listed on Coinbase when enough of its customers want it.
-		"""
+		cex = modifier.title()
+		df = listing_template.format(cex=cex)
+	elif modifier=="binance":
+		cex = modifier.title()
+		df = listing_template.format(cex=cex)
 	elif modifier=="kraken":
-		df = """
-		Ergo will be listed on Kraken when enough of its customers want it.
-		"""
+		cex = modifier.title()
+		df = listing_template.format(cex=cex)
 	elif modifier=="ftx":
-		df = """
-		Ergo will be listed on FTX when enough of its customers want it.
-		"""
+		cex = modifier.upper()
+		df = listing_template.format(cex=cex)
 	elif modifier=="tier1":
 		df = """
 		Armeanio is already in contact with most exchanges. Listing agents are in the chat every day. The only information that can be provided is that there are ongoing discussions, and announcements will be made by the exchanges themselves. If you just want listing for price pump, betterto keep discussion in @ErgoTrading.
 		"""
-	else:
-		df = """ 
-		The team can never give specifics about a listing until the exchange announces it. Listings are covered by a Non-Disclosure Agreement (NDA) and leaks put the listing itself at risk. Just keep your eyes on socials when it is announced you will see.  
+	elif modifier=="lambo":
+		df = """
+		VROOM VROOM
 		"""
-	return(df)
-
-# WEN BINANCE
-def faq_binance():
-	df = """
-	Ergo will be listed on Binance when enough of its customers want it.
-	"""
+	elif modifier=="yacht":
+		df = """
+		I'm on a boat!
+		"""
+	elif modifier=="bridge":
+		df = """
+		An einstein rosen bridge?" More like a "Rainbow Bridge"!
+		"""
+	else:
+		df = """
+		Modifiers: coinbase, binance, kraken, ftx, tier1, lambo, yacht, bridge
+		"""
 	return(df)
 
 # TRANSACTIONS
@@ -192,6 +179,24 @@ def faq_gulag():
 	df = """
 	This chat is for serious discussion. If you want to troll users and share your spicy opinions, please join our community of Ergo edgelords in @ErgoGulag in Telegram or #🚧│random in Discord. 
 	"""
+	return(df)
+
+# NFTs
+def faq_nfts(modifier=""):
+	if modifier=="dis":
+		df = """
+		https://discord.gg/gYZxq38pJn
+		"""
+	elif modifier=="tg":
+		df = """
+		@ErgoNFTs
+		"""
+	else:
+		df = """
+		@ErgoNFTs or https://discord.gg/gYZxq38pJn
+
+Modifiers: dis, tg
+		"""
 	return(df)
 
 # TOKENJAY

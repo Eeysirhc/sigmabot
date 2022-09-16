@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-15
+# Last updated: 2022-09-16
 ##############################
 
 # LOAD PYTHON MODULES
@@ -13,7 +13,6 @@ import discord
 from discord.ext import commands
 
 import faq as fq
-import eastereggs as egg
 
 # https://stackoverflow.com/questions/68581659/i-want-my-bot-to-process-commands-sent-by-other-bots
 class UnfilteredBot(commands.Bot):
@@ -68,19 +67,12 @@ async def mining(ctx, modifier=""):
 	response = fq.faq_mining(modifier)
 	await ctx.send(response)
 
-
-## LISTING
+## WEN
 @client.command()
-async def listing(ctx, modifier=""):
+async def wen(ctx, modifier=""):
 	modifier = modifier.lower()
-	response = fq.faq_listing(modifier)
+	response = fq.faq_wen(modifier)
 	await ctx.send(response)
-
-
-## BINANCE
-@client.command()
-async def binance(ctx):
-	await ctx.send(fq.faq_binance())
 
 
 ## TRANSACTIONS
@@ -196,29 +188,7 @@ async def contribute(ctx):
 	await ctx.send(fq.faq_contribute())
 
 
-# EASTER EGGS
-## LAMBO
-@client.command()
-async def lambo(ctx):
-	await ctx.send(egg.ee_lambo())
-
-
-## YACHT
-@client.command()
-async def yacht(ctx):
-	await ctx.send(egg.ee_yacht())
-
-
-## BRIDGE
-@client.command()
-async def bridge(ctx):
-	await ctx.send(egg.ee_bridge())
-
-
 # EXECUTE
 client.run(TOKEN)
-
-
-
 
 
