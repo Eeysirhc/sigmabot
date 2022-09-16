@@ -45,6 +45,12 @@ async def welcome(ctx):
 async def dex(ctx):
 	await ctx.send(fq.faq_dex())
 
+	
+## BOTS
+@client.command()
+async def bots(ctx):
+	await ctx.send(fq.faq_bots())
+
 
 ## CEX
 @client.command()
