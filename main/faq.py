@@ -11,6 +11,15 @@ def faq_welcome():
 	"""
 	return(df)
 
+
+# BOTS
+def faq_bots():
+	df = """
+	Beep Boop - don't worry, Human.. the bots are just Discord <-> Telegram carrier pidgeons.
+	"""
+	return(df)
+
+
 # DEX
 def faq_dex():
 	df = """
