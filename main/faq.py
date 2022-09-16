@@ -131,7 +131,7 @@ def faq_wen(modifier=""):
 		"""
 	elif modifier=="bridge":
 		df = """
-		An einstein rosen bridge?" More like a "Rainbow Bridge"!
+		An einstein rosen bridge? More like a Rainbow Bridge!
 		"""
 	else:
 		df = """
