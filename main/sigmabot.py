@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-14
+# Last updated: 2022-09-15
 ##############################
 
 # LOAD PYTHON MODULES
@@ -39,12 +39,6 @@ async def on_ready():
 @client.command()
 async def welcome(ctx):
 	await ctx.send(fq.faq_welcome())
-
-
-## GET $ERG
-@client.command()
-async def geterg(ctx):
-	await ctx.send(fq.faq_geterg())
 
 
 ## DEX
@@ -223,6 +217,7 @@ async def bridge(ctx):
 
 # EXECUTE
 client.run(TOKEN)
+
 
 
 

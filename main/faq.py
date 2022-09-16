@@ -11,13 +11,6 @@ def faq_welcome():
 	"""
 	return(df)
 
-# GET $ERG
-def faq_geterg():
-	df = """
-	https://ergoplatform.org/en/get-erg/
-	"""
-	return(df)
-
 # DEX
 def faq_dex():
 	df = """
@@ -336,5 +329,6 @@ def faq_yoroi():
 	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
+
 
 
