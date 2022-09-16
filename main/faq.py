@@ -55,7 +55,18 @@ def faq_wallets(modifier=""):
 		"""
 	else:
 		df = """
-		https://ergoplatform.org/en/get-erg/#Wallets
+		[Team Wallets]
+Ergo Node: https://docs.ergoplatform.com/node/install/
+Ergo Mobile: https://ergoplatform.org/en/mobile-wallets/
+Paper Wallet: https://ergopaperwallet.org/
+
+[Other Wallets]
+Minotaur (Multi Platform): https://github.com/minotaur-ergo/minotaur-wallet
+Nautilus (Web): https://github.com/capt-nemo429/nautilus-wallet
+Satergo (Desktop): https://satergo.com/
+SAFEW (Web): https://github.com/ThierryM1212/SAFEW
+
+Learn more at https://ergoplatform.org/en/get-erg/#Wallets
 
 Modifiers: dis, tg, cold
 		"""
@@ -329,6 +340,5 @@ def faq_yoroi():
 	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
-
 
 
