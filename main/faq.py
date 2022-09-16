@@ -84,11 +84,24 @@ def faq_mining(modifier=""):
 @GetBlok
 @GuapSwapCommunity
 		"""
+	elif modifier=="red":
+		df = """
+		https://www.reddit.com/r/erg_miners/
+		"""
 	else:
 		df = """
-		https://ergoplatform.org/en/get-erg/#Mining
+		Welcome new miners! Remember to spread out the hashrate to support decentralization.
 
-Modifiers: dis, tg
+[Mining Pools]
+GetBlok: https://ergo.getblok.io/
+2Miners: https://2miners.com/erg-mining-pool
+Nanopool: https://ergo.nanopool.org/
+HeroMiners: https://ergo.herominers.com/
+WoolyPooly:https://woolypooly.com/en/coin/erg
+
+Learn more at https://ergoplatform.org/en/get-erg/#Mining
+
+Modifiers: dis, tg, red
 		"""
 	return(df)
 
@@ -340,5 +353,7 @@ def faq_yoroi():
 	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
+
+
 
 
