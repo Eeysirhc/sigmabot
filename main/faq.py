@@ -14,7 +14,7 @@ def faq_welcome():
 # DEX
 def faq_dex():
 	df = """
-	https://app.spectrum.fi/ergo/swap
+	<https://app.spectrum.fi/ergo/swap>
 	"""
 	return(df)
 
@@ -22,18 +22,18 @@ def faq_dex():
 def faq_cex():
 	df = """
 	[KYC]
-Huobi: https://www.huobi.com/exchange/erg_usdt/
-GateIO: https://www.gate.io/trade/ERG_USDT
-Indodax: https://indodax.com/market/ERGIDR
-HotBit: https://www.hotbit.io/exchange?symbol=ERG_BTC
-FMFW: https://fmfw.io/erg-to-btc
-Changelly: https://changelly.com/exchange/erg
-swopfi: https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD
+Huobi: <https://www.huobi.com/exchange/erg_usdt/>
+GateIO: <https://www.gate.io/trade/ERG_USDT>
+Indodax: <https://indodax.com/market/ERGIDR>
+HotBit: <https://www.hotbit.io/exchange?symbol=ERG_BTC>
+FMFW: <https://fmfw.io/erg-to-btc>
+Changelly: <https://changelly.com/exchange/erg>
+swopfi: <https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD>
 
 [non-KYC]
-KuCoin: https://www.kucoin.com/trade/ERG-USDT
-CoinEx: https://www.coinex.com/exchange?currency=usdt&dest=erg
-TradeOgre: https://tradeogre.com/exchange/BTC-ERG
+KuCoin: <https://www.kucoin.com/trade/ERG-USDT>
+CoinEx: <https://www.coinex.com/exchange?currency=usdt&dest=erg>
+TradeOgre: <https://tradeogre.com/exchange/BTC-ERG>
 	"""
 	return(df)
 
@@ -56,17 +56,17 @@ def faq_wallets(modifier=""):
 	else:
 		df = """
 		[Team Wallets]
-Ergo Node: https://docs.ergoplatform.com/node/install/
-Ergo Mobile: https://ergoplatform.org/en/mobile-wallets/
-Paper Wallet: https://ergopaperwallet.org/
+Ergo Node: <https://docs.ergoplatform.com/node/install/>
+Ergo Mobile: <https://ergoplatform.org/en/mobile-wallets/>
+Paper Wallet: <https://ergopaperwallet.org/>
 
 [Other Wallets]
-Minotaur (Multi Platform): https://github.com/minotaur-ergo/minotaur-wallet
-Nautilus (Web): https://github.com/capt-nemo429/nautilus-wallet
-Satergo (Desktop): https://satergo.com/
-SAFEW (Web): https://github.com/ThierryM1212/SAFEW
+Minotaur (Multi Platform): <https://github.com/minotaur-ergo/minotaur-wallet>
+Nautilus (Web): <https://github.com/capt-nemo429/nautilus-wallet>
+Satergo (Desktop): <https://satergo.com/>
+SAFEW (Web): <https://github.com/ThierryM1212/SAFEW>
 
-Learn more at https://ergoplatform.org/en/get-erg/#Wallets
+Learn more at <https://ergoplatform.org/en/get-erg/#Wallets>
 
 Modifiers: `dis`, `tg`, `cold`
 		"""
@@ -86,16 +86,16 @@ def faq_mining(modifier=""):
 		"""
 	elif modifier=="red":
 		df = """
-		https://www.reddit.com/r/erg_miners/
+		<https://www.reddit.com/r/erg_miners/>
 		"""
 	else:
 		df = """
 		Welcome new miners! Remember to spread out the hashrate to support decentralization.
 
-Learn more at https://ergoplatform.org/en/get-erg/#Mining
+Learn more at <https://ergoplatform.org/en/get-erg/#Mining>
 
 [Sub-Mining Pools]
-With GetBlok you can mine Ergo or native tokens such as Neta, Ergopad or Comet: https://ergo.getblok.io/
+With GetBlok you can mine Ergo or native tokens such as Neta, Ergopad or Comet: <https://ergo.getblok.io/>
 
 Modifiers: `dis`, `tg`, `red`
 		"""
@@ -208,7 +208,7 @@ def faq_tokenjay(modifier=""):
 		"""
 	elif modifier=="mosaik":
 		df = """
-		Mosaik is a JSON-based markup language served via a REST API intended to be used by Ergo platform dApps. For more information: https://docs.ergoplatform.com/dev/stack/mosaik/intro/ 
+		Mosaik is a JSON-based markup language served via a REST API intended to be used by Ergo platform dApps. For more information: <https://docs.ergoplatform.com/dev/stack/mosaik/intro/>
 		"""
 	else:
 		df = """
@@ -262,14 +262,14 @@ Modifiers: `mixer`, `spectrum`, `ergopad`, `skyharbor`, `ergoauctions`, `raffle`
 # DOCS
 def faq_docs():
 	df = """
-	https://docs.ergoplatform.com/documents/
+	<https://docs.ergoplatform.com/documents/>
 	"""
 	return(df)
 
 # ERGO MANIFESTO
 def faq_manifesto():
 	df = """
-	The Ergo Manifesto hopes to educate and offer a vision of what blockchain technology can achieve. We hope to build society through horizontal cooperation through production under the division of labor, trade and exchange, and solidarity and mutual aid. Learn more at https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/
+	The Ergo Manifesto hopes to educate and offer a vision of what blockchain technology can achieve. We hope to build society through horizontal cooperation through production under the division of labor, trade and exchange, and solidarity and mutual aid. Learn more at <https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/>
 	"""
 	return(df)
 
@@ -287,11 +287,11 @@ def faq_ledger():
 	df = """
 	Tutorials to sideload Ergo Ledger app
 
-Nano S for Windows: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md
+Nano S for Windows: <https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md>
 
-Nano S for Linux/MacOS: https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-unix.md
+Nano S for Linux/MacOS: <https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-unix.md>
 
-Nano S Plus: https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a
+Nano S Plus: <https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a>
 	"""
 	return(df)
 
@@ -305,7 +305,7 @@ def faq_pouw():
 ## STORAGE RENT
 def faq_rent():
 	df = """
-	Storage rent is a fee for long term storage on the Ergo blockchain. Four years from your last transaction, you will be charged ~0.14 ERG and a transaction fee to pay for the costs of storing your digital information. Learn more at https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/ and https://docs.ergoplatform.com/mining/rent/
+	Storage rent is a fee for long term storage on the Ergo blockchain. Four years from your last transaction, you will be charged ~0.14 ERG and a transaction fee to pay for the costs of storing your digital information. Learn more at <https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/> and <https://docs.ergoplatform.com/mining/rent/>
 	"""
 	return(df)
 
@@ -317,11 +317,11 @@ def faq_node(modifier=""):
 		"""
 	elif modifier=="docs":
 		df = """
-		https://docs.ergoplatform.com/node/install/
+		<https://docs.ergoplatform.com/node/install/>
 		"""
 	else:
 		df = """
-		https://github.com/ergoplatform/ergo
+		<https://github.com/ergoplatform/ergo>
 
 Modifiers: `install`, `docs`
 		"""
@@ -330,7 +330,7 @@ Modifiers: `install`, `docs`
 # STAKING
 def faq_staking():
 	df = """
-	Ergo is a Proof of Work blockchain. So, it is not possible to stake Ergo itself as you would in a Proof of Stake blockchain. However, it is possible to earn some yield from your ERG in combination with Ergo in liquidity pools, tokenisation of dApps, trading bots, lending platforms, and other mechanisms. Learn more here at https://ergonaut.space/en/Guides/yield
+	Ergo is a Proof of Work blockchain. So, it is not possible to stake Ergo itself as you would in a Proof of Stake blockchain. However, it is possible to earn some yield from your ERG in combination with Ergo in liquidity pools, tokenisation of dApps, trading bots, lending platforms, and other mechanisms. Learn more here at <https://ergonaut.space/en/Guides/yield>
 	"""
 	return(df)
 
@@ -345,7 +345,7 @@ def faq_drama():
 # CONTRIBUTE
 def faq_contribute():
 	df = """
-	https://docs.ergoplatform.com/contribute/
+	<https://docs.ergoplatform.com/contribute/>
 	"""
 	return(df)
 
