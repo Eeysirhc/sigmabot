@@ -356,7 +356,6 @@ def faq_yoroi():
 	"""
 	return(df)
 
-
 # BOTS
 def faq_bots():
 	df = """
@@ -364,6 +363,19 @@ def faq_bots():
 	"""
 	return(df)
 
+# MINING DIFFICULTY ADJUSTMENT
+def faq_difficulty():
+        df = """
+	Ergo's difficulty algorithm was designed to reduce the incentive to perform coin-hopping and improve stability of inter-block delays. Coin-hopping is defined as an adversarial miner switching from mining one coin to another in the beginning of an epoch then switching back in the beginning of next epoch when difficulty becomes lower. Difficulty in Ergo is adjusted using the least squares method, which adjusts roughly every two weeks using the past eight epochs to obtain a target block interval of 120 seconds or 2 minutes, on average.
 
+	For more details: 
+	https://eprint.iacr.org/2017/731.pdf
+        """
+        return(df)
 
-
+# SEED
+def faq_seed():
+        df = """
+        Never give your seed to anyone. You can restore your seed in any wallet, even multiple wallets. With the correct seed, you (and anyone else) can access your assets on the Ergo blockchain."
+	"""
+        return(df)
