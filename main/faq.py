@@ -356,7 +356,6 @@ def faq_yoroi():
 	"""
 	return(df)
 
-
 # BOTS
 def faq_bots():
 	df = """
@@ -374,4 +373,9 @@ def faq_difficulty():
         """
         return(df)
 
-
+# SEED
+def faq_seed():
+        df = """
+        Never give your seed to anyone. You can restore your seed in any wallet, even multiple wallets. With the correct seed, you (and anyone else) can access your assets on the Ergo blockchain."
+	"""
+        return(df)
