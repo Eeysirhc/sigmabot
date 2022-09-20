@@ -157,7 +157,6 @@ async def pouw(ctx):
 async def rent(ctx):
 		await ctx.send(fq.faq_rent())
 
-
 ## NODE
 @client.command()
 async def node(ctx, modifier=""):
@@ -175,23 +174,25 @@ async def yoroi(ctx):
 async def staking(ctx):
 	await ctx.send(fq.faq_staking())
 
-
 ## DRAMA
 @client.command()
 async def drama(ctx):
 	await ctx.send(fq.faq_drama())
-
 
 ## CONTRIBUTE
 @client.command()
 async def contribute(ctx):
 	await ctx.send(fq.faq_contribute())
 
-
 ## BOTS
 @client.command()
 async def bots(ctx):
 	await ctx.send(fq.faq_bots())
+
+## MINING DIFFICULTY ADJUSTMENTS
+@client.command()
+async def difficulty(ctx):
+        await ctx.send(fq.faq_bots())
 
 # EXECUTE
 client.run(TOKEN)
