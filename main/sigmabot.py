@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-16
+# Last updated: 2022-09-20
 ##############################
 
 # LOAD PYTHON MODULES
@@ -178,10 +178,12 @@ async def difficulty(ctx):
 
 ## SEED
 @client.command()
-async def difficulty(ctx):
+async def seed(ctx):
         await ctx.send(fq.faq_seed())
 
 # EXECUTE
 client.run(TOKEN)
+
+
 
 
