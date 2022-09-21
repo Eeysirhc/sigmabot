@@ -377,7 +377,7 @@ def faq_difficulty():
 # SEED
 def faq_seed():
 	df = """
-	Never give your seed phrase to anyone. You can restore your seed in any wallet, even multiple wallets. With the correct seed, you (and anyone else) can access your assets on the Ergo blockchain."
+	Never give your seed phrase to anyone. You can restore your seed in any wallet, even multiple wallets. With the correct seed, you (and anyone else) can access your assets on the Ergo blockchain.
 	"""
 	return(df)
 
