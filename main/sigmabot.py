@@ -174,12 +174,12 @@ async def bots(ctx):
 ## MINING DIFFICULTY ADJUSTMENTS
 @client.command()
 async def difficulty(ctx):
-		await ctx.send(fq.faq_difficulty())
+	await ctx.send(fq.faq_difficulty())
 
 ## SEED
 @client.command()
 async def seed(ctx):
-		await ctx.send(fq.faq_seed())
+	await ctx.send(fq.faq_seed())
 
 # EXECUTE
 client.run(TOKEN)
