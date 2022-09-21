@@ -110,7 +110,7 @@ def faq_wen(modifier=""):
 		df = listing_template.format(cex=cex)
 	elif modifier=="binance":
 		df = """
-		kushti: Binance is a good recipe to be a King for a day, fool for a lifetime. Ergo is not grin, ravencoin etc it has ecosystem, unique tools, vibrant community with proper vision.
+		"Binance is a good recipe to be a King for a day, fool for a lifetime. Ergo is not grin, ravencoin etc it has ecosystem, unique tools, vibrant community with proper vision." -kushti
 		"""
 	elif modifier=="kraken":
 		cex = modifier.title()
