@@ -65,6 +65,7 @@ Minotaur (Multi Platform): <https://github.com/minotaur-ergo/minotaur-wallet>
 Nautilus (Web): <https://github.com/capt-nemo429/nautilus-wallet>
 Satergo (Desktop): <https://satergo.com/>
 SAFEW (Web): <https://github.com/ThierryM1212/SAFEW>
+Zelcore (Multi Platform): <https://zelcore.io/>
 
 Learn more at <https://ergoplatform.org/en/get-erg/#Wallets>
 
