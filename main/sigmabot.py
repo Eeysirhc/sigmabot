@@ -181,6 +181,11 @@ async def difficulty(ctx):
 async def seed(ctx):
 	await ctx.send(fq.faq_seed())
 
+## FORUM
+@client.command()
+async def seed(ctx):
+        await ctx.send(fq.faq_forum())
+
 # EXECUTE
 client.run(TOKEN)
 
