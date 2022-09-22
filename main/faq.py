@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-20
+# Last updated: 2022-09-22
 ##############################
 
 # WELCOME
@@ -386,8 +386,9 @@ def faq_forum():
 	df = """
 	Telegram and Discord are for informal discussion. Ergo's Community Forum is preferred for formal discussion of ecosystem development, hard forks (such as a mining difficulty adjustment) and soft forks (emission retargeting), and so forth. The Forum provides a means for the community to develop and comment on ideas that can be turned into Ergo Improvement Proposals (EIPs). EIPs are voted upon by the larger community before being implemented. Anyone can contribute to the forum or submit an EIP, and the Ergo community is open to ideas from anyone.
 
-	Links
-	https://www.ergoforum.org/
-	https://github.com/ergoplatform/eips
+Links
+<https://www.ergoforum.org/>
+<https://github.com/ergoplatform/eips>
 	"""
 	return(df)
+

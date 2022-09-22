@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-20
+# Last updated: 2022-09-22
 ##############################
 
 # LOAD PYTHON MODULES
@@ -184,7 +184,11 @@ async def seed(ctx):
 ## FORUM
 @client.command()
 async def forum(ctx):
-        await ctx.send(fq.faq_forum())
+	await ctx.send(fq.faq_forum())
 
 # EXECUTE
 client.run(TOKEN)
+
+
+
+
