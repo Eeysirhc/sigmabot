@@ -370,8 +370,8 @@ def faq_difficulty():
 	df = """
 	Ergo's difficulty algorithm was designed to reduce the incentive to perform coin-hopping and improve stability of inter-block delays. Coin-hopping is defined as an adversarial miner switching from mining one coin to another in the beginning of an epoch then switching back in the beginning of next epoch when difficulty becomes lower. Difficulty in Ergo is adjusted using the least squares method, which adjusts roughly every 34 hrs using the past eight epochs (8 epochs=⁓11 days), to obtain the target block interval of 120 seconds or 2 minutes, on average.
 
-	Learn more: <https://eprint.iacr.org/2017/731.pdf>
-	For community discussions: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
+Learn more: <https://eprint.iacr.org/2017/731.pdf>
+For community discussions: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
 	"""
 	return(df)
 
@@ -392,4 +392,8 @@ Links
 <https://github.com/ergoplatform/eips>
 	"""
 	return(df)
+
+
+
+
 
