@@ -2,7 +2,34 @@
 
 ## Quick Start
 
-### `.env` file
+### Ubuntu
+
+```bash
+sudo apt install python3
+sudo apt install python3-pip
+pip install discord
+pip install python-dotenv
+```
+
+### Discord
+
+Follow the instructions for creating a bot.
+https://discordpy.readthedocs.io/en/stable/discord.html
+
+When in the Bots tab of Applications, make sure to turn on the slider for all privileged Gateway Intents to test the bot.
+
+### bash
+
+#### add to $HOME/.profile:
+
+```bash
+# set PATH so it includes user's local bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+```
+
+#### create $HOME/bin/sigmabot/main/.env and add line:
 
 ```bash
 DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
