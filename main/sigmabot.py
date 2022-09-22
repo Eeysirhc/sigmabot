@@ -183,12 +183,8 @@ async def seed(ctx):
 
 ## FORUM
 @client.command()
-async def seed(ctx):
+async def forum(ctx):
         await ctx.send(fq.faq_forum())
 
 # EXECUTE
 client.run(TOKEN)
-
-
-
-
