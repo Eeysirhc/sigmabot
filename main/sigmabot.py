@@ -186,14 +186,44 @@ async def seed(ctx):
 async def forum(ctx):
 	await ctx.send(fq.faq_forum())
 
-## EIP
+########## EIP ##########
 def faq_eip(modifier=""):
 	if modifier=="1":
 		df = """UTXO-Set Scanning Wallet API: <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>"""
 	elif modifier=="2":
 		df = """Ergo grant program: <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>"""
+	elif modifier=="3":
+		df = """Deterministic Wallet Standard: <https://github.com/ergoplatform/eips/blob/master/eip-0003.md>"""
+	elif modifier=="4":
+		df = """Assets standard: <https://github.com/ergoplatform/eips/blob/master/eip-0004.md>"""
+	elif modifier=="5":
+		df = """Contract Template: <https://github.com/ergoplatform/eips/blob/master/eip-0005.md>"""
+	elif modifier=="6":
+		df = """Informal Smart Contract Protocol Specification Format: <https://github.com/ergoplatform/eips/blob/master/eip-0006.md>"""
+	elif modifier=="17":
+		df = """Proxy contracts: <https://github.com/ergoplatform/eips/blob/master/eip-0017.md>"""
+	elif modifier=="19":
+		df = """[Cold Wallet] An interaction protocol between Hot and Cold mobile wallets: <https://github.com/ergoplatform/eips/blob/master/eip-0019.md>"""
+	elif modifier=="20":
+		df = """[ErgoPay] An interaction protocol between wallet application and dApp: <https://github.com/ergoplatform/eips/blob/master/eip-0020.md>"""
+	elif modifier=="21":
+		df = """Genuine tokens verification: <https://github.com/ergoplatform/eips/blob/master/eip-0021.md>"""
+	elif modifier=="22":
+		df = """Auction contract: <https://github.com/ergoplatform/eips/blob/master/eip-0022.md>"""
+	elif modifier=="24":
+		df = """Artwork contract: <https://github.com/ergoplatform/eips/blob/master/eip-0024.md>"""
+	elif modifier=="25":
+		df = """URI scheme for payment requests: <https://github.com/ergoplatform/eips/blob/master/eip-0025.md>"""
+	elif modifier=="27":
+		df = """Emission Retargeting Soft-Forkr: <https://github.com/ergoplatform/eips/blob/master/eip-0027.md>"""
+	elif modifier=="37":
+		df = """[DRAFT] Tweatking Difficulty Adjustment Algorithm: <https://github.com/ergoplatform/eips/pull/79/commits/3c8494ba16f9ae85648f9624a8a715f87a19f785>"""
 	else: 
-		df = """<https://github.com/ergoplatform/eips#ergo-improvement-proposals>"""
+		df = """
+		Ergo Improvement Proposals (EIP) can be found at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>.
+
+Modifiers: `1`, `2`, `3`, `4`, `5`, `6`, `17`, `19`, `20`, `21`, `22`, `24`, `25`, `27`, `37`
+		"""
 	return(df)
 
 @client.command()
