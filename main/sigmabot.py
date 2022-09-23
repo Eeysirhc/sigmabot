@@ -188,7 +188,6 @@ async def forum(ctx):
 
 ## EIP
 def faq_eip(modifier=""):
-	modifier = str(modifier)
 	if modifier=="1":
 		df = """UTXO-Set Scanning Wallet API: <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>"""
 	elif modifier=="2":
@@ -199,11 +198,12 @@ def faq_eip(modifier=""):
 
 @client.command()
 async def eip(ctx, modifier=""):
-	await ctx.send(faq_eip())
+	modifier = str(modifier)
+	repsonse = faq_eip(modifier)
+	await ctx.send(response)
 
 # EXECUTE
 client.run(TOKEN)
-
 
 
 
