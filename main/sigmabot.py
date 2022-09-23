@@ -190,8 +190,7 @@ async def forum(ctx):
 def faq_eip(modifier=""):
 	if modifier=="1":
 		df = """
-		UTXO-Set Scanning Wallet API
-
+		[UTXO-Set Scanning Wallet API]
 Currently, the Ergo node wallet is able to search for boxes protected only by simplest scripts associated with P2PK addresses which is a large barrier for dApps. This makes development of external applications which use smart contracts quite challenging. Development would involve scanning the blockchain state independently by the off-chain portion of the dApp itself with handling forks, confirmation numbers, and so on.
 
 This Ergo Improvement Proposal focused on extending the wallet to be able to serve the needs of external applications by providing a flexible scanning interface and the possibility for applications to register scans with the wallet to ensure that they are tracked. Scans that have successfully passed are considered to belong to the application.
@@ -203,23 +202,50 @@ Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>
 		"""
 	elif modifier=="2":
 		df = """
-		Ergo grant program
-
+		[Ergo grant program]
 Ergo has a treasury box, that collects coins locked for further development of the platform. This is the proposal of the process of treasury box distribution.
 Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>
 		"""
 	elif modifier=="3":
-		df = """Deterministic Wallet Standard: <https://github.com/ergoplatform/eips/blob/master/eip-0003.md>"""
-	elif modifier=="4":
-		df = """Assets standard
+		df = """[Deterministic Wallet Standard] 
+The BIP-0044 defines a logical hierarchy for deterministic wallets. This is a common standard that is used directly (or used as inspiration) by countless projects in the cryptocurrency sphere.
 
+Such a standard allows end users to move between different wallet software trivially, and thus sets down a framework for a more cohesive ecosystem to grow.
+
+The standard has 5 levels part of its path:
+
+m / 44' / coin_type' / account' / change / address_index
+This EIP attempts to define a specific coin_type for the Ergo ecosystem, as well as a policy for how wallets use the change level.
+
+Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0003.md>
+		"""
+	elif modifier=="4":
+		df = """[Assets standard]
 This standard provides a uniform way to issue Ergo tokens. A standard interface allows any tokens on Ergo to be re-used by other applications: from wallets to decentralized exchanges.
 Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0004.md>
 		"""
 	elif modifier=="5":
-		df = """Contract Template: <https://github.com/ergoplatform/eips/blob/master/eip-0005.md>"""
+		df = """
+		[Contract Template]
+Ergo supports flexible language ErgoTree of guarding propositions which protect UTXO boxes. The propositions are stored in the blockchain according to ErgoTree serialization format, which is designed for compact storage and fast script execution and transaction validation.
+
+However, ErgoTree binary format intentionally doesn't include metadata, which may be necessary for various Ergo applications.
+
+This standard defines extended serialization format of contract templates, which may be reused across different protocol implementations, applications and tools on many execution environments.
+
+Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0005.md>
+		"""
 	elif modifier=="6":
-		df = """Informal Smart Contract Protocol Specification Format: <https://github.com/ergoplatform/eips/blob/master/eip-0006.md>"""
+		df = """
+		[Informal Smart Contract Protocol Specification Format]
+UTXO-based smart contracts are a fascinating new area beginning to be explored for implementing dApp protocols. The model allows for great expressiveness and approachability due to the fact that different stages of a complex protocol can be cleanly separated into their own contracts.
+
+With that said, this is an extremely nascent model for designing smart contract protocols. This means that though they may be simpler when compared to the current standard today, complexity is still going to be present when building protocols that require numerous actions or stages. Furthermore, we could benefit from conveying to others how a given protocol is supposed to be implemented and/or work without writing a single line of code.
+
+As such it would be quite handy to have a format to informally define specifications for our utxo-based smart contract protocols which are understandable, easily traversable, and can be used as a guide for eventually writing both the on-chain and off-chain code.
+
+Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0006.md>
+		"""
 	elif modifier=="17":
 		df = """Proxy contracts: <https://github.com/ergoplatform/eips/blob/master/eip-0017.md>"""
 	elif modifier=="19":
@@ -240,7 +266,8 @@ Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0004.md>
 		df = """[DRAFT] Tweaking Difficulty Adjustment Algorithm: <https://github.com/ergoplatform/eips/pull/79/commits/3c8494ba16f9ae85648f9624a8a715f87a19f785>"""
 	else: 
 		df = """
-		Ergo Improvement Proposals (EIPs) specify and/or describe standards for the Ergo Platform, including core protocol specifications, client APIs, dApp/contract standards, and other such things. You can find the full list of EIPs at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>
+		Ergo Improvement Proposals (EIPs) specify and/or describe standards for the Ergo Platform, including core protocol specifications, client APIs, dApp/contract standards, and other such things.
+You can find the full list of EIPs at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>
 
 Modifiers: `1`, `2`, `3`, `4`, `5`, `6`, `17`, `19`, `20`, `21`, `22`, `24`, `25`, `27`, `37`
 		"""
