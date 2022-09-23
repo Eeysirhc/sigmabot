@@ -217,7 +217,7 @@ def faq_eip(modifier=""):
 	elif modifier=="27":
 		df = """Emission Retargeting Soft-Forkr: <https://github.com/ergoplatform/eips/blob/master/eip-0027.md>"""
 	elif modifier=="37":
-		df = """[DRAFT] Tweatking Difficulty Adjustment Algorithm: <https://github.com/ergoplatform/eips/pull/79/commits/3c8494ba16f9ae85648f9624a8a715f87a19f785>"""
+		df = """[DRAFT] Tweaking Difficulty Adjustment Algorithm: <https://github.com/ergoplatform/eips/pull/79/commits/3c8494ba16f9ae85648f9624a8a715f87a19f785>"""
 	else: 
 		df = """
 		Ergo Improvement Proposals (EIP) can be found at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>.
