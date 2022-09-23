@@ -422,7 +422,7 @@ Links
 
 # PARTNERSHIPS
 def faq_partnerships():
-		df = """
+	df = """
 		The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
 	"""
 	return(df)
