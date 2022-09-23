@@ -261,9 +261,9 @@ This EIP concludes previous discussions and provides further details on the prop
 		[Tweaking Difficulty Adjustment Algorithm]
 The Ergo's algorithm works well in most cases, inluding huge price drops, 100x initial difficulty misestimation during mainnet launch, and so on. However, current simplified and limitless version of algorithm is bumpy. Big influx of mining hashrate over multiple epochs, especially with super-linear hashrate growth over time may result in huge spike of difficulty. Similarly, few slow epochs may cause huge drop. Also, for dapps and other applications it would be desirable to make difficulty readjustment more reactive (currently, readjustment takes place every 1024 blocks, and 8 epochs, so about two weeks normally, are considered).   
 
-Read more of the initial draft at <https://github.com/ergoplatform/eips/pull/79/files>
+Read more of the initial draft: <https://github.com/ergoplatform/eips/pull/79/files>
+For EIP-37 discussions: <https://github.com/ergoplatform/eips/pull/79>
 
-EIP-37 discussions: <https://github.com/ergoplatform/eips/pull/79>
 Broader conversations about difficulty adjustments: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
 		"""
 	else: 
