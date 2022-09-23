@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-22
+# Last updated: 2022-09-23
 ##############################
 
 # LOAD PYTHON MODULES
@@ -186,8 +186,23 @@ async def seed(ctx):
 async def forum(ctx):
 	await ctx.send(fq.faq_forum())
 
+## EIP
+def faq_eip(modifier=""):
+	if modifier=="1":
+		df = """UTXO-Set Scanning Wallet API: <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>"""
+	elif modifier=="2":
+		df = """Ergo grant program: <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>"""
+	else: 
+		df = """<https://github.com/ergoplatform/eips#ergo-improvement-proposals>"""
+	return(df)
+
+@client.command()
+async def eip(ctx):
+	await ctx.send(faq_eip())
+
 # EXECUTE
 client.run(TOKEN)
+
 
 
 
