@@ -198,7 +198,7 @@ def faq_eip(modifier=""):
 	return(df)
 
 @client.command()
-async def eip(ctx):
+async def eip(ctx, modifier=""):
 	await ctx.send(faq_eip())
 
 # EXECUTE
