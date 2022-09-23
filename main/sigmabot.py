@@ -191,77 +191,71 @@ def faq_eip(modifier=""):
 	if modifier=="1":
 		df = """
 		[UTXO-Set Scanning Wallet API]
-Currently, the Ergo node wallet is able to search for boxes protected only by simplest scripts associated with P2PK addresses which is a large barrier for dApps. This makes development of external applications which use smart contracts quite challenging. Development would involve scanning the blockchain state independently by the off-chain portion of the dApp itself with handling forks, confirmation numbers, and so on.
-
-This Ergo Improvement Proposal focused on extending the wallet to be able to serve the needs of external applications by providing a flexible scanning interface and the possibility for applications to register scans with the wallet to ensure that they are tracked. Scans that have successfully passed are considered to belong to the application.
-
-Each scan has a given scan ID, and each box found that matches said scan is tracked by the wallet and thus is associated with the scan ID. Among possible scans, there are some pre-defined scans
-implemented by the node wallet, to track wallet's public keys and also mining rewards. Other scans are not directly implemented inside of the wallet but can be added by a user or an external application.
-
-Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>
+This Ergo Improvement Proposal focused on extending the wallet to be able to serve the needs of external applications by providing a flexible scanning interface and the possibility for applications to register scans with the wallet to ensure that they are tracked. Scans that have successfully passed are considered to belong to the application.: <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>
 		"""
 	elif modifier=="2":
 		df = """
 		[Ergo grant program]
-Ergo has a treasury box, that collects coins locked for further development of the platform. This is the proposal of the process of treasury box distribution.
-Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>
+Ergo has a treasury box, that collects coins locked for further development of the platform. This is the proposal of the process of treasury box distribution: <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>
 		"""
 	elif modifier=="3":
 		df = """[Deterministic Wallet Standard] 
-The BIP-0044 defines a logical hierarchy for deterministic wallets. This is a common standard that is used directly (or used as inspiration) by countless projects in the cryptocurrency sphere.
-
-Such a standard allows end users to move between different wallet software trivially, and thus sets down a framework for a more cohesive ecosystem to grow.
-
-The standard has 5 levels part of its path:
-
-m / 44' / coin_type' / account' / change / address_index
-This EIP attempts to define a specific coin_type for the Ergo ecosystem, as well as a policy for how wallets use the change level.
-
-Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0003.md>
+This EIP attempts to define a specific `coin_type` for the Ergo ecosystem, as well as a policy for how wallets use the `change` level: <https://github.com/ergoplatform/eips/blob/master/eip-0003.md>
 		"""
 	elif modifier=="4":
 		df = """[Assets standard]
-This standard provides a uniform way to issue Ergo tokens. A standard interface allows any tokens on Ergo to be re-used by other applications: from wallets to decentralized exchanges.
-Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0004.md>
+This standard provides a uniform way to issue Ergo tokens. A standard interface allows any tokens on Ergo to be re-used by other applications from wallets to decentralized exchanges: <https://github.com/ergoplatform/eips/blob/master/eip-0004.md>
 		"""
 	elif modifier=="5":
 		df = """
 		[Contract Template]
-Ergo supports flexible language ErgoTree of guarding propositions which protect UTXO boxes. The propositions are stored in the blockchain according to ErgoTree serialization format, which is designed for compact storage and fast script execution and transaction validation.
-
-However, ErgoTree binary format intentionally doesn't include metadata, which may be necessary for various Ergo applications.
-
-This standard defines extended serialization format of contract templates, which may be reused across different protocol implementations, applications and tools on many execution environments.
-
-Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0005.md>
+This EIP defines a standard serialization formats and contract metadata for cross-platform reusable contract templates: <https://github.com/ergoplatform/eips/blob/master/eip-0005.md>
 		"""
 	elif modifier=="6":
 		df = """
 		[Informal Smart Contract Protocol Specification Format]
-UTXO-based smart contracts are a fascinating new area beginning to be explored for implementing dApp protocols. The model allows for great expressiveness and approachability due to the fact that different stages of a complex protocol can be cleanly separated into their own contracts.
-
-With that said, this is an extremely nascent model for designing smart contract protocols. This means that though they may be simpler when compared to the current standard today, complexity is still going to be present when building protocols that require numerous actions or stages. Furthermore, we could benefit from conveying to others how a given protocol is supposed to be implemented and/or work without writing a single line of code.
-
-As such it would be quite handy to have a format to informally define specifications for our utxo-based smart contract protocols which are understandable, easily traversable, and can be used as a guide for eventually writing both the on-chain and off-chain code.
-
 Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0006.md>
 		"""
 	elif modifier=="17":
-		df = """Proxy contracts: <https://github.com/ergoplatform/eips/blob/master/eip-0017.md>"""
+		df = """
+		[Proxy contracts]
+Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0017.md>
+		"""
 	elif modifier=="19":
-		df = """[Cold Wallet] An interaction protocol between Hot and Cold mobile wallets: <https://github.com/ergoplatform/eips/blob/master/eip-0019.md>"""
+		df = """
+		[Cold Wallet: an interaction protocol between Hot and Cold mobile wallets]
+This EIP defines a standard for cross-device interaction between "Hot" (online) and "Cold" (offline) wallets for signing Ergo transactions: <https://github.com/ergoplatform/eips/blob/master/eip-0019.md>
+		"""
 	elif modifier=="20":
-		df = """[ErgoPay] An interaction protocol between wallet application and dApp: <https://github.com/ergoplatform/eips/blob/master/eip-0020.md>"""
+		df = """
+		[ErgoPay: an interaction protocol between wallet application and dApp] 
+This EIP defines a standard for cross-platform interaction between an online dApp and a wallet app for creating, signing and sending Ergo transactions: <https://github.com/ergoplatform/eips/blob/master/eip-0020.md>
+		"""
 	elif modifier=="21":
-		df = """Genuine tokens verification: <https://github.com/ergoplatform/eips/blob/master/eip-0021.md>"""
+		df = """
+		[Genuine tokens verification]
+This EIP lists the common tokens of value with their unique identifier, so users as well as wallet and explorer applications can verify if a token is genuine. The EIP is meant to be updated regularly when new tokens of value are added.: <https://github.com/ergoplatform/eips/blob/master/eip-0021.md>
+		"""
 	elif modifier=="22":
-		df = """Auction contract: <https://github.com/ergoplatform/eips/blob/master/eip-0022.md>"""
+		df = """
+		[Auction contract]
+Decentralized auctioning of any kind of tokens (artwork, share tokens, etc.) is an important part of any blockchain. This EIP is proposing the auction contract with various features listed in the Design section: <https://github.com/ergoplatform/eips/blob/master/eip-0022.md>
+		"""
 	elif modifier=="24":
-		df = """Artwork contract: <https://github.com/ergoplatform/eips/blob/master/eip-0024.md>"""
+		df = """
+		[Artwork contract]
+With the discovery that we can easily use spent boxes in contracts, some new features are introduced for artworks and can be extended furthur in the future. This EIP is an extension of Asset standard (EIP-0004) and tents to standardize artwrok issuance in particular: <https://github.com/ergoplatform/eips/blob/master/eip-0024.md>
+		"""
 	elif modifier=="25":
-		df = """URI scheme for payment requests: <https://github.com/ergoplatform/eips/blob/master/eip-0025.md>"""
+		df = """
+		[URI scheme for payment requests]
+Like BIP-0021 for Bitcoin, this EIP proposes a URI scheme for initiating payments. The purpose of this URI scheme is to enable users to easily make payments by simply clicking links on webpages or in e-mails: <https://github.com/ergoplatform/eips/blob/master/eip-0025.md>
+		"""
 	elif modifier=="27":
-		df = """Emission Retargeting Soft-Forkr: <https://github.com/ergoplatform/eips/blob/master/eip-0027.md>"""
+		df = """
+		[Emission Retargeting Soft-Fork] 
+This EIP concludes previous discussions and provides further details on the proposed emission soft-fork design and implementation: <https://github.com/ergoplatform/eips/blob/master/eip-0027.md>
+		"""
 	elif modifier=="37":
 		df = """[DRAFT] Tweaking Difficulty Adjustment Algorithm: <https://github.com/ergoplatform/eips/pull/79/commits/3c8494ba16f9ae85648f9624a8a715f87a19f785>"""
 	else: 
@@ -281,6 +275,5 @@ async def eip(ctx, modifier=""):
 
 # EXECUTE
 client.run(TOKEN)
-
 
 
