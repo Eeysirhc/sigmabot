@@ -89,6 +89,10 @@ def faq_mining(modifier=""):
 		df = """
 		<https://www.reddit.com/r/erg_miners/>
 		"""
+	elif modifier=="profit":
+		df = """
+		With the Ethereum merge, 95% of the market for miners just got rugged. Imagine an economy where 95% of workers get laid off and take their tools home. It is going to take time for mining hash rate to balance out.
+		"""
 	else:
 		df = """
 		Welcome new miners! Remember to spread out the hashrate to support decentralization.
@@ -371,7 +375,8 @@ def faq_difficulty():
 	Ergo's difficulty algorithm was designed to reduce the incentive to perform coin-hopping and improve stability of inter-block delays. Coin-hopping is defined as an adversarial miner switching from mining one coin to another in the beginning of an epoch then switching back in the beginning of next epoch when difficulty becomes lower. Difficulty in Ergo is adjusted using the least squares method, which adjusts roughly every 34 hrs using the past eight epochs (8 epochs=⁓11 days), to obtain the target block interval of 120 seconds or 2 minutes, on average.
 
 Learn more: <https://eprint.iacr.org/2017/731.pdf>
-For community discussions: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
+For Ergo Forum discussion: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
+For EIP-27 github discussion: <https://github.com/ergoplatform/eips/pull/79>
 	"""
 	return(df)
 
@@ -393,7 +398,9 @@ Links
 	"""
 	return(df)
 
-
-
-
-
+# PARTNERSHIPS
+def faq_partnerships():
+        df = """
+        The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
+	"""
+        return(df)

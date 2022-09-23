@@ -281,9 +281,10 @@ async def eip(ctx, modifier=""):
 	response = faq_eip(modifier)
 	await ctx.send(response)
 
+## PARTNERSHIPS
+@client.command()
+async def partnerships(ctx):
+        await ctx.send(fq.faq_partnerships())
+
 # EXECUTE
 client.run(TOKEN)
-
-
-
-
