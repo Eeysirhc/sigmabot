@@ -189,13 +189,33 @@ async def forum(ctx):
 ########## EIP ##########
 def faq_eip(modifier=""):
 	if modifier=="1":
-		df = """UTXO-Set Scanning Wallet API: <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>"""
+		df = """
+		UTXO-Set Scanning Wallet API
+
+Currently, the Ergo node wallet is able to search for boxes protected only by simplest scripts associated with P2PK addresses which is a large barrier for dApps. This makes development of external applications which use smart contracts quite challenging. Development would involve scanning the blockchain state independently by the off-chain portion of the dApp itself with handling forks, confirmation numbers, and so on.
+
+This Ergo Improvement Proposal focused on extending the wallet to be able to serve the needs of external applications by providing a flexible scanning interface and the possibility for applications to register scans with the wallet to ensure that they are tracked. Scans that have successfully passed are considered to belong to the application.
+
+Each scan has a given scan ID, and each box found that matches said scan is tracked by the wallet and thus is associated with the scan ID. Among possible scans, there are some pre-defined scans
+implemented by the node wallet, to track wallet's public keys and also mining rewards. Other scans are not directly implemented inside of the wallet but can be added by a user or an external application.
+
+Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0001.md>
+		"""
 	elif modifier=="2":
-		df = """Ergo grant program: <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>"""
+		df = """
+		Ergo grant program
+
+Ergo has a treasury box, that collects coins locked for further development of the platform. This is the proposal of the process of treasury box distribution.
+Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>
+		"""
 	elif modifier=="3":
 		df = """Deterministic Wallet Standard: <https://github.com/ergoplatform/eips/blob/master/eip-0003.md>"""
 	elif modifier=="4":
-		df = """Assets standard: <https://github.com/ergoplatform/eips/blob/master/eip-0004.md>"""
+		df = """Assets standard
+
+This standard provides a uniform way to issue Ergo tokens. A standard interface allows any tokens on Ergo to be re-used by other applications: from wallets to decentralized exchanges.
+Learn more at <https://github.com/ergoplatform/eips/blob/master/eip-0004.md>
+		"""
 	elif modifier=="5":
 		df = """Contract Template: <https://github.com/ergoplatform/eips/blob/master/eip-0005.md>"""
 	elif modifier=="6":
@@ -220,7 +240,7 @@ def faq_eip(modifier=""):
 		df = """[DRAFT] Tweaking Difficulty Adjustment Algorithm: <https://github.com/ergoplatform/eips/pull/79/commits/3c8494ba16f9ae85648f9624a8a715f87a19f785>"""
 	else: 
 		df = """
-		Ergo Improvement Proposals (EIP) can be found at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>.
+		Ergo Improvement Proposals (EIPs) specify and/or describe standards for the Ergo Platform, including core protocol specifications, client APIs, dApp/contract standards, and other such things. You can find the full list of EIPs at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>
 
 Modifiers: `1`, `2`, `3`, `4`, `5`, `6`, `17`, `19`, `20`, `21`, `22`, `24`, `25`, `27`, `37`
 		"""
