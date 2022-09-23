@@ -71,9 +71,9 @@ async def wen(ctx, modifier=""):
 ## WHY
 @client.command()
 async def why(ctx, modifier=""):
-        modifier = modifier.lower()
-        response = fq.faq_why(modifier)
-        await ctx.send(response)
+		modifier = modifier.lower()
+		response = fq.faq_why(modifier)
+		await ctx.send(response)
 
 ## TRANSACTIONS
 @client.command()
@@ -291,7 +291,9 @@ async def eip(ctx, modifier=""):
 ## PARTNERSHIPS
 @client.command()
 async def partnerships(ctx):
-        await ctx.send(fq.faq_partnerships())
+	await ctx.send(fq.faq_partnerships())
 
 # EXECUTE
 client.run(TOKEN)
+
+
