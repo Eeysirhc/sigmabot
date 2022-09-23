@@ -89,6 +89,10 @@ def faq_mining(modifier=""):
 		df = """
 		<https://www.reddit.com/r/erg_miners/>
 		"""
+	elif modifier=="profit":
+		df = """
+		With the Ethereum merge, 95% of the market for miners just got rugged. Imagine an economy where 95% of workers get laid off and take their tools home. It is going to take time for mining hash rate to balance out.
+		"""
 	else:
 		df = """
 		Welcome new miners! Remember to spread out the hashrate to support decentralization.
@@ -138,6 +142,26 @@ def faq_wen(modifier=""):
 	else:
 		df = """
 		Modifiers: `coinbase`, `binance`, `kraken`, `ftx`, `tier1`, `lambo`, `yacht`, `bridge`
+		"""
+	return(df)
+
+## WHY
+def faq_why(modifier=""):
+	if modifier=="pow":
+		df = """
+		Every blockchain solution requires a careful consideration of costs, benefits and risks. Blockchains are a big tent. There is room for everyone. However, PoW NIPoPows and chain-specific features like storage rent offers unique functionality that can be worth the extra energy expenditure of PoW for some blockchain uses.
+		
+		https://ergoplatform.org/en/blog/2022-03-29-proof-of-work-energy-and-ergo/		
+		"""
+	elif modifier=="change":
+		df = """
+		"To absorb more fundamental changes, Ergo follows the approach of soft-forkability that allows changing the protocol significantly while keeping old nodes operational. At the beginning of an epoch, a miner can also propose to vote for a more fundamental change (e.g., adding a new instruction to ErgoScript) describing affected validation rules. Voting for such breaking changes continues for 32,768 blocks and requires at least 90%  votes to be accepted. Once being accepted, a 32,768-blocks long activation period starts to give outdated nodes time to update their software version. If a node software is still not updated after the activation period, then it skips the specified checks but continues to validate all the known rules. List of previous soft-fork changes is recorded into the extension to allow light nodes of any software version to join the network and catch up to the current validation rules. A combination of soft-forkability with the voting protocol allows changing of almost all the parameters of the network except the PoW rules that are responsible for the voting itself." 
+		
+		From the Ergo white paper, pg 10. https://storage.googleapis.com/ergo-cms-media/whitepaper_668cb39ee5/whitepaper_668cb39ee5.pdf                 
+		"""
+	else:
+		df = """
+		Why what?
 		"""
 	return(df)
 
@@ -371,7 +395,8 @@ def faq_difficulty():
 	Ergo's difficulty algorithm was designed to reduce the incentive to perform coin-hopping and improve stability of inter-block delays. Coin-hopping is defined as an adversarial miner switching from mining one coin to another in the beginning of an epoch then switching back in the beginning of next epoch when difficulty becomes lower. Difficulty in Ergo is adjusted using the least squares method, which adjusts roughly every 34 hrs using the past eight epochs (8 epochs=⁓11 days), to obtain the target block interval of 120 seconds or 2 minutes, on average.
 
 Learn more: <https://eprint.iacr.org/2017/731.pdf>
-For community discussions: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
+For Ergo Forum discussion: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
+For EIP-27 github discussion: <https://github.com/ergoplatform/eips/pull/79>
 	"""
 	return(df)
 
@@ -393,7 +418,9 @@ Links
 	"""
 	return(df)
 
-
-
-
-
+# PARTNERSHIPS
+def faq_partnerships():
+        df = """
+        The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
+	"""
+        return(df)
