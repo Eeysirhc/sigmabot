@@ -199,7 +199,7 @@ def faq_eip(modifier=""):
 @client.command()
 async def eip(ctx, modifier=""):
 	modifier = str(modifier)
-	repsonse = faq_eip(modifier)
+	response = faq_eip(modifier)
 	await ctx.send(response)
 
 # EXECUTE
