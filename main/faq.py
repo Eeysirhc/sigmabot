@@ -216,11 +216,15 @@ def faq_nfts(modifier=""):
 		df = """
 		@ErgoNFTs
 		"""
+	elif modifier=="watches":
+		df = """
+		Watches are the NFTs of meat space.
+		"""
 	else:
 		df = """
 		@ErgoNFTs or https://discord.gg/gYZxq38pJn
 
-Modifiers: `dis`, `tg`
+Modifiers: `dis`, `tg`, `watches`
 		"""
 	return(df)
 
@@ -398,7 +402,8 @@ def faq_difficulty():
 
 Learn more: <https://eprint.iacr.org/2017/731.pdf>
 For Ergo Forum discussion: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
-For EIP-27 GitHub discussion: <https://github.com/ergoplatform/eips/pull/79>
+For EIP-37 GitHub discussion: <https://github.com/ergoplatform/eips/pull/79>
+Difficulty statistics: <https://cds.oette.info/ergo_diff.htm>
 	"""
 	return(df)
 
@@ -423,7 +428,20 @@ Links
 # PARTNERSHIPS
 def faq_partnerships():
 	df = """
-		The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
+        The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
 	"""
 	return(df)
 
+# GRAPHQL
+def faq_graphql():
+        df = """
+        GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. If you are having trouble connecting from the main instance, try one of the alternatives.
+
+Main GraphQL instance: <https://ergo-explorer.getblok.io/graphql/>
+
+Alternative instances:
+<https://ergo-explorer.getblok.io/graphql/>
+<https://graphql.erg.zelcore.io>
+<https://explore.sigmaspace.io/api/graphql>
+        """
+        return(df)
