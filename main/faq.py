@@ -399,6 +399,7 @@ def faq_difficulty():
 Learn more: <https://eprint.iacr.org/2017/731.pdf>
 For Ergo Forum discussion: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
 For EIP-37 GitHub discussion: <https://github.com/ergoplatform/eips/pull/79>
+Difficulty statistics: <https://cds.oette.info/ergo_diff.htm>
 	"""
 	return(df)
 
