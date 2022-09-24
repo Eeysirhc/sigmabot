@@ -293,6 +293,11 @@ async def eip(ctx, modifier=""):
 async def partnerships(ctx):
 	await ctx.send(fq.faq_partnerships())
 
+#GraphQL
+@client.command()
+async def graphql(ctx):
+        await ctx.send(fq.faq_graphql())
+        
 # EXECUTE
 client.run(TOKEN)
 

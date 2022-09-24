@@ -424,7 +424,20 @@ Links
 # PARTNERSHIPS
 def faq_partnerships():
 	df = """
-		The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
+        The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
 	"""
 	return(df)
 
+# GRAPHQL
+def faq_graphql():
+        df = """
+        GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. If you are having trouble connecting from the main instance, try one of the alternatives.
+
+Main GraphQL instance: <https://ergo-explorer.getblok.io/graphql/>
+
+Alternative instances:
+<https://ergo-explorer.getblok.io/graphql/>
+<https://graphql.erg.zelcore.io>
+<https://explore.sigmaspace.io/api/graphql>
+        """
+        return(df)
