@@ -216,11 +216,15 @@ def faq_nfts(modifier=""):
 		df = """
 		@ErgoNFTs
 		"""
+        elif modifier=="watches":
+                df = """
+                Watches are the NFTs of meatspace.
+                """
 	else:
 		df = """
 		@ErgoNFTs or https://discord.gg/gYZxq38pJn
 
-Modifiers: `dis`, `tg`
+Modifiers: `dis`, `tg`, `watches`
 		"""
 	return(df)
 
