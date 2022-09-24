@@ -41,7 +41,7 @@ async def welcome(ctx):
 @client.command()
 async def dex(ctx):
 	await ctx.send(fq.faq_dex())
-	
+
 ## CEX
 @client.command()
 async def cex(ctx):
@@ -206,7 +206,7 @@ This Ergo Improvement Proposal focused on extending the wallet to be able to ser
 Ergo has a treasury box, that collects coins locked for further development of the platform. This is the proposal of the process of treasury box distribution: <https://github.com/ergoplatform/eips/blob/master/eip-0002.md>
 		"""
 	elif modifier=="3":
-		df = """[Deterministic Wallet Standard] 
+		df = """[Deterministic Wallet Standard]
 This EIP attempts to define a specific `coin_type` for the Ergo ecosystem, as well as a policy for how wallets use the `change` level: <https://github.com/ergoplatform/eips/blob/master/eip-0003.md>
 		"""
 	elif modifier=="4":
@@ -235,7 +235,7 @@ This EIP defines a standard for cross-device interaction between "Hot" (online) 
 		"""
 	elif modifier=="20":
 		df = """
-		[ErgoPay: an interaction protocol between wallet application and dApp] 
+		[ErgoPay: an interaction protocol between wallet application and dApp]
 This EIP defines a standard for cross-platform interaction between an online dApp and a wallet app for creating, signing and sending Ergo transactions: <https://github.com/ergoplatform/eips/blob/master/eip-0020.md>
 		"""
 	elif modifier=="21":
@@ -260,20 +260,20 @@ Like BIP-0021 for Bitcoin, this EIP proposes a URI scheme for initiating payment
 		"""
 	elif modifier=="27":
 		df = """
-		[Emission Retargeting Soft-Fork] 
+		[Emission Retargeting Soft-Fork]
 This EIP concludes previous discussions and provides further details on the proposed emission soft-fork design and implementation: <https://github.com/ergoplatform/eips/blob/master/eip-0027.md>
 		"""
 	elif modifier=="37":
 		df = """
 		[Tweaking Difficulty Adjustment Algorithm]
-The Ergo's algorithm works well in most cases, inluding huge price drops, 100x initial difficulty misestimation during mainnet launch, and so on. However, current simplified and limitless version of algorithm is bumpy. Big influx of mining hashrate over multiple epochs, especially with super-linear hashrate growth over time may result in huge spike of difficulty. Similarly, few slow epochs may cause huge drop. Also, for dapps and other applications it would be desirable to make difficulty readjustment more reactive (currently, readjustment takes place every 1024 blocks, and 8 epochs, so about two weeks normally, are considered).   
+The Ergo's algorithm works well in most cases, inluding huge price drops, 100x initial difficulty misestimation during mainnet launch, and so on. However, current simplified and limitless version of algorithm is bumpy. Big influx of mining hashrate over multiple epochs, especially with super-linear hashrate growth over time may result in huge spike of difficulty. Similarly, few slow epochs may cause huge drop. Also, for dapps and other applications it would be desirable to make difficulty readjustment more reactive (currently, readjustment takes place every 1024 blocks, and 8 epochs, so about two weeks normally, are considered).
 
 Read more of the initial draft: <https://github.com/ergoplatform/eips/pull/79/files>
 For EIP-37 discussions: <https://github.com/ergoplatform/eips/pull/79>
 
 Broader conversations about difficulty adjustments: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>
 		"""
-	else: 
+	else:
 		df = """
 		Ergo Improvement Proposals (EIPs) specify and/or describe standards for the Ergo Platform, including core protocol specifications, client APIs, dApp/contract standards, and other such things.
 You can find the full list of EIPs at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>
@@ -297,8 +297,11 @@ async def partnerships(ctx):
 @client.command()
 async def graphql(ctx):
         await ctx.send(fq.faq_graphql())
-        
+
+# Nodes
+@client.command()
+async def nodelist(ctx):
+        await ctx.send(fq.faq_nodelist())
+
 # EXECUTE
 client.run(TOKEN)
-
-

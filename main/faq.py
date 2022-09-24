@@ -150,13 +150,13 @@ def faq_why(modifier=""):
 	if modifier=="pow":
 		df = """
 		Every blockchain solution requires a careful consideration of costs, benefits and risks. Blockchains are a big tent. There is room for everyone. However, PoW NIPoPows and chain-specific features like storage rent offers unique functionality that can be worth the extra energy expenditure of PoW for some blockchain uses.
-		
+
 Learn more at <https://ergoplatform.org/en/blog/2022-03-29-proof-of-work-energy-and-ergo/>
 		"""
 	elif modifier=="change":
 		df = """
-		"To absorb more fundamental changes, Ergo follows the approach of soft-forkability that allows changing the protocol significantly while keeping old nodes operational. At the beginning of an epoch, a miner can also propose to vote for a more fundamental change (e.g., adding a new instruction to ErgoScript) describing affected validation rules. Voting for such breaking changes continues for 32,768 blocks and requires at least 90%  votes to be accepted. Once being accepted, a 32,768-blocks long activation period starts to give outdated nodes time to update their software version. If a node software is still not updated after the activation period, then it skips the specified checks but continues to validate all the known rules. List of previous soft-fork changes is recorded into the extension to allow light nodes of any software version to join the network and catch up to the current validation rules. A combination of soft-forkability with the voting protocol allows changing of almost all the parameters of the network except the PoW rules that are responsible for the voting itself." 
-		
+		"To absorb more fundamental changes, Ergo follows the approach of soft-forkability that allows changing the protocol significantly while keeping old nodes operational. At the beginning of an epoch, a miner can also propose to vote for a more fundamental change (e.g., adding a new instruction to ErgoScript) describing affected validation rules. Voting for such breaking changes continues for 32,768 blocks and requires at least 90%  votes to be accepted. Once being accepted, a 32,768-blocks long activation period starts to give outdated nodes time to update their software version. If a node software is still not updated after the activation period, then it skips the specified checks but continues to validate all the known rules. List of previous soft-fork changes is recorded into the extension to allow light nodes of any software version to join the network and catch up to the current validation rules. A combination of soft-forkability with the voting protocol allows changing of almost all the parameters of the network except the PoW rules that are responsible for the voting itself."
+
 From the Ergo white paper, pg 10: <https://storage.googleapis.com/ergo-cms-media/whitepaper_668cb39ee5/whitepaper_668cb39ee5.pdf>
 		"""
 	else:
@@ -170,15 +170,15 @@ Modifiers: `pow`, `change`
 # TRANSACTIONS
 def faq_tps():
 	df = """
-	TPS (Transactions Per Second) is not a useful metric. On Ergo Reference Node v.5, TPS is estimated to be a minimum of 47.5 tx/s. However, transactions can happen in three scaling layers or levels: 
+	TPS (Transactions Per Second) is not a useful metric. On Ergo Reference Node v.5, TPS is estimated to be a minimum of 47.5 tx/s. However, transactions can happen in three scaling layers or levels:
 
-L0: Ergo Reference Nodes, which can be bootstrapped using NiPoPoWs proofs and UTXO set snapshots. 
-L1: Ergo has extensions that allow for a wide variety of scaling solutions such as Sharding, Hydra, or BitcoinNG-style macroblocks. 
+L0: Ergo Reference Nodes, which can be bootstrapped using NiPoPoWs proofs and UTXO set snapshots.
+L1: Ergo has extensions that allow for a wide variety of scaling solutions such as Sharding, Hydra, or BitcoinNG-style macroblocks.
 L2 (off-chain): Ergo should be compatible with the Lightning Network, Rainbow Network, and many more. The implementation here will depend on the needs of the applications being built on Ergo.
 
 The general idea is that many transactions can happen in L1 or L2 and these transactions can be bundled and settled on the L0 layer of the Ergo blockchain using a single transaction. Thanks to the high flexibility of ErgoScript programming model, many different protocols are possible, each one solving scalability problem in a specific domain (like simple payment transactions).
 
-Ergo blockchain can be thought as common settlement layer for many L1/L2 protocols and applications.    
+Ergo blockchain can be thought as common settlement layer for many L1/L2 protocols and applications.
 	"""
 	return(df)
 
@@ -201,7 +201,7 @@ def faq_genesis():
 # GULAG
 def faq_gulag():
 	df = """
-	This chat is for serious discussion. If you want to troll users and share your spicy opinions, please join our community of Ergo edgelords in @ErgoGulag in Telegram or #🚧│random in Discord. 
+	This chat is for serious discussion. If you want to troll users and share your spicy opinions, please join our community of Ergo edgelords in @ErgoGulag in Telegram or #🚧│random in Discord.
 	"""
 	return(df)
 
@@ -250,7 +250,7 @@ Modifiers: `mobile`, `escrow`, `mosaik`
 		"""
 	return(df)
 
-# ERGO PROJECTS 
+# ERGO PROJECTS
 ## future: add categories as modifier (https://github.com/ergoplatform/sigmaverse/blob/master/config/categories.ts)
 def faq_projects(modifier=""):
 	if modifier=="mixer":
@@ -414,8 +414,8 @@ def faq_seed():
 	"""
 	return(df)
 
-# FORUM 
-def faq_forum(): 
+# FORUM
+def faq_forum():
 	df = """
 	Telegram and Discord are for informal discussion. Ergo's Community Forum is preferred for formal discussion of ecosystem development, hard forks (such as a mining difficulty adjustment) and soft forks (emission retargeting), and so forth. The Forum provides a means for the community to develop and comment on ideas that can be turned into Ergo Improvement Proposals (EIPs). EIPs are voted upon by the larger community before being implemented. Anyone can contribute to the forum or submit an EIP, and the Ergo community is open to ideas from anyone.
 
@@ -443,5 +443,13 @@ Alternative instances:
 <https://ergo-explorer.getblok.io/graphql/>
 <https://graphql.erg.zelcore.io>
 <https://explore.sigmaspace.io/api/graphql>
+        """
+        return(df)
+
+# NODELIST
+def faq_nodelist():
+        df = """
+        List of alternative nodes:
+        <https://api.tokenjay.app/peers/list?unreachable=false&limit=50>
         """
         return(df)
