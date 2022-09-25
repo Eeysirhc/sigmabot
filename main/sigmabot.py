@@ -293,15 +293,22 @@ async def eip(ctx, modifier=""):
 async def partnerships(ctx):
 	await ctx.send(fq.faq_partnerships())
 
-#GraphQL
+# GRAHQL
 @client.command()
 async def graphql(ctx):
         await ctx.send(fq.faq_graphql())
 
-# Nodes
+# NODELIST
 @client.command()
 async def nodelist(ctx):
         await ctx.send(fq.faq_nodelist())
+
+# TIPBOT
+@client.command()
+async def tipbot(ctx, modifier=""):
+        modifier = modifier.lower()
+        response = fq.faq_tipbot(modifier)
+        await ctx.send(response)
 
 # EXECUTE
 client.run(TOKEN)

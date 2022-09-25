@@ -449,7 +449,43 @@ Alternative instances:
 # NODELIST
 def faq_nodelist():
         df = """
-        List of alternative nodes:
-        <https://api.tokenjay.app/peers/list?unreachable=false&limit=50>
+        Lists of alternative nodes:
+<http://ergonodes.net/list>
+<https://api.tokenjay.app/peers/list?unreachable=false&limit=50>
         """
         return(df)
+
+# TIPBOT
+def faq_tipbot(modifier=""):
+	if modifier=="dis":
+		df = """
+                To initialize a Discord wallet, message /start to @Ergo Tipper Bot[BETA]#0902.
+		"""
+	elif modifier=="reddit":
+		df = """
+                To initialize a Reddit wallet. message !start to /u/ErgoTipperBot.
+		"""
+	elif modifier=="tg":
+		df = """
+		To initialize a Telegram wallet, message /start to @ergotipperbot.
+		"""
+	elif modifier=="twitter":
+		df = """
+		To initalize a Twitter wallet, message !start to @ErgoTipperBot.
+		"""
+	else:
+		df = """
+		Ergo's Tipper Bot can be setup on Discord, Reddit, Telegram and Twitter. You can initialize a tip wallet by messaging the tipbot on each platform.
+
+Platform | Message | Bot Name
+=============================
+Discord  | /start  | @Ergo Tipper Bot[BETA]#0902
+Reddit   | !start  | ErgoTipperBot
+Telegram | /start  | @ergotipperbot
+Twitter  | !start  | @ErgoTipperBot
+
+Pro-Tip: If you restore the same wallet into each service, you can use the same tip wallet across platforms.
+
+Modifiers: `dis`, `reddit`, `tg`, `twitter`
+		"""
+	return(df)
