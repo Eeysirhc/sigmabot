@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-25
-# Last updated: 2022-09-23
+# Last updated: 2022-09-25
 ##############################
 
 # WELCOME
@@ -428,14 +428,14 @@ Links
 # PARTNERSHIPS
 def faq_partnerships():
 	df = """
-        The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
+	The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
 	"""
 	return(df)
 
 # GRAPHQL
 def faq_graphql():
-        df = """
-        GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. If you are having trouble connecting from the main instance, try one of the alternatives.
+	df = """
+	GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. If you are having trouble connecting from the main instance, try one of the alternatives.
 
 Main GraphQL instance: <https://ergo-explorer.getblok.io/graphql/>
 
@@ -443,27 +443,27 @@ Alternative instances:
 <https://ergo-explorer.getblok.io/graphql/>
 <https://graphql.erg.zelcore.io>
 <https://explore.sigmaspace.io/api/graphql>
-        """
-        return(df)
+		"""
+	return(df)
 
 # NODELIST
 def faq_nodelist():
-        df = """
-        Lists of alternative nodes:
+	df = """
+	Lists of alternative nodes:
 <http://ergonodes.net/list>
 <https://api.tokenjay.app/peers/list?unreachable=false&limit=50>
-        """
-        return(df)
+		"""
+	return(df)
 
 # TIPBOT
 def faq_tipbot(modifier=""):
 	if modifier=="dis":
 		df = """
-                To initialize a Discord wallet, message /start to @Ergo Tipper Bot[BETA]#0902.
+		To initialize a Discord wallet, message /start to @Ergo Tipper Bot[BETA]#0902.
 		"""
 	elif modifier=="reddit":
 		df = """
-                To initialize a Reddit wallet. message !start to /u/ErgoTipperBot.
+		To initialize a Reddit wallet. message !start to /u/ErgoTipperBot.
 		"""
 	elif modifier=="tg":
 		df = """
@@ -489,3 +489,6 @@ Pro-Tip: If you restore the same wallet into each service, you can use the same 
 Modifiers: `dis`, `reddit`, `tg`, `twitter`
 		"""
 	return(df)
+
+
+

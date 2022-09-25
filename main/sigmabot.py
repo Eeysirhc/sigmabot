@@ -1,7 +1,7 @@
 ##############################
 # Author: eeysirhc
 # Date written: 2022-08-12
-# Last updated: 2022-09-23
+# Last updated: 2022-09-25
 ##############################
 
 # LOAD PYTHON MODULES
@@ -71,9 +71,9 @@ async def wen(ctx, modifier=""):
 ## WHY
 @client.command()
 async def why(ctx, modifier=""):
-		modifier = modifier.lower()
-		response = fq.faq_why(modifier)
-		await ctx.send(response)
+	modifier = modifier.lower()
+	response = fq.faq_why(modifier)
+	await ctx.send(response)
 
 ## TRANSACTIONS
 @client.command()
@@ -139,7 +139,7 @@ async def ledger(ctx):
 ## POUW
 @client.command()
 async def pouw(ctx):
-		await ctx.send(fq.faq_pouw())
+	await ctx.send(fq.faq_pouw())
 
 ## STORAGE RENT
 @client.command()
@@ -296,19 +296,19 @@ async def partnerships(ctx):
 # GRAHQL
 @client.command()
 async def graphql(ctx):
-        await ctx.send(fq.faq_graphql())
+	await ctx.send(fq.faq_graphql())
 
 # NODELIST
 @client.command()
 async def nodelist(ctx):
-        await ctx.send(fq.faq_nodelist())
+	await ctx.send(fq.faq_nodelist())
 
 # TIPBOT
 @client.command()
 async def tipbot(ctx, modifier=""):
-        modifier = modifier.lower()
-        response = fq.faq_tipbot(modifier)
-        await ctx.send(response)
+	modifier = modifier.lower()
+	response = fq.faq_tipbot(modifier)
+	await ctx.send(response)
 
 # EXECUTE
 client.run(TOKEN)
