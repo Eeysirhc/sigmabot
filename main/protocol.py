@@ -3,7 +3,7 @@
 # Description: Protocol
 # Date written: 2022-08-25
 # Last updated: 2022-09-26
-# Bot commands: gensis, pouw, rent, staking
+# Bot commands: genesis, pouw, rent, staking
 ##############################
 
 from discord.ext import commands

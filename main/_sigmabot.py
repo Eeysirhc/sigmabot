@@ -31,11 +31,11 @@ async def on_ready():
 	await client.change_presence(activity=discord.Game("on the Rosen Bridge"))
 
 
-cogs = ["ztemplate", "eip", "eastereggs", "wallets", "exchange", "mining", "protocol", "ecosystem", "faq"]
+cats = ["ztemplate", "eip", "eastereggs", "wallets", "exchange", "mining", "protocol", "ecosystem", "faq"]
 
 if __name__ == "__main__":
-	for cog in cogs:
-		client.load_extension(cog)
+	for cat in cats:
+		client.load_extension(cat)
 
 
 
