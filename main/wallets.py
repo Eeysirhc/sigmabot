@@ -2,31 +2,30 @@
 # Author: eeysirhc
 # Description: Wallets
 # Date written: 2022-08-25
-# Last updated: 2022-09-26
+# Last updated: 2022-09-27
 # Bot commands: wallets, ledger, yoroi, seed, tipbot
 ##############################
 
 from discord.ext import commands
 
-# WALLETS
-def faq_wallets(modifier=""):
-	if modifier=="dis":
-		df = """
-		#🚧│wallets
-		"""
-	elif modifier=="tg":
-		df = """
-		@NautilusWallet - web browser extension wallet
+##### WALLETS #####
+wallets_responses = {
+"dis": """#🚧│wallets""",
+
+"tg": """@NautilusWallet - web browser extension wallet
 @ErgoWalletApp - mobile wallet
-@SatergoWallet - full node desktop wallet
-		"""
-	elif modifier=="cold":
-		df = """
-		In this tutorial you will find instructions on how to install the cold mobile wallet: https://www.youtube.com/watch?v=7q3Jq_OvhKY
-		"""
-	else:
-		df = """
-		[Team Wallets]
+@SatergoWallet - full node desktop wallet""",
+
+"cold": """In this tutorial you will find instructions on how to install the cold mobile wallet: https://www.youtube.com/watch?v=7q3Jq_OvhKY"""
+	
+}
+
+
+def faq_wallets(modifier=""):
+	if modifier in wallets_responses:
+		df = wallets_responses[modifier]
+	else: 
+		df = """[Team Wallets]
 Ergo Node: <https://docs.ergoplatform.com/node/install/>
 Ergo Mobile: <https://ergoplatform.org/en/mobile-wallets/>
 Paper Wallet: <https://ergopaperwallet.org/>
@@ -40,11 +39,12 @@ Zelcore (Multi Platform): <https://zelcore.io/>
 
 Learn more at <https://ergoplatform.org/en/get-erg/#Wallets>
 
-Modifiers: `dis`, `tg`, `cold`
-		"""
+Modifiers: `dis`, `tg`, `cold``"""
 	return(df)
 
-# LEDGER
+
+
+##### LEDGER #####
 def faq_ledger():
 	df = """
 	Tutorials to sideload Ergo Ledger app
@@ -57,41 +57,38 @@ Nano S Plus: <https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-n
 	"""
 	return(df)
 
-# YOROI
+##### YOROI #####
 def faq_yoroi():
 	df = """
 	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
 
-# SEED
+##### SEED #####
 def faq_seed():
 	df = """
 	Never give your seed phrase to anyone. You can restore your seed in any wallet, even multiple wallets. With the correct seed, you (and anyone else) can access your assets on the Ergo blockchain.
 	"""
 	return(df)
 
-# TIPBOT
+##### TIPBOT #####
+tipbot_responses = {
+"dis": """To initialize a Discord wallet, message /start to @Ergo Tipper Bot[BETA]#0902.""",
+
+"reddit": """To initialize a Reddit wallet. message !start to /u/ErgoTipperBot.""",
+
+"tg": """To initialize a Telegram wallet, message /start to @ergotipperbot.""",
+
+"twitter": """To initalize a Twitter wallet, message !start to @ErgoTipperBot.""",
+
+}
+
+
 def faq_tipbot(modifier=""):
-	if modifier=="dis":
-		df = """
-		To initialize a Discord wallet, message /start to @Ergo Tipper Bot[BETA]#0902.
-		"""
-	elif modifier=="reddit":
-		df = """
-		To initialize a Reddit wallet. message !start to /u/ErgoTipperBot.
-		"""
-	elif modifier=="tg":
-		df = """
-		To initialize a Telegram wallet, message /start to @ergotipperbot.
-		"""
-	elif modifier=="twitter":
-		df = """
-		To initalize a Twitter wallet, message !start to @ErgoTipperBot.
-		"""
-	else:
-		df = """
-		Ergo's Tipper Bot can be setup on Discord, Reddit, Telegram and Twitter. You can initialize a tip wallet by messaging the tipbot on each platform.
+	if modifier in tipbot_responses:
+		df = tipbot_responses[modifier]
+	else: 
+		df = """Ergo's Tipper Bot can be setup on Discord, Reddit, Telegram and Twitter. You can initialize a tip wallet by messaging the tipbot on each platform.
 
 Platform | Message | Bot Name
 =============================
@@ -102,8 +99,7 @@ Twitter  | !start  | @ErgoTipperBot
 
 Pro-Tip: If you restore the same wallet into each service, you can use the same tip wallet across platforms.
 
-Modifiers: `dis`, `reddit`, `tg`, `twitter`
-		"""
+Modifiers: `dis`, `reddit`, `tg`, `twitter`"""
 	return(df)
 
 
@@ -139,6 +135,5 @@ class Wallets(commands.Cog):
 
 def setup(client):
 	client.add_cog(Wallets(client))
-
 
 
