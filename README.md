@@ -52,7 +52,7 @@ Source lives in the `main` folder with 3 types.
 
 ## Customization
 
-Developers can change config settings in the `sigmabot.py` file.
+Developers can change config settings in the `_sigmabot.py` file.
 
 ### Prefix
 
