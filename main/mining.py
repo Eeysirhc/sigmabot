@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Mining
 # Date written: 2022-08-25
-# Last updated: 2022-09-26
+# Last updated: 2022-09-27
 # Bot commands: mining, difficulty
 ##############################
 
@@ -10,36 +10,31 @@ from discord.ext import commands
 
 
 # MINING
-def faq_mining(modifier=""):
-	if modifier=="dis":
-		df = """
-		#🚧│mining
-		"""
-	elif modifier=="tg":
-		df = """
-		@Ergo_Mining
+mining_responses = {
+"dis": """#🚧│mining""",
+
+"tg": """@Ergo_Mining
 @GetBlok
-@GuapSwapCommunity
-		"""
-	elif modifier=="red":
-		df = """
-		<https://www.reddit.com/r/erg_miners/>
-		"""
-	elif modifier=="profit":
-		df = """
-		With the Ethereum merge, 95% of the market for miners just got rugged. Imagine an economy where 95% of workers get laid off and take their tools home. It is going to take time for mining hash rate to balance out.
-		"""
-	else:
-		df = """
-		Welcome new miners! Remember to spread out the hashrate to support decentralization.
+@GuapSwapCommunity""",
+
+"red": """<https://www.reddit.com/r/erg_miners/>""",
+
+"profit": """With the Ethereum merge, 95% of the market for miners just got rugged. Imagine an economy where 95% of workers get laid off and take their tools home. It is going to take time for mining hash rate to balance out."""
+}
+
+
+def faq_mining(modifier=""):
+	if modifier in mining_responses:
+		df = mining_responses[modifier]
+	else: 
+		df = """Welcome new miners! Remember to spread out the hashrate to support decentralization.
 
 Learn more at <https://ergoplatform.org/en/get-erg/#Mining>
 
 [Sub-Mining Pools]
 With GetBlok you can mine Ergo or native tokens such as Neta, Ergopad or Comet: <https://ergo.getblok.io/>
 
-Modifiers: `dis`, `tg`, `red`
-		"""
+Modifiers: `dis`, `tg`, `red`"""
 	return(df)
 
 # MINING DIFFICULTY ADJUSTMENT
