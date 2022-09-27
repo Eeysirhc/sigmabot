@@ -2,13 +2,13 @@
 # Author: eeysirhc
 # Description: Basic Frequently Asked Questions
 # Date written: 2022-08-25
-# Last updated: 2022-09-26
+# Last updated: 2022-09-27
 # Bot commands: welcome, tps, marketcap, docs, manifesto, admin, contribute, bots, forum, partnerships 
 ##############################
 
 from discord.ext import commands
 
-# WELCOME
+##### WELCOME #####
 def faq_welcome():
 	df = """
 	Welcome Ergonauts, in this video you can learn more about Ergo: https://youtu.be/CzGqYAlQRWQ
@@ -16,8 +16,7 @@ def faq_welcome():
 	return(df)
 
 
-
-# TRANSACTIONS
+##### TRANSACTIONS #####
 def faq_tps():
 	df = """
 	TPS (Transactions Per Second) is not a useful metric. On Ergo Reference Node v.5, TPS is estimated to be a minimum of 47.5 tx/s. However, transactions can happen in three scaling layers or levels:
@@ -33,8 +32,7 @@ Ergo blockchain can be thought as common settlement layer for many L1/L2 protoco
 	return(df)
 
 
-
-# MARKET CAPITALIZATION
+##### MARKET CAPITALIZATION #####
 def faq_marketcap():
 	df = """
 	Ergo Explorer displays circulating supply and max supply (97,739,924 ERG). Multiply these amounts by current price to get Ergo's market capitalization. Do not rely on Coinmarketcap data. ERGs value derives from the popularity and utility of the platform + the cost of mining erg.
@@ -44,21 +42,21 @@ def faq_marketcap():
 	return(df)
 
 
-# DOCS
+##### DOCS #####
 def faq_docs():
 	df = """
 	<https://docs.ergoplatform.com/documents/>
 	"""
 	return(df)
 
-# ERGO MANIFESTO
+##### ERGO MANIFESTO #####
 def faq_manifesto():
 	df = """
 	The Ergo Manifesto hopes to educate and offer a vision of what blockchain technology can achieve. We hope to build society through horizontal cooperation through production under the division of labor, trade and exchange, and solidarity and mutual aid. Learn more at <https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/>
 	"""
 	return(df)
 
-# ADMIN
+##### ADMIN #####
 def faq_admin():
 	df = """
 	For technical support on Telegram please join @ErgoSupport
@@ -68,7 +66,7 @@ For marketing queries please email angie@ergoplatform.org
 	return(df)
 
 
-# CONTRIBUTE
+##### CONTRIBUTE #####
 def faq_contribute():
 	df = """
 	<https://docs.ergoplatform.com/contribute/>
@@ -76,7 +74,7 @@ def faq_contribute():
 	return(df)
 
 
-# BOTS
+##### BOTS #####
 def faq_bots():
 	df = """
 	Beep Boop - don't worry, Human...the bots are just Discord <-> Telegram carrier pigeons (message bridge).
@@ -84,7 +82,7 @@ def faq_bots():
 	return(df)
 
 
-# FORUM
+##### FORUM #####
 def faq_forum():
 	df = """
 	Telegram and Discord are for informal discussion. Ergo's Community Forum is preferred for formal discussion of ecosystem development, hard forks (such as a mining difficulty adjustment) and soft forks (emission retargeting), and so forth. The Forum provides a means for the community to develop and comment on ideas that can be turned into Ergo Improvement Proposals (EIPs). EIPs are voted upon by the larger community before being implemented. Anyone can contribute to the forum or submit an EIP, and the Ergo community is open to ideas from anyone.
@@ -96,13 +94,12 @@ Links
 	return(df)
 
 
-# PARTNERSHIPS
+##### PARTNERSHIPS #####
 def faq_partnerships():
 	df = """
 	The Ergo team welcomes partnerships. However, it is helpful to see and have Ergo's engineers understand partner code first. Projects without code are hard to distinquish from mere marketing. Ergo's focus is on engineering. Please contact team@ergoplatform.org when you are ready to share your code with Ergo's developers.
 	"""
 	return(df)
-
 
 
 class FrequentQuestions(commands.Cog):
@@ -152,8 +149,6 @@ class FrequentQuestions(commands.Cog):
 
 def setup(client):
 	client.add_cog(FrequentQuestions(client))
-
-
 
 
 

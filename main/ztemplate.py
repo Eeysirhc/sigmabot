@@ -28,7 +28,7 @@ class DevTemplate(commands.Cog):
 	def __init__(self, client):
 		self.client = client 
 
-# renmae toast to the bot command and replace with appropriate function
+# renmae toast/roast to the bot command and replace with appropriate function(s)
 	@commands.command()
 	async def toast(self, ctx):
 		await ctx.send(ztemplate_toast())

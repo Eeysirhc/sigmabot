@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Exchange
 # Date written: 2022-08-25
-# Last updated: 2022-09-26
+# Last updated: 2022-09-27
 # Bot commands: dex, cex
 ##############################
 
@@ -10,14 +10,14 @@ from discord.ext import commands
 
 
 
-# DEX
+##### DEX #####
 def exchange_dex():
 	df = """
 	<https://app.spectrum.fi/ergo/swap>
 	"""
 	return(df)
 
-# CEX
+##### CEX #####
 def exchange_cex():
 	df = """
 	[KYC]

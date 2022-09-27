@@ -39,7 +39,7 @@ Zelcore (Multi Platform): <https://zelcore.io/>
 
 Learn more at <https://ergoplatform.org/en/get-erg/#Wallets>
 
-Modifiers: `dis`, `tg`, `cold``"""
+Modifiers: `dis`, `tg`, `cold`"""
 	return(df)
 
 
