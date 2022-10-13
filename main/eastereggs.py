@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Easter Eggs
 # Date written: 2022-08-25
-# Last updated: 2022-09-27
+# Last updated: 2022-10-13
 # Bot commands: wen, why, drama, gulag
 ##############################
 
@@ -14,7 +14,7 @@ listing_template = "Ergo will be listed on {cex} when enough of its customers wa
 wen_responses = {
 "coinbase": listing_template,
 
-"binance": """Binance is a good recipe to be a King for a day, fool for a lifetime. Ergo is not grin, ravencoin etc it has ecosystem, unique tools, vibrant community with proper vision." -kushti""",
+"binance": """While Binance is, in fact, the largest exchange in the world, Ergo is only a few years old and step by step has been achieving all its goals, so eventually, sooner or later, they will inevitably list Ergo.""",
 
 "kraken": listing_template,
 
