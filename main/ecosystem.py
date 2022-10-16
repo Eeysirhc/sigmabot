@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Ecosystem
 # Date written: 2022-08-25
-# Last updated: 2022-09-27
+# Last updated: 2022-10-16
 # Bot commands: nfts, tokenjay, projects, node, graphql, nodelist
 ##############################
 
@@ -25,7 +25,14 @@ def faq_nfts(modifier=""):
 	if modifier in nfts_responses:
 		df = nfts_responses[modifier]
 	else: 
-		df = """@ErgoNFTs or https://discord.gg/gYZxq38pJn
+		df = """
+		Marketplaces
+Ergo Auction House: <https://ergoauctions.org>
+SkyHarbor: <https://www.skyharbor.io/>
+
+Socials
+Telegram: @ErgoNFTs
+Discord: [https://discord].gg/gYZxq38pJn (remove the brackets)
 
 Modifiers: `dis`, `tg`, `watches`"""
 	return(df)

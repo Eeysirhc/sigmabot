@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Basic Frequently Asked Questions
 # Date written: 2022-08-25
-# Last updated: 2022-09-27
+# Last updated: 2022-10-16
 # Bot commands: welcome, tps, marketcap, docs, manifesto, admin, contribute, bots, forum, partnerships 
 ##############################
 
@@ -101,6 +101,17 @@ def faq_partnerships():
 	"""
 	return(df)
 
+##### BRIDGE #####
+def faq_bridge():
+	df = """
+	In cryptocurrencies, bridges move assets from one cryptocurrency blockchain to another. The two most frequently discussed on Ergo are Rosen Bridge and AnetaBTC.
+
+Rosen Bridge video: <https://www.youtube.com/watch?v=Xsiy-yPJQ6w>
+
+Rosen Bridge compared to Interlay bridges: <https://medium.com/@anetaBTC/rosen-bridge-vs-interlay-an-analysis-on-wrapping-bitcoin-c9ae84da0e9d>
+	"""
+	return(df)
+
 
 class FrequentQuestions(commands.Cog):
 	def __init__(self, client):
@@ -145,6 +156,10 @@ class FrequentQuestions(commands.Cog):
 	@commands.command()
 	async def partnerships(self, ctx):
 		await ctx.send(faq_partnerships())
+
+	@commands.command()
+	async def bridge(self, ctx):
+		await ctx.send(faq_bridge())
 
 
 def setup(client):
