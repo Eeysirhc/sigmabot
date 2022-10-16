@@ -107,7 +107,6 @@ def faq_bridge():
 	In cryptocurrencies, bridges move assets from one cryptocurrency blockchain to another. The two most frequently discussed on Ergo are Rosen Bridge and AnetaBTC.
 
 Rosen Bridge video: <https://www.youtube.com/watch?v=Xsiy-yPJQ6w>
-
 Rosen Bridge compared to Interlay bridges: <https://medium.com/@anetaBTC/rosen-bridge-vs-interlay-an-analysis-on-wrapping-bitcoin-c9ae84da0e9d>
 	"""
 	return(df)
@@ -164,6 +163,7 @@ class FrequentQuestions(commands.Cog):
 
 def setup(client):
 	client.add_cog(FrequentQuestions(client))
+
 
 
 
