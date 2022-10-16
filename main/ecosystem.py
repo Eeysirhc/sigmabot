@@ -10,7 +10,6 @@ from discord.ext import commands
 
 
 ##### NFTs #####
-## need to fix this Ergo server times out the bot due to discord invite links (meant to prevent spam)
 nfts_responses = {
 "dis": """https://discord.gg/gYZxq38pJn""",
 
@@ -26,13 +25,13 @@ def faq_nfts(modifier=""):
 		df = nfts_responses[modifier]
 	else: 
 		df = """
-		Marketplaces
+		[Marketplaces]
 Ergo Auction House: <https://ergoauctions.org>
 SkyHarbor: <https://www.skyharbor.io/>
 
-Socials
+[Socials]
 Telegram: @ErgoNFTs
-Discord: [https://discord].gg/gYZxq38pJn (remove the brackets)
+Discord: (add DISCORD).gg/gYZxq38pJn
 
 Modifiers: `dis`, `tg`, `watches`"""
 	return(df)
@@ -182,5 +181,4 @@ class Ecosystem(commands.Cog):
 
 def setup(client):
 	client.add_cog(Ecosystem(client))
-
 
