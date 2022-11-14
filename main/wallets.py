@@ -26,7 +26,7 @@ def faq_wallets(modifier=""):
 		df = wallets_responses[modifier]
 	else: 
 		df = """[Team Wallets]
-Ergo Node: <https://docs.ergoplatform.com/node/install/>
+Ergo Node: <https://docs.ergoplatform.com/node/install/install/>
 Ergo Mobile: <https://ergoplatform.org/en/mobile-wallets/>
 Paper Wallet: <https://ergopaperwallet.org/>
 
