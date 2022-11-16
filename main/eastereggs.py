@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Easter Eggs
 # Date written: 2022-08-25
-# Last updated: 2022-10-13
+# Last updated: 2022-11-16
 # Bot commands: wen, why, drama, gulag
 ##############################
 
@@ -17,8 +17,6 @@ wen_responses = {
 "binance": """While Binance is, in fact, the largest exchange in the world, Ergo is only a few years old and step by step has been achieving all its goals, so eventually, sooner or later, they will inevitably list Ergo.""",
 
 "kraken": listing_template,
-
-"ftx": listing_template,
 
 "tier1": """Armeanio is already in contact with most exchanges. Listing agents are in the chat every day. The only information that can be provided is that there are ongoing discussions, and announcements will be made by the exchanges themselves. If you just want listing for price pump, better to keep discussions in @ErgoTrading.""",
 
@@ -38,7 +36,7 @@ def eggs_wen(modifier=""):
 		except:
 			df = wen_responses[modifier]
 	else: 
-		df = """Modifiers: `coinbase`, `binance`, `kraken`, `ftx`, `tier1`, `lambo`, `yacht`, `bridge`"""
+		df = """Modifiers: `coinbase`, `binance`, `kraken`, `tier1`, `lambo`, `yacht`, `bridge`"""
 	return(df)
 
 
