@@ -111,6 +111,14 @@ Rosen Bridge compared to Interlay bridges: <https://medium.com/@anetaBTC/rosen-b
 	"""
 	return(df)
 
+#### SOCIALS #####
+def faq_socials():
+	df = """
+	Ergo Telegram groups: https://t.me/Ergo_Chats
+	On Discord, select #rules and select a role to see relevant channels.
+	"""
+	return(df)
+
 
 class FrequentQuestions(commands.Cog):
 	def __init__(self, client):
@@ -160,6 +168,9 @@ class FrequentQuestions(commands.Cog):
 	async def bridge(self, ctx):
 		await ctx.send(faq_bridge())
 
+	@commands.command()
+	async def socials(self,ctx):
+		await ctx.send(faq_socials())
 
 def setup(client):
 	client.add_cog(FrequentQuestions(client))
