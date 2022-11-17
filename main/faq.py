@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Basic Frequently Asked Questions
 # Date written: 2022-08-25
-# Last updated: 2022-10-16
+# Last updated: 2022-11-16
 # Bot commands: welcome, tps, marketcap, docs, manifesto, admin, contribute, bots, forum, partnerships 
 ##############################
 
@@ -114,8 +114,8 @@ Rosen Bridge compared to Interlay bridges: <https://medium.com/@anetaBTC/rosen-b
 #### SOCIALS #####
 def faq_socials():
 	df = """
-	Ergo Telegram groups: https://t.me/Ergo_Chats
-	On Discord, select #rules and select a role to see relevant channels.
+	Ergo Telegram groups: <https://t.me/Ergo_Chats>
+On Discord, select #rules and select a role to see relevant channels.
 	"""
 	return(df)
 
