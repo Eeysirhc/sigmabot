@@ -133,7 +133,7 @@ class Wallets(commands.Cog):
 		await ctx.send(response)
 
 
-def setup(client):
-	client.add_cog(Wallets(client))
+async def setup(client):
+	await client.add_cog(Wallets(client))
 
 

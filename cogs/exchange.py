@@ -51,8 +51,8 @@ class Exchanges(commands.Cog):
 		await ctx.send(exchange_cex())
 
 
-def setup(client):
-	client.add_cog(Exchanges(client))
+async def setup(client):
+	await client.add_cog(Exchanges(client))
 
 
 

@@ -88,7 +88,7 @@ class EIProposals(commands.Cog):
 		await ctx.send(response)
 
 
-def setup(client):
-	client.add_cog(EIProposals(client))
+async def setup(client):
+	await client.add_cog(EIProposals(client))
 
 

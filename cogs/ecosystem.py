@@ -8,7 +8,6 @@
 
 from discord.ext import commands
 
-
 ##### NFTs #####
 nfts_responses = {
 "dis": """https://discord.gg/gYZxq38pJn""",
@@ -179,6 +178,6 @@ class Ecosystem(commands.Cog):
 		await ctx.send(faq_nodelist())
 
 
-def setup(client):
-	client.add_cog(Ecosystem(client))
+async def setup(client):
+	await client.add_cog(Ecosystem(client))
 

@@ -102,6 +102,6 @@ class EasterEggs(commands.Cog):
 		await ctx.send(eggs_gulag())
 
 
-def setup(client):
-	client.add_cog(EasterEggs(client))
+async def setup(client):
+	await client.add_cog(EasterEggs(client))
 

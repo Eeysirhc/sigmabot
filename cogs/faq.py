@@ -172,8 +172,8 @@ class FrequentQuestions(commands.Cog):
 	async def socials(self,ctx):
 		await ctx.send(faq_socials())
 
-def setup(client):
-	client.add_cog(FrequentQuestions(client))
+async def setup(client):
+	await client.add_cog(FrequentQuestions(client))
 
 
 
