@@ -31,9 +31,6 @@ def faq_mining(modifier=""):
 
 Learn more at <https://ergoplatform.org/en/get-erg/#Mining>
 
-[Sub-Mining Pools]
-With GetBlok you can mine Ergo or native tokens such as Neta, Ergopad or Comet: <https://ergo.getblok.io/>
-
 Modifiers: `dis`, `tg`, `red`"""
 	return(df)
 
