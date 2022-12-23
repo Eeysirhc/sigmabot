@@ -59,6 +59,6 @@ class Protocol(commands.Cog):
 		await ctx.send(faq_staking())
 
 
-def setup(client):
-	client.add_cog(Protocol(client))
+async def setup(client):
+	await client.add_cog(Protocol(client))
 

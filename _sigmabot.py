@@ -1,16 +1,12 @@
-##############################
-# Author: eeysirhc
-# Date written: 2022-08-12
-# Last updated: 2022-09-26
-##############################
-
-# LOAD PYTHON MODULES
 import os
 from dotenv import load_dotenv
 load_dotenv()
+# TOKEN = os.getenv('DISCORD_TOKEN')
 
 import discord
 from discord.ext import commands
+
+import asyncio
 
 # https://stackoverflow.com/questions/68581659/i-want-my-bot-to-process-commands-sent-by-other-bots
 class UnfilteredBot(commands.Bot):
@@ -30,20 +26,15 @@ async def on_ready():
 	print("Logged in as {0.user}".format(client))
 	await client.change_presence(activity=discord.Game("on the Rosen Bridge"))
 
+async def load_extensions():
+	for filename in os.listdir("./cogs"):
+		if filename.endswith(".py"):
+			# cut off the .py from the file name
+			await client.load_extension(f'cogs.{filename[:-3]}')
 
-cats = ["ztemplate", "eip", "eastereggs", "wallets", "exchange", "mining", "protocol", "ecosystem", "faq"]
+async def main():
+	async with client:
+		await load_extensions()
+		await client.start(TOKEN)
 
-if __name__ == "__main__":
-	for cat in cats:
-		client.load_extension(cat)
-
-
-
-
-
-
-# EXECUTE
-client.run(TOKEN)
-
-
-
+asyncio.run(main())

@@ -38,8 +38,8 @@ class DevTemplate(commands.Cog):
 		await ctx.send(ztemplate_roast())
 
 # reminder to change "DevTemplate" cog name to match above
-def setup(client):
-	client.add_cog(DevTemplate(client))
+async def setup(client):
+	await client.add_cog(DevTemplate(client))
 
 
 # final step
