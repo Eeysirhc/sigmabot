@@ -48,7 +48,6 @@ logger.addHandler(handler)
 async def main():
 	async with client:
 		await load_extensions()
-		# None, due to handling logs in previous section
 		await client.start(TOKEN)
 
 asyncio.run(main())

@@ -37,13 +37,9 @@ class DevTemplate(commands.Cog):
 	async def roast(self, ctx):
 		await ctx.send(ztemplate_roast())
 
-# reminder to change "DevTemplate" cog name to match above
 async def setup(client):
 	await client.add_cog(DevTemplate(client))
 
-
-# final step
-## update _sigmabot.py to include this file in the list of "cats"
 
 
 

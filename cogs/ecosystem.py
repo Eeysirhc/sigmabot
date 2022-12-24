@@ -35,9 +35,6 @@ Discord: (add DISCORD).gg/gYZxq38pJn
 Modifiers: `dis`, `tg`, `watches`"""
 	return(df)
 
-
-
-
 ##### TOKENJAY #####
 tokenjay_responses = {
 "mobile": """If you haven't already, download Ergo Mobile Wallet (Android) or Terminus Wallet (Apple) and restore seed. Go to Settings. Click on the button Mosaik plugins disabled and make it enabled. A new dApps will appear in the bottom navigation bar of the wallet. Click on dApps, then scroll to the bottom of new page. Click on AgeUSD Dashboard. Then, click the Exchange button for either SigUSD or SigRSV. Then select Buy/Sell from the pull down menu and the amount you want.""",
@@ -48,7 +45,6 @@ tokenjay_responses = {
 
 }
 
-
 def faq_tokenjay(modifier=""):
 	if modifier in tokenjay_responses:
 		df = tokenjay_responses[modifier]
@@ -58,15 +54,11 @@ def faq_tokenjay(modifier=""):
 Modifiers: `mobile`, `escrow`, `mosaik`"""
 	return(df)
 
-
-
-
-
 ##### ERGO PROJECTS #####
 projects_responses = {
 "mixer": """https://www.youtube.com/watch?v=DgztoNDFG8U""",
 
-"spectrum": """A DEX on Ergo, use either Nautilus or SAFEW wallets to access: https://app.spectrum.fi/""",
+"spectrum": """A DEX on Ergo, use either Nautilus, Ergo Mobile or SAFEW wallets to access: https://app.spectrum.fi/""",
 
 "ergopad": """https://www.ergopad.io/""",
 
@@ -120,10 +112,9 @@ def faq_graphql():
 	df = """
 	GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. If you are having trouble connecting from the main instance, try one of the alternatives.
 
-Main GraphQL instance: <https://ergo-explorer.getblok.io/graphql/>
+Main GraphQL instance: <https://ergo-explorer.anetabtc.io/graphql>
 
 Alternative instances:
-<https://ergo-explorer.getblok.io/graphql/>
 <https://graphql.erg.zelcore.io>
 <https://explore.sigmaspace.io/api/graphql>
 		"""
@@ -176,7 +167,6 @@ class Ecosystem(commands.Cog):
 	@commands.command()
 	async def nodelist(self, ctx):
 		await ctx.send(faq_nodelist())
-
 
 async def setup(client):
 	await client.add_cog(Ecosystem(client))

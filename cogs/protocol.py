@@ -12,7 +12,7 @@ from discord.ext import commands
 ##### GENESIS #####
 def faq_genesis():
 	df = """
-	The Ergo genesis block was created on 1 July 2019. Prior to that, there was a different coin, EFYT. EFYT was a Waves token that was airdropped, not sold. ICOs cause issues as you're buying from a common enterprise directly - who likely have nothing to show yet so purely for expectations of profits. ERGs value derives from the popularity and utility of the platform + the co.
+	The Ergo genesis block was created on 1 July 2019. Prior to that, there was a different coin, EFYT. EFYT was a Waves token that was airdropped, not sold. ICOs cause issues as you're buying from a common enterprise directly - who likely have nothing to show yet so purely for expectations of profits. ERGs value derives from the popularity and utility of the platform + the coin.
 	"""
 	return(df)
 
@@ -26,7 +26,7 @@ def faq_pouw():
 ##### STORAGE RENT #####
 def faq_rent():
 	df = """
-	Storage rent is a fee for long term storage on the Ergo blockchain. Four years from your last transaction, you will be charged ~0.14 ERG and a transaction fee to pay for the costs of storing your digital information. Learn more at <https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/> and <https://docs.ergoplatform.com/mining/rent/>
+	Storage rent is a fee for long term storage on the Ergo blockchain. Four years from the creation of a eUTxO box, you will be charged ~0.14 ERG and a transaction fee to pay for the costs of storing your digital information. Normal use of Ergo creates new boxes regularly and avoids this fee. Learn more at <https://ergoplatform.org/en/blog/2022-02-18-ergo-explainer-storage-rent/> and <https://docs.ergoplatform.com/mining/rent/>
 	"""
 	return(df)
 

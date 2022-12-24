@@ -40,11 +40,12 @@ Modifiers: `dis`, `tg`, `cold`"""
 	return(df)
 
 
-
 ##### LEDGER #####
 def faq_ledger():
 	df = """
-	Tutorials to sideload Ergo Ledger app
+	Ergo is currently being evaluated by the Ledger Team and undergoing a security audit. When complete, it will be available in the usual way.
+	
+	In it possible to sideload the Ergo Ledger app. If this is of interest, tutorials are available.
 
 Nano S for Windows: <https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md>
 
@@ -57,7 +58,7 @@ Nano S Plus: <https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-n
 ##### YOROI #####
 def faq_yoroi():
 	df = """
-	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
+	Yoroi is not a recommended wallet. Please use one from this list: https://ergoplatform.org/en/get-erg/#Wallets
 	"""
 	return(df)
 

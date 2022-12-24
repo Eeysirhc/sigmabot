@@ -11,7 +11,11 @@ from discord.ext import commands
 ##### WELCOME #####
 def faq_welcome():
 	df = """
-	Welcome Ergonauts, in this video you can learn more about Ergo: https://youtu.be/CzGqYAlQRWQ
+	Welcome! If you want to learn more about Ergo, this video is a good starting point: https://youtu.be/CzGqYAlQRWQ
+	
+	Additional Resources: 
+	1. The Ergo website: https://www.ergoplatform.org
+	2. ErgoDocs: https://docs.ergoplatform.com/
 	"""
 	return(df)
 
@@ -45,7 +49,7 @@ def faq_marketcap():
 ##### DOCS #####
 def faq_docs():
 	df = """
-	<https://docs.ergoplatform.com/documents/>
+	<https://docs.ergoplatform.com/>
 	"""
 	return(df)
 

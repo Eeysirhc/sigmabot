@@ -1,8 +1,8 @@
 ##############################
 # Author: eeysirhc
-# Description: Ergo Improvement Proposal
+# Description: Ergo Improvement Proposals
 # Date written: 2022-08-25
-# Last updated: 2022-09-27
+# Last updated: 2022-12-23
 # Bot commands: eip
 ##############################
 
@@ -54,7 +54,7 @@ Like BIP-0021 for Bitcoin, this EIP proposes a URI scheme for initiating payment
 This EIP concludes previous discussions and provides further details on the proposed emission soft-fork design and implementation: <https://github.com/ergoplatform/eips/blob/master/eip-0027.md>""",
 
 "37": """[Tweaking Difficulty Adjustment Algorithm]
-The Ergo's algorithm works well in most cases, inluding huge price drops, 100x initial difficulty misestimation during mainnet launch, and so on. However, current simplified and limitless version of algorithm is bumpy. Big influx of mining hashrate over multiple epochs, especially with super-linear hashrate growth over time may result in huge spike of difficulty. Similarly, few slow epochs may cause huge drop. Also, for dapps and other applications it would be desirable to make difficulty readjustment more reactive (currently, readjustment takes place every 1024 blocks, and 8 epochs, so about two weeks normally, are considered).
+The Ergo's algorithm works well in most cases, including huge price drops, 100x initial difficulty mis-estimation during mainnet launch, and so on. However, the current simplified and limitless version of algorithm is bumpy. Big influx of mining hashrate over multiple epochs, especially with super-linear hashrate growth over time may result in huge spike of difficulty. Similarly, few slow epochs may cause huge drop. Also, for dapps and other applications it would be desirable to make difficulty readjustment more reactive (currently, readjustment takes place every 1024 blocks, and 8 epochs, so about two weeks normally, are considered).
 
 Read more of the initial draft: <https://github.com/ergoplatform/eips/pull/79/files>
 For EIP-37 discussions: <https://github.com/ergoplatform/eips/pull/79>
@@ -68,13 +68,11 @@ def faq_eip(modifier=""):
 	if modifier in eip_responses:
 		df = eip_responses[modifier]
 	else: 
-		df = """Ergo Improvement Proposals (EIPs) specify and/or describe standards for the Ergo Platform, including core protocol specifications, client APIs, dApp/contract standards, and other such things.
+		df = """Ergo Improvement Proposals (EIPs) specify and/or describe standards for the Ergo Platform, including core protocol specifications, client APIs, dApp/contract standards, and so forth.
 You can find the full list of EIPs at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>
 
 Modifiers: `1`, `2`, `3`, `4`, `5`, `6`, `17`, `19`, `20`, `21`, `22`, `24`, `25`, `27`, `37`"""
 	return(df)
-
-
 
 
 class EIProposals(commands.Cog):
