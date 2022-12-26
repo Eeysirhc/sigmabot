@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Mining
 # Date written: 2022-08-25
-# Last updated: 2022-09-27
+# Last updated: 2022-12-26
 # Bot commands: mining, difficulty
 ##############################
 
@@ -14,7 +14,6 @@ mining_responses = {
 "dis": """#🚧│mining""",
 
 "tg": """@Ergo_Mining
-@GetBlok
 @GuapSwapCommunity""",
 
 "red": """<https://www.reddit.com/r/erg_miners/>""",

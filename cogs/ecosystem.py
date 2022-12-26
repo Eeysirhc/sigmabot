@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Ecosystem
 # Date written: 2022-08-25
-# Last updated: 2022-10-16
+# Last updated: 2022-12-26
 # Bot commands: nfts, tokenjay, projects, node, graphql, nodelist
 ##############################
 
@@ -120,10 +120,6 @@ def faq_graphql():
 	df = """
 	GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. If you are having trouble connecting from the main instance, try one of the alternatives.
 
-Main GraphQL instance: <https://ergo-explorer.getblok.io/graphql/>
-
-Alternative instances:
-<https://ergo-explorer.getblok.io/graphql/>
 <https://graphql.erg.zelcore.io>
 <https://explore.sigmaspace.io/api/graphql>
 		"""
