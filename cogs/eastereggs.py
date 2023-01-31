@@ -35,11 +35,13 @@ def eggs_wen(modifier=""):
 			df = wen_responses[modifier].format(cex=cex)
 		except:
 			df = wen_responses[modifier]
-	else: 
-		df = """Modifiers: `coinbase`, `binance`, `kraken`, `tier1`, `lambo`, `yacht`, `bridge`"""
+	else:
+		df = """
+		Wen? Soooooooon!
+
+		Modifiers: `coinbase`, `binance`, `kraken`, `tier1`, `lambo`, `yacht`, `bridge`
+		"""
 	return(df)
-
-
 
 ##### WHY #####
 why_responses = {
