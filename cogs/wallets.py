@@ -25,15 +25,12 @@ def faq_wallets(modifier=""):
 	if modifier in wallets_responses:
 		df = wallets_responses[modifier]
 	else: 
-		df = """[Team Wallets]
-Ergo Node: <https://docs.ergoplatform.com/node/install/install/>
-Ergo Mobile: <https://ergoplatform.org/en/mobile-wallets/>
-Paper Wallet: <https://ergopaperwallet.org/>
-
-[Other Wallets]
+		df = """Ergo Node (Desktop, Full Node): <https://docs.ergoplatform.com/node/install/install/>
+Ergo Wallet, Terminus (Multi Platform): <https://ergoplatform.org/en/ergo-wallet-app/>
 Minotaur (Multi Platform): <https://github.com/minotaur-ergo/minotaur-wallet>
 Nautilus (Web): <https://github.com/capt-nemo429/nautilus-wallet>
-Satergo (Desktop): <https://satergo.com/>
+Paper Wallet (Offline): <https://ergopaperwallet.org/>
+Satergo (Desktop, Full Node): <https://satergo.com/>
 SAFEW (Web): <https://github.com/ThierryM1212/SAFEW>
 Zelcore (Multi Platform): <https://zelcore.io/>
 

@@ -2,7 +2,7 @@
 # Author: eeysirhc
 # Description: Mining
 # Date written: 2022-08-25
-# Last updated: 2022-09-27
+# Last updated: 2022-12-26
 # Bot commands: mining, difficulty
 ##############################
 
@@ -14,7 +14,6 @@ mining_responses = {
 "dis": """#🚧│mining""",
 
 "tg": """@Ergo_Mining
-@GetBlok
 @GuapSwapCommunity""",
 
 "red": """<https://www.reddit.com/r/erg_miners/>""",
@@ -30,9 +29,6 @@ def faq_mining(modifier=""):
 		df = """Welcome new miners! Remember to spread out the hashrate to support decentralization.
 
 Learn more at <https://ergoplatform.org/en/get-erg/#Mining>
-
-[Sub-Mining Pools]
-With GetBlok you can mine Ergo or native tokens such as Neta, Ergopad or Comet: <https://ergo.getblok.io/>
 
 Modifiers: `dis`, `tg`, `red`"""
 	return(df)
