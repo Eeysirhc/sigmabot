@@ -119,6 +119,24 @@ On Discord, select #rules and select a role to see relevant channels.
 	"""
 	return(df)
 
+#### Koinly #####
+def faq_koinly():
+	df = """
+Anyone struggling with Ergo taxes, it is possible to get Koinly to accept a csv and accurately represent everything. Here's how:
+ 
+1. Retore wallet in SAFEW
+2. Export .csv
+3. Arrange first row with the following headings: date, sent amount, sent currency, received amount, received currency, fee amount, fee currency, txn hash (most of this is done, just move a couple around and create collumns for received
+4. Cut and paste all positive values from the sent amount column and the sent currency (formerly 'balance') into the received amount and received currency collumns
+5. Remove the '-' sign from the sent amount collumn so that all values are positive
+6. Check for unrecognized currencies in the spreadsheet, some may be left blank. I just looked at SAFEW for this. If it was LP, I created a name that was consistent across those txns. If it was something dumb like spicy oatmeal, I just deleted those rows (fight me, irs).
+
+Edit in Google Sheets, then downloaded as .csv and uploaded to Koinly.
+
+A complicated wallet can like 30 min, but most should be easy.
+	"""
+	return(df)
+
 
 class FrequentQuestions(commands.Cog):
 	def __init__(self, client):
@@ -171,6 +189,10 @@ class FrequentQuestions(commands.Cog):
 	@commands.command()
 	async def socials(self,ctx):
 		await ctx.send(faq_socials())
+
+	@commands.command()
+	async def koinly(self,ctx):
+		await ctx.send(faq_koinly())
 
 async def setup(client):
 	await client.add_cog(FrequentQuestions(client))

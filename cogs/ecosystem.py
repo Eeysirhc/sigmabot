@@ -57,11 +57,11 @@ tokenjay_responses = {
 
 "mobile": """If you haven't already, download Ergo Mobile Wallet (Android) or Terminus Wallet (Apple) and restore seed. Go to Settings. Click on the button Mosaik plugins disabled and make it enabled. A new dApps will appear in the bottom navigation bar of the wallet. Click on dApps, then scroll to the bottom of new page. Click on AgeUSD Dashboard. Then, click the Exchange button for either SigUSD or SigRSV. Then select Buy/Sell from the pull down menu and the amount you want.""",
 
-"mosaik": """Mosaik is a JSON-based markup language served via a REST API intended to be used by Ergo platform dApps. For more information: <https://docs.ergoplatform.com/dev/stack/mosaik/intro/>"""
+"mosaik": """Mosaik is a JSON-based markup language served via a REST API intended to be used by Ergo platform dApps. For more information: <https://docs.ergoplatform.com/dev/stack/mosaik/intro/>""",
 
-"sigrsv": """Tokenjay can be used to buy SigRSV directly from the bank. """
+"sigrsv": """Tokenjay can be used to buy SigRSV directly from the bank. """,
 
-"sigusd": """Tokenjay can be used to buy SigUSD directly from the bank. """
+"sigusd": """Tokenjay can be used to buy SigUSD directly from the bank. """,
 
 }
 
@@ -144,16 +144,40 @@ def faq_nodelist():
 	return(df)
 
 def faq_scala():
-	df = """
-kushti started implementation Ergo in Scala, which was an attractive language for developers like morphic and greenhat. Objectively, Scala has some features that give it advantages over other JVM languages:
-1) Scala is cross platform. The same code can run on JVM, JS and natively.
-2) Scala is growing in popularity as a development platform.
-3) Beyond language, Ergo also has support for key ecosystem libraries for all platforms.
-4) Scala's code is more concise syntactically and allows for more conceptually abstract code.
-5) Scala can also be more efficient than similar Java code. Java generics like ArrayList<T> can only be used when T is reference type, i.e. allocated (or boxed) object. In Scala T can be primitive unboxed time such as Byte or Int and also Scala compiler can do code specialization so that T values are never boxed. This can be 2x difference in performance.
-6) Finally, Scala is also multi-paradigm (OOP + FP + LP) so you can combine advantages of the paradigms depending on the domain.
+	df = """kushti started implementation Ergo in Scala, which was an attractive language for developers like morphic and greenhat. Objectively, Scala has some features that give it advantages over other JVM languages:
+	
+	1) Scala is cross platform. The same code can run on JVM, JS and natively.
+	2) Scala is growing in popularity as a development platform.
+	3) Beyond language, Ergo also has support for key ecosystem libraries for all platforms.
+	4) Scala's code is more concise syntactically and allows for more conceptually abstract code.
+	5) Scala can also be more efficient than similar Java code. Java generics like ArrayList<T> can only be used when T is reference type, i.e. allocated (or boxed) object. In Scala T can be primitive unboxed time such as Byte or Int and also Scala compiler can do code specialization so that T values are never boxed. This can be 2x difference in performance.
+	6) Finally, Scala is also multi-paradigm (OOP + FP + LP) so you can combine advantages of the paradigms depending on the domain.
+	
+All this is true with Scala2. With Scala3, there are additional metaprogramming features and more tools for zero-cost abstractions.
+"""
+	return(df)
 
-All this is true with Scala2. With Scala3, there are additional metaprogramming features and more tools for zero-cost abstractions."""
+def faq_howie():
+	df = """The test has four criteria that must all be met for an instrument to be considered a security: investment of money, common enterprise, reasonable expectation of profits, and entrepreneurial or managerial efforts of others.
+
+Storage rent is part of the argument for the fourth prong.  'entrepreneurial or managerial efforts of others' which requires that the efforts of those outside the investor are essential to the success or failure of the enterprise.
+
+- While the EF undeniably plays a big role currently, the ERG ecosystem is becoming more decentralized and independent of the Foundation or any other centralized entity
+     - This decentralization will increase over time as more third-party developers bring value to the Platform.
+     - The Platform is open source and permissionless, allowing anyone to build applications or launch tokens without the permission or assistance of the Foundation.
+     - The EF and has went to great efforts to inform and encourage discussion with the community
+     - If the EF were to vanish, development would not need to stop, and miners could extract and spend all of the Foundation's funds through storage rent.
+
+Therefore, it is difficult to argue that the success of the Platform and the value of ERG tokens necessarily rely on the Foundation or its members. Overall, the value of ERG tokens is becoming more market-driven and independent of the Foundation, which suggests that the fourth criterion of the Howey Test is not met."""
+	return(df)
+
+def faq_ergo():
+	df = """Ergo represents the next step in the evolution of proof-of-work blockchain technology, combining Bitcoin’s ledger model with smart contract functionality. Ergo’s extended UTXO design is built to offer secure and robust tooling through the use of its native language, ErgoScript, and its inherent Sigma protocols that utilize non-interactive zero-knowledge proofs.
+
+Ergo’s Autolykos v2 mining consensus algorithm is GPU friendly and ASIC resistant, allowing for anyone with consumer-grade GPU hardware to easily and effectively participate in securing the network.
+
+The Ergo blockchain launched in 2019 with no pre-mining or pre-allocation of any coins. The platform strives to be fair and accessible to all with an emphasis on building truly decentralized financial products and services. The ecosystem currently features the SigUSD stablecoin, ErgoMixer, a cross-chain DEX, and much more. More information can be found at ergoplatform.org and sigmaverse.io."""
+	return(df)
 
 class Ecosystem(commands.Cog):
 	def __init__(self, client):
@@ -192,9 +216,16 @@ class Ecosystem(commands.Cog):
 		await ctx.send(faq_nodelist())
 
 	@commands.command()
-    async def nodelist(self, ctx):
-    	await ctx.send(faq_scala())
+	async def scala(self, ctx):
+		await ctx.send(faq_scala())
 
+	@commands.command()
+	async def howie(self, ctx):
+		await ctx.send(faq_howie())
+
+	@commands.command()
+	async def ergo(self, ctx):
+		await ctx.send(faq_ergo())
 
 async def setup(client):
 	await client.add_cog(Ecosystem(client))
