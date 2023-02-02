@@ -37,15 +37,15 @@ Modifiers: `dis`, `tg`, `watches`"""
 tokenjay_responses = {
 "escrow": """The open P2P Escrow service is a smart contract that enables trustless, person-to-person (P2P), private sales on the Ergo blockchain for a small fee. The contract accepts Ergo tokens, such as a non-fungible token (NFT), 100 SigUSD, or other token(s) from the seller. Once in the contract, only a defined buyer sending a defined amount of ERG can access the token(s). If this happens, the contract sends the NFT, SigUSD or other token(s) to the buyer and the ERG to the seller. The seller can cancel the contract at any time before the exchange is made. To use:
 
-                 1. Go to tokenjay.app.
-                 2. Connect wallet, by scanning QR code.
-                 3. Go to Your Token Sales.
-                 4. Click Start New Sale.
-                 5. Select the vesting key from your wallet.
-                 6. Put in buyer address.
-                 7. Put in price buyer should pay. $ per SPF token, converted into Erg
-                 8. Click Sell Token.
-                 9. Sign transaction.
+	1. Go to tokenjay.app.
+	2. Connect wallet, by scanning QR code.
+	3. Go to Your Token Sales.
+	4. Click Start New Sale.
+	5. Select the vesting key from your wallet.
+	6. Put in buyer address.
+	7. Put in price buyer should pay. $ per SPF token, converted into Erg
+	8. Click Sell Token.
+	9. Sign transaction.
 
 When transaction confirms, buyer can buy via tokenjay, it will show under P2P Escrow offers. Buyer needs to check token and minting transaction to confirm it is authentic. If an Ergopad vesting key, they can checking the tokenid in the verifier API: https://api.ergopad.io/vesting/vestedWithKey/tokenid
 
@@ -69,7 +69,7 @@ def faq_tokenjay(modifier=""):
 	else: 
 		df = """https://tokenjay.app
 
-Modifiers: `escrow`, `mobile`, mosaik`, `sigrsv`, `sigusd`"""
+Modifiers: `escrow`, `mobile`, `mosaik`, `sigrsv`, `sigusd`"""
 	return(df)
 
 ##### ERGO PROJECTS #####
