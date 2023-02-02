@@ -54,9 +54,9 @@ Like BIP-0021 for Bitcoin, this EIP proposes a URI scheme for initiating payment
 This EIP concludes previous discussions and provides further details on the proposed emission soft-fork design and implementation: <https://github.com/ergoplatform/eips/blob/master/eip-0027.md>""",
 
 "37": """[Tweaking Difficulty Adjustment Algorithm]
-The Ergo's algorithm works well in most cases, inluding huge price drops, 100x initial difficulty misestimation during mainnet launch, and so on. However, current simplified and limitless version of algorithm is bumpy. Big influx of mining hashrate over multiple epochs, especially with super-linear hashrate growth over time may result in huge spike of difficulty. Similarly, few slow epochs may cause huge drop. Also, for dapps and other applications it would be desirable to make difficulty readjustment more reactive (currently, readjustment takes place every 1024 blocks, and 8 epochs, so about two weeks normally, are considered).
+Ergo's initial algorithm worked well in most cases, inluding huge price drops, 100x initial difficulty misestimation during mainnet launch, and so on. However, a big influx of mining hashrate over multiple epochs, especially with super-linear hashrate growth over time resulted in huge spike of difficulty. Similarly, few slow epochs could cause a huge drop in difficulty. For dapps and other applications, it was desirable to make Ergo's difficulty readjustment more reactive.
 
-Read more of the initial draft: <https://github.com/ergoplatform/eips/pull/79/files>
+Read more about current difficulty adjustment algorithm: <https://github.com/ergoplatform/eips/pull/79/files>
 For EIP-37 discussions: <https://github.com/ergoplatform/eips/pull/79>
 
 Broader conversations about difficulty adjustments: <https://www.ergoforum.org/t/diff-adjustment-potential-design-tradeoffs/3875>""",
@@ -73,9 +73,6 @@ You can find the full list of EIPs at <https://github.com/ergoplatform/eips#ergo
 
 Modifiers: `1`, `2`, `3`, `4`, `5`, `6`, `17`, `19`, `20`, `21`, `22`, `24`, `25`, `27`, `37`"""
 	return(df)
-
-
-
 
 class EIProposals(commands.Cog):
 	def __init__(self, client):

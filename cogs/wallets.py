@@ -99,7 +99,11 @@ Pro-Tip: If you restore the same wallet into each service, you can use the same 
 Modifiers: `dis`, `reddit`, `tg`, `twitter`"""
 	return(df)
 
-
+def faq_consolidate():
+	df = """
+If you are having trouble with a transaction, often you can correct it by consolidating your transaction by sending assets to yourself. Whether it is many small mining payments, staking/unstaking Ergopad, limits on the dat size of transactions on chain.  if you send the tokens, NFTs, staking keys and Erg to yourself in one transaction. This will consolidate the tokens & your erg into one utxo. Then retry your transaction. This solves many problems users of the Ergo blockchain experience. If it still does not work after consolidation, please try one of our support channels. Thank you.
+	"""
+	return(df)
 
 class Wallets(commands.Cog):
 	def __init__(self, client):
@@ -128,6 +132,10 @@ class Wallets(commands.Cog):
 		modifier = modifier.lower()
 		response = faq_tipbot(modifier)
 		await ctx.send(response)
+
+	@commands.command()
+	async def consolidate(self, ctx):
+		await ctx.send(faq_consolidate())
 
 
 async def setup(client):
