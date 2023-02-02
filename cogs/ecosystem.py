@@ -2,7 +2,6 @@
 # Author: eeysirhc
 # Description: Ecosystem
 # Date written: 2022-08-25
-# Last updated: 2022-12-26
 # Bot commands: nfts, tokenjay, projects, node, graphql, nodelist
 ##############################
 
@@ -48,12 +47,11 @@ tokenjay_responses = {
                  8. Click Sell Token.
                  9. Sign transaction.
 
-                 When transaction confirms, buyer can buy via tokenjay, it will show under P2P Escrow offers. Buyer needs to check token and minting transaction to confirm it is authentic. If an Ergopad vesting key, they can checking the tokenid in the verifier API;
-                  https://api.ergopad.io/vesting/vestedWithKey/tokenid
+When transaction confirms, buyer can buy via tokenjay, it will show under P2P Escrow offers. Buyer needs to check token and minting transaction to confirm it is authentic. If an Ergopad vesting key, they can checking the tokenid in the verifier API: https://api.ergopad.io/vesting/vestedWithKey/tokenid
 
-                 This will return whether it is a real key, the token type and number of tokens. If it checks out, then they click Buy and sign the transaction.
+This will return whether it is a real key, the token type and number of tokens. If it checks out, then they click Buy and sign the transaction.
 
-                 When transaction goes through, Erg is sent to seller, key is sent to buyer, contract takes a small fee.""",
+When transaction goes through, Erg is sent to seller, key is sent to buyer, contract takes a small fee.""",
 
 "mobile": """If you haven't already, download Ergo Mobile Wallet (Android) or Terminus Wallet (Apple) and restore seed. Go to Settings. Click on the button Mosaik plugins disabled and make it enabled. A new dApps will appear in the bottom navigation bar of the wallet. Click on dApps, then scroll to the bottom of new page. Click on AgeUSD Dashboard. Then, click the Exchange button for either SigUSD or SigRSV. Then select Buy/Sell from the pull down menu and the amount you want.""",
 

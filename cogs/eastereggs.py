@@ -2,7 +2,6 @@
 # Author: eeysirhc
 # Description: Easter Eggs
 # Date written: 2022-08-25
-# Last updated: 2022-11-16
 # Bot commands: wen, why, drama, gulag
 ##############################
 
@@ -39,7 +38,7 @@ def eggs_wen(modifier=""):
 		df = """
 		Wen? Soooooooon!
 
-		Modifiers: `coinbase`, `binance`, `kraken`, `tier1`, `lambo`, `yacht`, `bridge`
+Modifiers: `coinbase`, `binance`, `kraken`, `tier1`, `lambo`, `yacht`, `bridge`
 		"""
 	return(df)
 
@@ -106,4 +105,5 @@ class EasterEggs(commands.Cog):
 
 async def setup(client):
 	await client.add_cog(EasterEggs(client))
+
 
