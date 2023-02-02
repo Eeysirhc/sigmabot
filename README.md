@@ -26,7 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 ```
 
-#### create `$HOME/bin/sigmabot/main/.env` and add line:
+#### create `$HOME/bin/sigmabot/.env` and add line:
 
 ```bash
 DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
@@ -44,11 +44,9 @@ For a list of available commands send `.help` as a message in Discord or Telegra
 
 ## File Structure
 
-Source lives in the `main` folder with 3 types.
-
 * `_sigmabot.py`: exec and most likely won't need to change unless adding a new category
-* `*.py`: houses all the content and majority of the code for each category 
-* `ztemplate.py`: if there is a need for a new category then copy this file and follow instrutions on how to edit
+* `/cogs`: houses all the content and majority of the code for each category 
+* `/cogs/ztemplate.py`: if there is a need for a new category then copy this file and follow instrutions on how to edit
 
 ## Customization
 
@@ -71,9 +69,6 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
-
-
-
 
 
 
