@@ -2,8 +2,7 @@
 # Author: eeysirhc
 # Description: Ecosystem
 # Date written: 2022-08-25
-# Last updated: 2022-12-26
-# Bot commands: nfts, tokenjay, projects, node, graphql, nodelist
+# Last updated: 2023-02-03
 ##############################
 
 from discord.ext import commands
@@ -36,10 +35,7 @@ Modifiers: `dis`, `tg`, `watches`"""
 
 ##### TOKENJAY #####
 tokenjay_responses = {
-"escrow": """
-For directions on how to use Tokenjay for P2P Escrow trades and verifying Ergopad vesting key NFTs, see"
-https://ergonaut.space/en/dApps/TokenJay
-	""",
+"escrow": """For directions on how to use Tokenjay for P2P Escrow trades and verifying Ergopad vesting key NFTs: <https://ergonaut.space/en/dApps/TokenJay> """,
 
 "mobile": """If you haven't already, download Ergo Mobile Wallet (Android) or Terminus Wallet (Apple) and restore seed. Go to Settings. Click on the button Mosaik plugins disabled and make it enabled. A new dApps will appear in the bottom navigation bar of the wallet. Click on dApps, then scroll to the bottom of new page. Click on AgeUSD Dashboard. Then, click the Exchange button for either SigUSD or SigRSV. Then select Buy/Sell from the pull down menu and the amount you want.""",
 
@@ -55,8 +51,9 @@ def faq_tokenjay(modifier=""):
 	if modifier in tokenjay_responses:
 		df = tokenjay_responses[modifier]
 	else: 
-		df = """Website: https://tokenjay.app
-Details: https://ergonaut.space/en/dApps/TokenJay
+		df = """Website: <https://tokenjay.app>
+Details: <https://ergonaut.space/en/dApps/TokenJay>
+
 Modifiers: `escrow`, `mobile`, mosaik`, `sigrsv`, `sigusd` """
 	return(df)
 
@@ -82,8 +79,7 @@ def faq_projects(modifier=""):
 	if modifier in projects_responses:
 		df = projects_responses[modifier]
 	else: 
-		df = """Sigmaverse is the most comprehensive list of Ergo projects
-		https://sigmaverse.io/
+		df = """Sigmaverse is the most comprehensive list of Ergo projects: <https://sigmaverse.io/>
 
 Modifiers: `mixer`, `spectrum`, `ergopad`, `skyharbor`, `ergoauctions`, `raffle`, `sigmavalley`"""
 	return(df)
@@ -127,15 +123,13 @@ def faq_nodelist():
 
 def faq_scala():
 	df = """ 
-	Why is Scala the programming language Ergo is based on?
-	https://ergonaut.space/en/Ergo/Scala
+	Why is Scala the programming language Ergo is based on? https://ergonaut.space/en/Ergo/Scala
 	"""
 	return(df)
 
 def faq_howie():
 	df = """
-	Does the Howie Test apply to Ergo?
-	https://ergonaut.space/en/Ergo/Howie
+	Does the Howie Test apply to Ergo? https://ergonaut.space/en/Ergo/Howie
 	"""
 	return(df)
 
@@ -148,14 +142,13 @@ The Ergo blockchain launched in 2019 with no pre-mining or pre-allocation of any
 	return(df)
 
 def faq_newdev():
-	df = """
-	If you are a developer new to the Ergo ecosystem, these links may be useful:
-	- Documentation: https://docs.ergoplatform.com/dev/start/
-	- Developer Channel: https://discord.gg/ergo-platform-668903786361651200
-	- DeCo Education: https://www.youtube.com/@decoeducation9394
-	- Ergohack: https://ergohack.io/
-	- Ergo Appkit: https://github.com/ergoplatform/ergo-appkit
-	- Fleet: https://fleet-sdk.github.io/docs/
+	df = """If you are a developer new to the Ergo ecosystem, these links may be useful:
+- Documentation: <https://docs.ergoplatform.com/dev/start/>
+- Developer Channel: <https://discord.gg/ergo-platform-668903786361651200>
+- DeCo Education: <https://www.youtube.com/@decoeducation9394>
+- Ergohack: <https://ergohack.io/>
+- Ergo Appkit: <https://github.com/ergoplatform/ergo-appkit>
+- Fleet: <https://fleet-sdk.github.io/docs/>
 	"""
 	return(df)
 

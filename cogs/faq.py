@@ -2,8 +2,7 @@
 # Author: eeysirhc
 # Description: Basic Frequently Asked Questions
 # Date written: 2022-08-25
-# Last updated: 2022-11-16
-# Bot commands: welcome, tps, marketcap, docs, manifesto, admin, contribute, bots, forum, partnerships 
+# Last updated: 2023-02-03
 ##############################
 
 from discord.ext import commands
@@ -119,11 +118,10 @@ On Discord, select #rules and select a role to see relevant channels.
 	"""
 	return(df)
 
-#### Koinly #####
+#### TAXES #####
 def faq_taxes():
 	df = """
-For help with getting information for taxes:
-https://ergonaut.space/en/Guides/tax
+For help with getting information for taxes: <https://ergonaut.space/en/Guides/tax>
 	"""
 	return(df)
 
@@ -186,7 +184,6 @@ class FrequentQuestions(commands.Cog):
 
 async def setup(client):
 	await client.add_cog(FrequentQuestions(client))
-
 
 
 
