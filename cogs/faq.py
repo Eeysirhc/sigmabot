@@ -25,9 +25,9 @@ L0: Ergo Reference Nodes, which can be bootstrapped using NiPoPoWs proofs and UT
 L1: Ergo has extensions that allow for a wide variety of scaling solutions such as Sharding, Hydra, or BitcoinNG-style macroblocks.
 L2 (off-chain): Ergo should be compatible with the Lightning Network, Rainbow Network, and many more. The implementation here will depend on the needs of the applications being built on Ergo.
 
-The general idea is that many transactions can happen in L1 or L2 and these transactions can be bundled and settled on the L0 layer of the Ergo blockchain using a single transaction. Thanks to the high flexibility of ErgoScript programming model, many different protocols are possible, each one solving scalability problem in a specific domain (like simple payment transactions).
+The general idea is that many transactions can happen in L1 or L2 and these transactions can be bundled and settled on the L0 layer of the Ergo blockchain using a single transaction. Thanks to the high flexibility of the ErgoScript programming model, many different protocols are possible, each one solving a scalability problem in a specific domain (like simple payment transactions).
 
-Ergo blockchain can be thought as common settlement layer for many L1/L2 protocols and applications.
+The Ergo blockchain can be thought as common settlement layer for many L1/L2 protocols and applications.
 	"""
 	return(df)
 
@@ -120,20 +120,10 @@ On Discord, select #rules and select a role to see relevant channels.
 	return(df)
 
 #### Koinly #####
-def faq_koinly():
+def faq_taxes():
 	df = """
-Anyone struggling with Ergo taxes, it is possible to get Koinly to accept a csv and accurately represent everything. Here's how:
- 
-1. Retore wallet in SAFEW
-2. Export .csv
-3. Arrange first row with the following headings: date, sent amount, sent currency, received amount, received currency, fee amount, fee currency, txn hash (most of this is done, just move a couple around and create collumns for received
-4. Cut and paste all positive values from the sent amount column and the sent currency (formerly 'balance') into the received amount and received currency collumns
-5. Remove the '-' sign from the sent amount collumn so that all values are positive
-6. Check for unrecognized currencies in the spreadsheet, some may be left blank. I just looked at SAFEW for this. If it was LP, I created a name that was consistent across those txns. If it was something dumb like spicy oatmeal, I just deleted those rows (fight me, irs).
-
-Edit in Google Sheets, then downloaded as .csv and uploaded to Koinly.
-
-A complicated wallet can like 30 min, but most should be easy.
+For help with getting information for taxes:
+https://ergonaut.space/en/Guides/tax
 	"""
 	return(df)
 
@@ -191,8 +181,8 @@ class FrequentQuestions(commands.Cog):
 		await ctx.send(faq_socials())
 
 	@commands.command()
-	async def koinly(self,ctx):
-		await ctx.send(faq_koinly())
+	async def taxes(self,ctx):
+		await ctx.send(faq_taxes())
 
 async def setup(client):
 	await client.add_cog(FrequentQuestions(client))

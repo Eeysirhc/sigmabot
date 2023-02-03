@@ -2,6 +2,7 @@
 # Author: eeysirhc
 # Description: Ecosystem
 # Date written: 2022-08-25
+# Last updated: 2022-12-26
 # Bot commands: nfts, tokenjay, projects, node, graphql, nodelist
 ##############################
 
@@ -35,23 +36,10 @@ Modifiers: `dis`, `tg`, `watches`"""
 
 ##### TOKENJAY #####
 tokenjay_responses = {
-"escrow": """The open P2P Escrow service is a smart contract that enables trustless, person-to-person (P2P), private sales on the Ergo blockchain for a small fee. The contract accepts Ergo tokens, such as a non-fungible token (NFT), 100 SigUSD, or other token(s) from the seller. Once in the contract, only a defined buyer sending a defined amount of ERG can access the token(s). If this happens, the contract sends the NFT, SigUSD or other token(s) to the buyer and the ERG to the seller. The seller can cancel the contract at any time before the exchange is made. To use:
-
-	1. Go to tokenjay.app.
-	2. Connect wallet, by scanning QR code.
-	3. Go to Your Token Sales.
-	4. Click Start New Sale.
-	5. Select the vesting key from your wallet.
-	6. Put in buyer address.
-	7. Put in price buyer should pay. $ per SPF token, converted into Erg
-	8. Click Sell Token.
-	9. Sign transaction.
-
-When transaction confirms, buyer can buy via tokenjay, it will show under P2P Escrow offers. Buyer needs to check token and minting transaction to confirm it is authentic. If an Ergopad vesting key, they can checking the tokenid in the verifier API: https://api.ergopad.io/vesting/vestedWithKey/tokenid
-
-This will return whether it is a real key, the token type and number of tokens. If it checks out, then they click Buy and sign the transaction.
-
-When transaction goes through, Erg is sent to seller, key is sent to buyer, contract takes a small fee.""",
+"escrow": """
+For directions on how to use Tokenjay for P2P Escrow trades and verifying Ergopad vesting key NFTs, see"
+https://ergonaut.space/en/dApps/TokenJay
+	""",
 
 "mobile": """If you haven't already, download Ergo Mobile Wallet (Android) or Terminus Wallet (Apple) and restore seed. Go to Settings. Click on the button Mosaik plugins disabled and make it enabled. A new dApps will appear in the bottom navigation bar of the wallet. Click on dApps, then scroll to the bottom of new page. Click on AgeUSD Dashboard. Then, click the Exchange button for either SigUSD or SigRSV. Then select Buy/Sell from the pull down menu and the amount you want.""",
 
@@ -67,9 +55,9 @@ def faq_tokenjay(modifier=""):
 	if modifier in tokenjay_responses:
 		df = tokenjay_responses[modifier]
 	else: 
-		df = """https://tokenjay.app
-
-Modifiers: `escrow`, `mobile`, `mosaik`, `sigrsv`, `sigusd`"""
+		df = """Website: https://tokenjay.app
+Details: https://ergonaut.space/en/dApps/TokenJay
+Modifiers: `escrow`, `mobile`, mosaik`, `sigrsv`, `sigusd` """
 	return(df)
 
 ##### ERGO PROJECTS #####
@@ -138,31 +126,17 @@ def faq_nodelist():
 	return(df)
 
 def faq_scala():
-	df = """kushti started implementation Ergo in Scala, which was an attractive language for developers like morphic and greenhat. Objectively, Scala has some features that give it advantages over other JVM languages:
-	
-	1) Scala is cross platform. The same code can run on JVM, JS and natively.
-	2) Scala is growing in popularity as a development platform.
-	3) Beyond language, Ergo also has support for key ecosystem libraries for all platforms.
-	4) Scala's code is more concise syntactically and allows for more conceptually abstract code.
-	5) Scala can also be more efficient than similar Java code. Java generics like ArrayList<T> can only be used when T is reference type, i.e. allocated (or boxed) object. In Scala T can be primitive unboxed time such as Byte or Int and also Scala compiler can do code specialization so that T values are never boxed. This can be 2x difference in performance.
-	6) Finally, Scala is also multi-paradigm (OOP + FP + LP) so you can combine advantages of the paradigms depending on the domain.
-	
-All this is true with Scala2. With Scala3, there are additional metaprogramming features and more tools for zero-cost abstractions.
-"""
+	df = """ 
+	Why is Scala the programming language Ergo is based on?
+	https://ergonaut.space/en/Ergo/Scala
+	"""
 	return(df)
 
 def faq_howie():
-	df = """The test has four criteria that must all be met for an instrument to be considered a security: investment of money, common enterprise, reasonable expectation of profits, and entrepreneurial or managerial efforts of others.
-
-Storage rent is part of the argument for the fourth prong.  'entrepreneurial or managerial efforts of others' which requires that the efforts of those outside the investor are essential to the success or failure of the enterprise.
-
-- While the EF undeniably plays a big role currently, the ERG ecosystem is becoming more decentralized and independent of the Foundation or any other centralized entity
-     - This decentralization will increase over time as more third-party developers bring value to the Platform.
-     - The Platform is open source and permissionless, allowing anyone to build applications or launch tokens without the permission or assistance of the Foundation.
-     - The EF and has went to great efforts to inform and encourage discussion with the community
-     - If the EF were to vanish, development would not need to stop, and miners could extract and spend all of the Foundation's funds through storage rent.
-
-Therefore, it is difficult to argue that the success of the Platform and the value of ERG tokens necessarily rely on the Foundation or its members. Overall, the value of ERG tokens is becoming more market-driven and independent of the Foundation, which suggests that the fourth criterion of the Howey Test is not met."""
+	df = """
+	Does the Howie Test apply to Ergo?
+	https://ergonaut.space/en/Ergo/Howie
+	"""
 	return(df)
 
 def faq_ergo():
@@ -170,7 +144,19 @@ def faq_ergo():
 
 Ergo’s Autolykos v2 mining consensus algorithm is GPU friendly and ASIC resistant, allowing for anyone with consumer-grade GPU hardware to easily and effectively participate in securing the network.
 
-The Ergo blockchain launched in 2019 with no pre-mining or pre-allocation of any coins. The platform strives to be fair and accessible to all with an emphasis on building truly decentralized financial products and services. The ecosystem currently features the SigUSD stablecoin, ErgoMixer, a cross-chain DEX, and much more. More information can be found at ergoplatform.org and sigmaverse.io."""
+The Ergo blockchain launched in 2019 with no pre-mining or pre-allocation of any coins. The platform strives to be fair and accessible to all with an emphasis on building truly decentralized financial products and services. The ecosystem currently features the SigUSD stablecoin, ErgoMixer, a cross-chain DEX, and much more. More information can be found at ergoplatform.org, sigmaverse.io and ergonaut.space."""
+	return(df)
+
+def faq_newdev():
+	df = """
+	If you are a developer new to the Ergo ecosystem, these links may be useful:
+	- Documentation: https://docs.ergoplatform.com/dev/start/
+	- Developer Channel: https://discord.gg/ergo-platform-668903786361651200
+	- DeCo Education: https://www.youtube.com/@decoeducation9394
+	- Ergohack: https://ergohack.io/
+	- Ergo Appkit: https://github.com/ergoplatform/ergo-appkit
+	- Fleet: https://fleet-sdk.github.io/docs/
+	"""
 	return(df)
 
 class Ecosystem(commands.Cog):
@@ -220,6 +206,10 @@ class Ecosystem(commands.Cog):
 	@commands.command()
 	async def ergo(self, ctx):
 		await ctx.send(faq_ergo())
+
+	@commands.command()
+	async def newdev(self, ctx):
+		await ctx.send(faq_newdev())
 
 async def setup(client):
 	await client.add_cog(Ecosystem(client))
