@@ -1,7 +1,7 @@
 import os
+
 from dotenv import load_dotenv
 load_dotenv()
-# TOKEN = os.getenv('DISCORD_TOKEN')
 
 import discord
 from discord.ext import commands
@@ -26,6 +26,7 @@ async def on_ready():
 	print("Logged in as {0.user}".format(client))
 	await client.change_presence(activity=discord.Game("on the Rosen Bridge"))
 
+# LOAD COGS
 async def load_extensions():
 	for filename in os.listdir("./cogs"):
 		if filename.endswith(".py"):
@@ -38,3 +39,6 @@ async def main():
 		await client.start(TOKEN)
 
 asyncio.run(main())
+
+
+
