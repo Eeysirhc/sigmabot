@@ -37,7 +37,7 @@ def faq_marketcap():
 	df = """
 	Ergo Explorer displays circulating supply and max supply (97,739,924 ERG). Multiply these amounts by current price to get Ergo's market capitalization. Do not rely on Coinmarketcap data. ERGs value derives from the popularity and utility of the platform + the cost of mining erg.
 
-	https://explorer.ergoplatform.com/
+https://explorer.ergoplatform.com/
 	"""
 	return(df)
 
