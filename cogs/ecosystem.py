@@ -143,13 +143,14 @@ The Ergo blockchain launched in 2019 with no pre-mining or pre-allocation of any
 
 def faq_newdev():
 	df = """If you are a developer new to the Ergo ecosystem, these links may be useful:
-- Documentation: <https://docs.ergoplatform.com/dev/start/>
-- Developer Channel: <https://discord.gg/ergo-platform-668903786361651200>
-- DeCo Education: <https://www.youtube.com/@decoeducation9394>
-- Ergohack: <https://ergohack.io/>
-- Ergo Appkit: <https://github.com/ergoplatform/ergo-appkit>
-- Fleet: <https://fleet-sdk.github.io/docs/>
-	"""
+	
+	- Documentation: <https://docs.ergoplatform.com/dev/start/>
+	- Ergo Appkit: <https://github.com/ergoplatform/ergo-appkit>
+	- Fleet: <https://fleet-sdk.github.io/docs/>
+	- DeCo Education: <https://www.youtube.com/@decoeducation9394>
+	- Ergohack: <https://ergohack.io/>
+
+To access the Development channel in Discord, go to channels in the side bar. Click Channels & Roles (near the top). Then, select Start Developing."""
 	return(df)
 
 class Ecosystem(commands.Cog):
