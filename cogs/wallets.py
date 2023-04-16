@@ -14,7 +14,7 @@ wallets_responses = {
 
 "tg": """@NautilusWallet - web browser extension wallet
 @ErgoWalletApp - mobile wallet
-@SatergoWallet - full node desktop wallet""",
+@Satergo - full node desktop wallet""",
 
 "cold": """In this tutorial you will find instructions on how to install the cold mobile wallet: https://www.youtube.com/watch?v=7q3Jq_OvhKY"""
 	
