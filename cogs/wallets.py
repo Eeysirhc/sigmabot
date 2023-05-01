@@ -44,27 +44,23 @@ Modifiers: `dis`, `tg`, `cold`"""
 ##### LEDGER #####
 def faq_ledger():
 	df = """
-	Tutorials to sideload Ergo Ledger app
-
-Nano S for Windows: <https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-windows.md>
-
-Nano S for Linux/MacOS: <https://github.com/anon-br/ledger-ergo-js/blob/master/docs/ledger-app-installing-unix.md>
-
-Nano S Plus: <https://medium.com/@koutelier/how-to-sideload-ergo-ledger-app-to-nano-s-nano-s-plus-on-linux-fafb2380508a>
+	The link below is the official documentation for storing Ergo on Ledger.
+	<https://support.ledger.com/hc/en-us/articles/6892461437597-Ergo-ERG->
 	"""
 	return(df)
 
 ##### YOROI #####
 def faq_yoroi():
 	df = """
-	What are you, some sort of cave person living under a rock? Use a wallet listed here: https://ergoplatform.org/en/get-erg/#Wallets
+	Yoroi no longer supported. Please restore your wallet from seed in a wallet from the link below.
+	<https://ergoplatform.org/en/get-erg/#Wallets>
 	"""
 	return(df)
 
 ##### SEED #####
 def faq_seed():
 	df = """
-	Never give your seed phrase to anyone. You can restore your seed in any wallet, even multiple wallets. With the correct seed, you (and anyone else) can access your assets on the Ergo blockchain.
+	Never give your seed phrase to anyone. You can restore your seed in any wallet, even multiple wallets. With the correct seed, you (or anyone) can access your assets on the Ergo blockchain.
 	"""
 	return(df)
 

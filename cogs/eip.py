@@ -71,6 +71,9 @@ def faq_eip(modifier=""):
 		df = """Ergo Improvement Proposals (EIPs) specify and/or describe standards for the Ergo Platform, including core protocol specifications, client APIs, dApp/contract standards, and other such things.
 You can find the full list of EIPs at <https://github.com/ergoplatform/eips#ergo-improvement-proposals>
 
+Anyone can submit an EIP. If you are unfamiliar writing an EIP, you can write about your idea informally in Ergo Forum.
+<https://www.ergoforum.org/>
+
 Modifiers: `1`, `2`, `3`, `4`, `5`, `6`, `17`, `19`, `20`, `21`, `22`, `24`, `25`, `27`, `37`"""
 	return(df)
 

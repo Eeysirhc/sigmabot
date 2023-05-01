@@ -10,7 +10,8 @@ from discord.ext import commands
 ##### WELCOME #####
 def faq_welcome():
 	df = """
-	Welcome Ergonauts, in this video you can learn more about Ergo: https://youtu.be/CzGqYAlQRWQ
+	Welcome! A 14 minute video introduction to Ergo: https://youtu.be/CzGqYAlQRWQ
+	Main website: <https://ergoplatform.org/>
 	"""
 	return(df)
 
@@ -114,7 +115,7 @@ Rosen Bridge compared to Interlay bridges: <https://medium.com/@anetaBTC/rosen-b
 def faq_socials():
 	df = """
 	Ergo Telegram groups: <https://t.me/Ergo_Chats>
-On Discord, select #rules and select a role to see relevant channels.
+	On Discord, select #Channels & Roles and answer the customization questions."
 	"""
 	return(df)
 
