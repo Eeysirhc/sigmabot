@@ -111,11 +111,11 @@ def faq_graphql():
 	GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. 
 	Default: https://gql.ergoplatform.org
 	
-	If you are having trouble connecting from the main instance, try one of these alternatives.
-	<https://ergo-explorer.anetabtc.io/graphql/>
-	<https://graphql.ergo.aap.cornell.edu>
-	<https://graphql.erg.zelcore.io>
-	<https://explore.sigmaspace.io/api/graphql>
+	If you are having trouble connecting to the default, try one of these alternatives.
+<https://ergo-explorer.anetabtc.io/graphql/>
+<https://graphql.ergo.aap.cornell.edu>
+<https://graphql.erg.zelcore.io>
+<https://explore.sigmaspace.io/api/graphql>
 		"""
 	return(df)
 

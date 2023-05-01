@@ -53,7 +53,7 @@ def faq_ledger():
 def faq_yoroi():
 	df = """
 	Yoroi no longer supported. Please restore your wallet from seed in a wallet from the link below.
-	<https://ergoplatform.org/en/get-erg/#Wallets>
+<https://ergoplatform.org/en/get-erg/#Wallets>
 	"""
 	return(df)
 

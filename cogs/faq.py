@@ -11,7 +11,7 @@ from discord.ext import commands
 def faq_welcome():
 	df = """
 	Welcome! A 14 minute video introduction to Ergo: https://youtu.be/CzGqYAlQRWQ
-	Main website: <https://ergoplatform.org/>
+Main website: <https://ergoplatform.org/>
 	"""
 	return(df)
 
