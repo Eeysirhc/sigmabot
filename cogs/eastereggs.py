@@ -17,7 +17,7 @@ wen_responses = {
 
 "kraken": listing_template,
 
-"tier1": """Armeanio is already in contact with most exchanges. Listing agents are in the chat every day. The only information that can be provided is that there are ongoing discussions, and announcements will be made by the exchanges themselves. If you just want listing for price pump, better to keep discussions in @ErgoTrading.""",
+"listing": """Armeanio is already in contact with most exchanges. Listing agents are in the chat every day. The only information that can be provided is that there are ongoing discussions, and announcements will be made by the exchanges themselves. If you just want listing for price pump, better to keep discussions in @ErgoTrading.""",
 
 "lambo": """VROOM VROOM""",
 

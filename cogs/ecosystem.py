@@ -88,7 +88,11 @@ Modifiers: `mixer`, `spectrum`, `ergopad`, `skyharbor`, `ergoauctions`, `raffle`
 node_responses = {
 "install": """Instructions on how to setup a full Ergo node: https://www.youtube.com/watch?v=fpEDJ1CM6ns""",
 
-"docs": """<https://docs.ergoplatform.com/node/install/>"""
+"docs": """<https://docs.ergoplatform.com/node/install/>""",
+
+"list": """Lists of alternative nodes:
+<http://ergonodes.net/list>
+<https://api.tokenjay.app/peers/list?unreachable=false&limit=50>"""
 
 }
 
@@ -98,26 +102,20 @@ def faq_node(modifier=""):
 	else: 
 		df = """<https://github.com/ergoplatform/ergo>
 
-Modifiers: `install`, `docs`"""
+Modifiers: `install`, `docs`, `list'"""
 	return(df)
 
 ##### GRAPHQL #####
 def faq_graphql():
 	df = """
-	GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. If you are having trouble connecting from the main instance, try one of the alternatives.
-
+	GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. 
+	Default: https://gql.ergoplatform.org
+	
+	If you are having trouble connecting to the default, try one of these alternatives.
+<https://ergo-explorer.anetabtc.io/graphql/>
+<https://graphql.ergo.aap.cornell.edu>
 <https://graphql.erg.zelcore.io>
 <https://explore.sigmaspace.io/api/graphql>
-		"""
-	return(df)
-
-
-##### NODELIST #####
-def faq_nodelist():
-	df = """
-	Lists of alternative nodes:
-<http://ergonodes.net/list>
-<https://api.tokenjay.app/peers/list?unreachable=false&limit=50>
 		"""
 	return(df)
 
@@ -144,10 +142,11 @@ The Ergo blockchain launched in 2019 with no pre-mining or pre-allocation of any
 def faq_newdev():
 	df = """If you are a developer new to the Ergo ecosystem, these links may be useful:
 	
-	- Documentation: <https://docs.ergoplatform.com/dev/start/>
+	- Ergo Documentation: <https://docs.ergoplatform.com/dev/start/>
 	- Ergo Appkit: <https://github.com/ergoplatform/ergo-appkit>
 	- Fleet: <https://fleet-sdk.github.io/docs/>
-	- DeCo Education: <https://www.youtube.com/@decoeducation9394>
+	- DeCo Education (video): <https://www.youtube.com/@decoeducation9394>
+	- DeCo Education (docs): <https://deco-education.github.io/deco-docs/docs/intro/>
 	- Ergohack: <https://ergohack.io/>
 
 To access the Development channel in Discord, go to channels in the side bar. Click Channels & Roles (near the top). Then, select Start Developing."""
@@ -186,10 +185,6 @@ class Ecosystem(commands.Cog):
 		await ctx.send(faq_graphql())
 
 	@commands.command()
-	async def nodelist(self, ctx):
-		await ctx.send(faq_nodelist())
-
-	@commands.command()
 	async def scala(self, ctx):
 		await ctx.send(faq_scala())
 
@@ -207,4 +202,3 @@ class Ecosystem(commands.Cog):
 
 async def setup(client):
 	await client.add_cog(Ecosystem(client))
-
