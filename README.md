@@ -28,7 +28,7 @@ fi
 
 #### create `$HOME/bin/sigmabot/.env` and add line:
 
-SECRET-BOT-TOKEN can be found in the Discord [applications](https://discord.com/developers/applications) page. Select Bot from under Settings. Token is under Username.
+SECRET-BOT-TOKEN can be found in the Discord [applications](https://discord.com/developers/applications) page. Select bot name under Applications. Bot from under Settings. Token is under Username.
 
 ```bash
 DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
