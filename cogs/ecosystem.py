@@ -18,11 +18,11 @@ nfts_responses = {
 }
 
 def faq_nfts(modifier=""):
-	if modifier in nfts_responses:
-		df = nfts_responses[modifier]
-	else: 
-		df = """
-		[Marketplaces]
+    if modifier in nfts_responses:
+        df = nfts_responses[modifier]
+    else:
+        df = """
+        [Marketplaces]
 Ergo Auction House: <https://ergoauctions.org>
 SkyHarbor: <https://www.skyharbor.io/>
 
@@ -31,7 +31,7 @@ Telegram: @ErgoNFTs
 Discord: (add DISCORD).gg/gYZxq38pJn
 
 Modifiers: `dis`, `tg`, `watches`"""
-	return(df)
+    return(df)
 
 ##### TOKENJAY #####
 tokenjay_responses = {
@@ -48,14 +48,14 @@ tokenjay_responses = {
 }
 
 def faq_tokenjay(modifier=""):
-	if modifier in tokenjay_responses:
-		df = tokenjay_responses[modifier]
-	else: 
-		df = """Website: <https://tokenjay.app>
+    if modifier in tokenjay_responses:
+        df = tokenjay_responses[modifier]
+    else:
+        df = """Website: <https://tokenjay.app>
 Details: <https://ergonaut.space/en/dApps/TokenJay>
 
 Modifiers: `escrow`, `mobile`, mosaik`, `sigrsv`, `sigusd` """
-	return(df)
+    return(df)
 
 ##### ERGO PROJECTS #####
 projects_responses = {
@@ -76,13 +76,13 @@ projects_responses = {
 }
 
 def faq_projects(modifier=""):
-	if modifier in projects_responses:
-		df = projects_responses[modifier]
-	else: 
-		df = """Sigmaverse is the most comprehensive list of Ergo projects: <https://sigmaverse.io/>
+    if modifier in projects_responses:
+        df = projects_responses[modifier]
+    else:
+        df = """Sigmaverse is the most comprehensive list of Ergo projects: <https://sigmaverse.io/>
 
 Modifiers: `mixer`, `spectrum`, `ergopad`, `skyharbor`, `ergoauctions`, `raffle`, `sigmavalley`"""
-	return(df)
+    return(df)
 
 ##### NODE #####
 node_responses = {
@@ -90,115 +90,171 @@ node_responses = {
 
 "docs": """<https://docs.ergoplatform.com/node/install/>""",
 
-"list": """Lists of alternative nodes:
+"lists": """Lists of alternative nodes:
 <http://ergonodes.net/list>
 <https://api.tokenjay.app/peers/list?unreachable=false&limit=50>"""
 
 }
 
 def faq_node(modifier=""):
-	if modifier in node_responses:
-		df = node_responses[modifier]
-	else: 
-		df = """<https://github.com/ergoplatform/ergo>
+    if modifier in node_responses:
+        df = node_responses[modifier]
+    else:
+        df = """Node contain the reference implementation of the Ergo Platform Protocol. Details: <https://github.com/ergoplatform/ergo>
 
-Modifiers: `install`, `docs`, `list'"""
-	return(df)
+Modifiers: `install`, `docs`, `lists`"""
+    return(df)
 
 ##### GRAPHQL #####
 def faq_graphql():
-	df = """
-	GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. 
-	Default: https://gql.ergoplatform.org
-	
-	If you are having trouble connecting to the default, try one of these alternatives.
-<https://ergo-explorer.anetabtc.io/graphql/>
-<https://graphql.ergo.aap.cornell.edu>
-<https://graphql.erg.zelcore.io>
-<https://explore.sigmaspace.io/api/graphql>
-		"""
-	return(df)
+    df = """
+GraphQL runs on top of Ergo Explorer and allows for faster access to blockchain information. 
+Default: https://gql.ergoplatform.org
+    
+If you are having trouble connecting to the default, try the list of APIs for alternatives.
+<https://ergonaut.space/e/en/Glossary/APIs>"""
+    return(df)
 
 def faq_scala():
-	df = """ 
-	Why is Scala the programming language Ergo is based on? https://ergonaut.space/en/Ergo/Scala
-	"""
-	return(df)
+    df = """ 
+    Why is Scala the programming language Ergo is based on? https://ergonaut.space/en/Ergo/Scala
+    """
+    return(df)
 
 def faq_howie():
-	df = """
-	Does the Howie Test apply to Ergo? https://ergonaut.space/en/Ergo/Howie
-	"""
-	return(df)
+    df = """
+    Does the Howie Test apply to Ergo? https://ergonaut.space/en/Ergo/Howie
+    """
+    return(df)
 
 def faq_ergo():
-	df = """Ergo represents the next step in the evolution of proof-of-work blockchain technology, combining Bitcoin’s ledger model with smart contract functionality. Ergo’s extended UTXO design is built to offer secure and robust tooling through the use of its native language, ErgoScript, and its inherent Sigma protocols that utilize non-interactive zero-knowledge proofs.
+    df = """Ergo represents the next step in the evolution of proof-of-work blockchain technology, combining Bitcoin’s ledger model with smart contract functionality. Ergo’s extended UTXO design is built to offer secure and robust tooling through the use of its native language, ErgoScript, and its inherent Sigma protocols that utilize non-interactive zero-knowledge proofs.
 
 Ergo’s Autolykos v2 mining consensus algorithm is GPU friendly and ASIC resistant, allowing for anyone with consumer-grade GPU hardware to easily and effectively participate in securing the network.
 
 The Ergo blockchain launched in 2019 with no pre-mining or pre-allocation of any coins. The platform strives to be fair and accessible to all with an emphasis on building truly decentralized financial products and services. The ecosystem currently features the SigUSD stablecoin, ErgoMixer, a cross-chain DEX, and much more. More information can be found at ergoplatform.org, sigmaverse.io and ergonaut.space."""
-	return(df)
+    return(df)
 
 def faq_newdev():
-	df = """If you are a developer new to the Ergo ecosystem, these links may be useful:
-	
-	- Ergo Documentation: <https://docs.ergoplatform.com/dev/start/>
-	- Ergo Appkit: <https://github.com/ergoplatform/ergo-appkit>
-	- Fleet: <https://fleet-sdk.github.io/docs/>
-	- DeCo Education (video): <https://www.youtube.com/@decoeducation9394>
-	- DeCo Education (docs): <https://deco-education.github.io/deco-docs/docs/intro/>
-	- Ergohack: <https://ergohack.io/>
+    df = """If you are a developer new to the Ergo ecosystem, these links may be useful:
+    
+    - Ergo Documentation: <https://docs.ergoplatform.com/dev/start/>
+    - Ergo Appkit: <https://github.com/ergoplatform/ergo-appkit>
+    - Fleet: <https://fleet-sdk.github.io/docs/>
+    - DeCo Education (video): <https://www.youtube.com/@decoeducation9394>
+    - DeCo Education (docs): <https://deco-education.github.io/deco-docs/docs/category/into-the-woods/>
+    - Ergohack: <https://ergohack.io/>
 
 To access the Development channel in Discord, go to channels in the side bar. Click Channels & Roles (near the top). Then, select Start Developing."""
-	return(df)
+    return(df)
+
+def faq_rosen():
+    df = """
+    Rosen Bridge is a cross-chain bridge on Ergo that only requires a multi-signature wallet on the other chain. Rosen has dual layers of confirmation. One layer is watchers, which watch for changes on the other chains and notify the second layer when something happens on the other chain. Then, the guards verify that the event they were notified of actually happened. A consensus among guards needs to be reached before funds are transferred or released.02
+
+For more information: <https://docs.ergoplatform.com/eco/rosen/>
+    """
+    return(df)
+
+def faq_efyt():
+    df = """
+    <https://docs.ergoplatform.com/mining/emission/#what-is-efyt>
+    """
+    return(df)
+
+def faq_explorer():
+    df = """Ergo Explorer is the main source for Ergo blockchain information. Details: <https://docs.ergoplatform.com/dev/stack/explorer>
+
+Default website: <https://explorer.ergoplatform.com>
+Alternative: <https://ergexplorer.com/>
+
+If you are having trouble connecting to the default, alternative explorer instances can be found here: <https://ergonaut.space/e/en/Glossary/APIs>
+    """
+    return(df)
+
+def faq_consolidate():
+    df = """Trouble using a dApp? Often consolidating your wallet will solve the problem. There are three methods to consolidating a wallet.
+    
+    1. In Nautilus, select dApps (the four squares icon). Click on Wallet Optimization, then Optimize. 
+    2. In Ergo Mobile Wallet / Terminus, click on dApps. Then, click on Box Consolidation.
+    3. Send all assets to your own wallet address.
+    
+If you continue to have trouble, try the support channel in Ergo Discord/Telegram.
+    """
+    return(df)
+
+def faq_unfrackit():
+    df = """People from Cardano sometimes ask about Unfrack.it on Ergo.  With the exceptions of token isolation on Ledger wallets and UTXO compression, the problems of parellelism are solved with Ergo's state of art chained transactions. In short, a dApp like unfrack.it are already implemeented in the Ergo protocol.
+    """
+    return(df)
 
 class Ecosystem(commands.Cog):
-	def __init__(self, client):
-		self.client = client 
+    def __init__(self, client):
+        self.client = client
 
-	@commands.command()
-	async def nfts(self, ctx, modifier=""):
-		modifier = modifier.lower()
-		response = faq_nfts(modifier)
-		await ctx.send(response)
+    @commands.command()
+    async def nfts(self, ctx, modifier=""):
+        modifier = modifier.lower()
+        response = faq_nfts(modifier)
+        await ctx.send(response)
 
-	@commands.command()
-	async def tokenjay(self, ctx, modifier=""):
-		modifier = modifier.lower()
-		response = faq_tokenjay(modifier)
-		await ctx.send(response)
+    @commands.command()
+    async def tokenjay(self, ctx, modifier=""):
+        modifier = modifier.lower()
+        response = faq_tokenjay(modifier)
+        await ctx.send(response)
 
-	@commands.command()
-	async def projects(self, ctx, modifier=""):
-		modifier = modifier.lower()
-		response = faq_projects(modifier)
-		await ctx.send(response)
+    @commands.command()
+    async def projects(self, ctx, modifier=""):
+        modifier = modifier.lower()
+        response = faq_projects(modifier)
+        await ctx.send(response)
 
-	@commands.command()
-	async def node(self, ctx, modifier=""):
-		modifier = modifier.lower()
-		response = faq_node(modifier)
-		await ctx.send(response)
+    @commands.command()
+    async def node(self, ctx, modifier=""):
+        modifier = modifier.lower()
+        response = faq_node(modifier)
+        await ctx.send(response)
 
-	@commands.command()
-	async def graphql(self, ctx):
-		await ctx.send(faq_graphql())
+    @commands.command()
+    async def graphql(self, ctx):
+        await ctx.send(faq_graphql())
 
-	@commands.command()
-	async def scala(self, ctx):
-		await ctx.send(faq_scala())
+    @commands.command()
+    async def scala(self, ctx):
+        await ctx.send(faq_scala())
 
-	@commands.command()
-	async def howie(self, ctx):
-		await ctx.send(faq_howie())
+    @commands.command()
+    async def howie(self, ctx):
+        await ctx.send(faq_howie())
 
-	@commands.command()
-	async def ergo(self, ctx):
-		await ctx.send(faq_ergo())
+    @commands.command()
+    async def ergo(self, ctx):
+        await ctx.send(faq_ergo())
 
-	@commands.command()
-	async def newdev(self, ctx):
-		await ctx.send(faq_newdev())
+    @commands.command()
+    async def newdev(self, ctx):
+        await ctx.send(faq_newdev())
+
+    @commands.command()
+    async def rosen(self, ctx):
+        await ctx.send(faq_rosen())
+
+    @commands.command()
+    async def efyt(self, ctx):
+        await ctx.send(faq_efyt())
+
+    @commands.command()
+    async def explorer(self, ctx):
+        await ctx.send(faq_explorer())
+
+    @commands.command()
+    async def consolidate(self, ctx):
+        await ctx.send(faq_consolidate())
+
+    @commands.command()
+    async def unfrackit(self, ctx):
+        await ctx.send(faq_unfrackit())
 
 async def setup(client):
-	await client.add_cog(Ecosystem(client))
+    await client.add_cog(Ecosystem(client))

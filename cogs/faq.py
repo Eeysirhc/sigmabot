@@ -106,16 +106,14 @@ def faq_bridge():
 	df = """
 	In cryptocurrencies, bridges move assets from one cryptocurrency blockchain to another. The two most frequently discussed on Ergo are Rosen Bridge and AnetaBTC.
 
-Rosen Bridge video: <https://www.youtube.com/watch?v=Xsiy-yPJQ6w>
-Rosen Bridge compared to Interlay bridges: <https://medium.com/@anetaBTC/rosen-bridge-vs-interlay-an-analysis-on-wrapping-bitcoin-c9ae84da0e9d>
-	"""
+    For more information on Ergo's Rosen Bridge, see: <https://docs.ergoplatform.com/eco/rosen/>
+    """
 	return(df)
 
 #### SOCIALS #####
 def faq_socials():
-	df = """
-	Ergo Telegram groups: <https://t.me/Ergo_Chats>
-	On Discord, select #Channels & Roles and answer the customization questions."
+	df = """Ergo Telegram groups: <https://t.me/Ergo_Chats>
+On Discord, select #Channels & Roles and answer the customization questions."
 	"""
 	return(df)
 
