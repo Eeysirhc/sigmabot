@@ -24,7 +24,6 @@ def exchange_cex():
 Huobi: <https://www.huobi.com/exchange/erg_usdt/>
 GateIO: <https://www.gate.io/trade/ERG_USDT>
 Indodax: <https://indodax.com/market/ERGIDR>
-HotBit: <https://www.hotbit.io/exchange?symbol=ERG_BTC>
 FMFW: <https://fmfw.io/erg-to-btc>
 Changelly: <https://changelly.com/exchange/erg>
 swopfi: <https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD>
@@ -33,6 +32,8 @@ swopfi: <https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD>
 KuCoin: <https://www.kucoin.com/trade/ERG-USDT>
 CoinEx: <https://www.coinex.com/exchange?currency=usdt&dest=erg>
 TradeOgre: <https://tradeogre.com/exchange/BTC-ERG>
+Probit: <https://www.probit.com/app/exchange/ERG-USDT>
+Bitmart: <https://www.bitmart.com/trade/en-US?layout=basic&symbol=ERG_USDT>
 	"""
 	return(df)
 
