@@ -32,7 +32,6 @@ swopfi: <https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD>
 KuCoin: <https://www.kucoin.com/trade/ERG-USDT>
 CoinEx: <https://www.coinex.com/exchange?currency=usdt&dest=erg>
 TradeOgre: <https://tradeogre.com/exchange/BTC-ERG>
-CoinEx: <https://www.coinex.com/en/exchange/erg-usdt?currency=USDT&dest=ERG>
 Probit: <https://www.probit.com/app/exchange/ERG-USDT>
 Bitmart: <https://www.bitmart.com/trade/en-US?layout=basic&symbol=ERG_USDT>
 	"""
