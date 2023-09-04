@@ -27,9 +27,9 @@ Indodax: <https://indodax.com/market/ERGIDR>
 FMFW: <https://fmfw.io/erg-to-btc>
 Changelly: <https://changelly.com/exchange/erg>
 swopfi: <https://swop.fi/info/3PGVJvV8Ep1u7qMkvUs1DYhRyfvArdRbMsD>
+KuCoin: <https://www.kucoin.com/trade/ERG-USDT>
 
 [non-KYC]
-KuCoin: <https://www.kucoin.com/trade/ERG-USDT>
 CoinEx: <https://www.coinex.com/exchange?currency=usdt&dest=erg>
 TradeOgre: <https://tradeogre.com/exchange/BTC-ERG>
 Probit: <https://www.probit.com/app/exchange/ERG-USDT>
